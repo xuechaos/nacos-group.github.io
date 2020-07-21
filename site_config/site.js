@@ -1,6 +1,8 @@
 export default {
   rootPath: '', // 发布到服务器的根目录，需以/开头但不能有尾/，如果只有/，请填写空字符串
   port: 8080, // 本地开发服务器的启动端口
+  domain: 'nacos.io', // 站点部署域名
+  defaultSearch: 'baidu', // 默认搜索引擎，baidu或者google
   defaultLanguage: 'en-us',
   'en-us': {
     pageMenu: [
@@ -13,11 +15,6 @@ export default {
         key: 'docs',
         text: 'DOCS',
         link: '/en-us/docs/quick-start.html',
-      },
-      {
-        key: 'Nacos TEAM',
-        text: 'TEAM',
-        link: '/en-us/docs/nacos-dev.html',
       },
       {
         key: 'blog',
@@ -34,6 +31,18 @@ export default {
       //   text: 'DOWNLOAD',
       //   link: '/en-us/blog/download.html',
       // },
+        {
+          key: 'Nacos in Cloud',
+          text: 'NACOS IN CLOUD',
+          link: 'https://cn.aliyun.com/product/aliware/mse?spm=nacos-website.topbar.0.0.0',
+          imgUrl: 'https://img.alicdn.com/tfs/TB1esl_m.T1gK0jSZFrXXcNCXXa-200-200.png'
+        },
+        {
+          key: 'We are hiring',
+          text: 'HIRING',
+          link: 'https://job.alibaba.com/zhaopin/position_detail.htm?trace=qrcode_share&positionCode=GP633620',
+          imgUrl: 'https://img.alicdn.com/tfs/TB1esl_m.T1gK0jSZFrXXcNCXXa-200-200.png'
+      },
       {
         text: 'DEMO-CONSOLE',
           link: 'http://console.nacos.io/nacos/index.html',
@@ -97,11 +106,6 @@ export default {
         link: '/zh-cn/docs/what-is-nacos.html',
       },
       {
-        key: 'Nacos TEAM',
-        text: '开发者团队',
-        link: '/zh-cn/docs/nacos-dev.html',
-      },
-      {
         key: 'blog',
         text: '博客',
         link: '/zh-cn/blog/index.html',
@@ -111,11 +115,18 @@ export default {
         text: '社区',
         link: '/zh-cn/community/index.html',
       },
-      // {
-      //   key: 'download',
-      //   text: '下载',
-      //   link: '/zh-cn/blog/download.html',
-      // },
+        {
+            key: 'Nacos in Cloud',
+              text: '企业版Nacos',
+            link: 'https://cn.aliyun.com/product/aliware/mse?spm=nacos-website.topbar.0.0.0',
+            imgUrl: 'https://img.alicdn.com/tfs/TB1esl_m.T1gK0jSZFrXXcNCXXa-200-200.png'
+        },
+      {
+          key: 'We are hiring',
+          text: '招贤纳士',
+          link: 'https://job.alibaba.com/zhaopin/position_detail.htm?trace=qrcode_share&positionCode=GP633620',
+          imgUrl: 'https://img.alicdn.com/tfs/TB1esl_m.T1gK0jSZFrXXcNCXXa-200-200.png'
+      },
       {
         text: '控制台样例',
           link: 'http://console.nacos.io/nacos/index.html',

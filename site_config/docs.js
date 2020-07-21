@@ -21,8 +21,8 @@ export default {
                 link: '/en-us/docs/architecture.html',
               },
               {
-                title: 'FAQ',
-                link: '/en-us/docs/FAQ.html',
+                title: 'Feature list',
+                link: '/en-us/docs/feature-list.html',
               },
             ],
           },
@@ -78,11 +78,19 @@ export default {
               },
               {
                 title: 'Open-API',
-                link: '/en-us/docs/open-API.html',
+                link: '/en-us/docs/open-api.html',
               },
               {
                   title: 'Nacos Spring',
                   link: '/en-us/docs/nacos-spring.html',
+              },
+              {
+                title: 'Nacos System Configurations',
+                link: '/en-us/docs/system-configurations.html',
+              },
+              {
+                title: 'FAQ',
+                link: '/en-us/docs/faq.html',
               },
             ],
           },
@@ -99,7 +107,7 @@ export default {
               },
               {
                 title: 'Management OpenAPI',
-                link: '/en-us/docs/managementAPI.html',
+                link: '/en-us/docs/management-api.html',
               },
               {
                 title: 'Admin Console Guide',
@@ -112,6 +120,10 @@ export default {
               {
                 title: 'Nacos Config Benchmark',
                 link: '/en-us/docs/nacos-config-benchmark.html',
+              },
+              {
+                title: 'Nacos Naming Benchmark',
+                link: '/en-us/docs/nacos-naming-benchmark.html',
               },
               {
                   title: 'Data Migration to Nacos',
@@ -127,24 +139,16 @@ export default {
                 link: '/en-us/docs/contributing.html',
               },
               {
-                title: 'Nacos Activity',
-                link: '/zh-cn/docs/activity.html',
+                title: 'Contributing Flow',
+                link: '/en-us/docs/contributing-flow.html',
               },
               {
                 title: 'Pull Request Template',
                 link: '/en-us/docs/pull-request.html',
               },
               {
-                title: 'How to reporting bugs',
+                title: 'How to report bugs',
                 link: '/en-us/docs/how-to-reporting-bugs.html',
-              },
-              {
-                title: 'Nacos RoadMap',
-                link: '/en-us/docs/roadmap.html',
-              },
-              {
-                title: 'Nacos with Istio',
-                link: '/en-us/docs/use-nacos-with-istio.html',
               },
             ],
           },
@@ -154,6 +158,10 @@ export default {
               {
                 title: 'Community',
                 link: '/en-us/docs/community.html',
+              },
+              {
+                title: 'Develop Team',
+                link: '/en-us/docs/nacos-dev.html',
               },
             ],
           },
@@ -184,8 +192,9 @@ export default {
                 link: '/zh-cn/docs/architecture.html',
               },
               {
-                title: 'FAQ',
-                link: '/zh-cn/docs/FAQ.html',
+                title: '功能和需求列表',
+                link: '/zh-cn/docs/feature-list.html',
+                imgUrl: 'https://img.alicdn.com/tfs/TB1esl_m.T1gK0jSZFrXXcNCXXa-200-200.png'
               },
             ],
           },
@@ -194,7 +203,7 @@ export default {
             opened: true,
             children: [
               {
-                  title: '快速开始',
+                  title: 'Nacos',
                   link: '/zh-cn/docs/quick-start.html',
               },
               {
@@ -241,11 +250,19 @@ export default {
               },
               {
                   title: 'Open-API指南',
-                  link: '/zh-cn/docs/open-API.html',
+                  link: '/zh-cn/docs/open-api.html',
               },
               {
                   title: 'Nacos Spring',
                   link: '/zh-cn/docs/nacos-spring.html',
+              },
+              {
+                title: 'Nacos系统参数介绍',
+                link: '/zh-cn/docs/system-configurations.html',
+              },
+              {
+                title: 'FAQ',
+                link: '/zh-cn/docs/faq.html',
               },
             ],
           },
@@ -262,7 +279,7 @@ export default {
               },
               {
                 title: '运维API',
-                link: '/zh-cn/docs/managementAPI.html',
+                link: '/zh-cn/docs/management-api.html',
               },
               {
                 title: '控制台手册',
@@ -273,12 +290,16 @@ export default {
                 link: '/zh-cn/docs/monitor-guide.html',
               },
               {
-                  title: '配置模块压测模型',
-                  link: '/en-us/docs/nacos-config-benchmark.html',
+                  title: '服务配置模块压测报告',
+                  link: '/zh-cn/docs/nacos-config-benchmark.html',
+              },
+              {
+                title: '服务发现模块压测报告',
+                link: '/zh-cn/docs/nacos-naming-benchmark.html',
               },
               {
                   title: '其他环境迁移到Nacos',
-                  link: '/en-us/docs/nacos-sync-use.html',
+                  link: '/zh-cn/docs/nacos-sync-use.html',
               },
             ],
           },
@@ -290,9 +311,9 @@ export default {
                 link: '/zh-cn/docs/contributing.html',
               },
               {
-                title: 'Nacos有奖活动介绍',
-                link: '/zh-cn/docs/activity.html',
-               },
+                title: '贡献流程',
+                link: '/zh-cn/docs/contributing-flow.html',
+              },
               {
                 title: 'pull request模板',
                 link: '/zh-cn/docs/pull-request.html',
@@ -300,14 +321,6 @@ export default {
               {
                 title: '如何提交问题报告',
                 link: '/zh-cn/docs/how-to-reporting-bugs.html',
-              },
-              {
-                title: 'Nacos规划',
-                link: '/zh-cn/docs/roadmap.html',
-              },
-              {
-                title: 'nacos支持istio',
-                link: '/zh-cn/docs/use-nacos-with-istio.html',
               },
             ],
           },
@@ -317,7 +330,11 @@ export default {
               {
                 title: '社区',
                 link: '/zh-cn/docs/community.html',
-              }
+              },
+              {
+                title: '开发团队',
+                link: '/zh-cn/docs/nacos-dev.html',
+              },
             ],
           },
         ],

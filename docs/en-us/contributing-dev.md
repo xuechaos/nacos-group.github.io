@@ -1,3 +1,9 @@
+---
+title: Contributing to Nacos
+keywords: Nacos,contribute
+description: Welcome to Nacos! This document is a guideline about how to contribute to Nacos.
+---
+
 # Contributing to Nacos
 
 Welcome to Nacos! This document is a guideline about how to contribute to Nacos.
@@ -90,7 +96,7 @@ Some principles:
     
 -   Testability - 80% of the new code should be covered by unit test cases.
     
--   Maintainability - Comply with our [PMD spec](style/codeStyle.xml), and 3-month-frequency update should be maintained at least.
+-   Maintainability - Comply with our [PMD spec](https://github.com/alibaba/nacos/blob/develop/style/codeStyle.md), and 3-month-frequency update should be maintained at least.
     
 
 ### Now how about try become a committer?
