@@ -1,9 +1,9 @@
 ---
 id: "question-history-8230"
-title: "服务端的udp发送和客户端的定时更新的时间问题。A调用B， B下线后。A的本地缓存还没变更，nacos也没主动通知(或者Client端的udp由于某种原因没有接收到)， 此时A访问B会报错，这种情况有没有好的解决方案？或者已经有了解决方案 nacos-opensource"
+title: "服务端的udp发送和客户端的定时更新的时间问题。A调用B， B下线后。A的本地缓存还没变更，nacos也没 nacos-opensource"
 date: "2024-05-17"
-category: expertConsultation
-description: "nacos-opensource 服务端的udp发送和客户端的定时更新的时间问题。A调用B， B下线后。A的本地缓存还没变更，nacos也没主动通知(或者Client端的udp由于某种原因没有接收到)， 此时A访问B会报错，这种情况有没有好的解决方案？或者已经有了解决方案"
+category: "expertConsultation"
+description: "首先，根据提供的知识内容，我们可以分析该问题的原因如下：1. **UDP不可靠性**：Nacos 1.x版本中使用UDP协议进行服务变更的推送，UDP协议本身具有不可靠性，可能导致客户端未接收到服务下线的通知。2. **客户端本地缓存**：即使Nacos-Client收到了服务变更通知，客户端（如A"
 tags: ["udp发送","客户端","定时更新","时间问题","A调用B","B下线","本地缓存","变更","主动通知","Client端","接收","报错","解决方案"]
 keywords: ["udp发送","客户端","定时更新","时间问题","A调用B","B下线","本地缓存","变更","主动通知","Client端","接收","报错","解决方案"]
 ---

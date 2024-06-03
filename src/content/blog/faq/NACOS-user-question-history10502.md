@@ -2,8 +2,8 @@
 id: "question-history-10502"
 title: "#消费者是如何调用提供者的 nacos-opensource"
 date: "2024-05-17"
-category: expertConsultation
-description: "nacos-opensource #消费者是如何调用提供者的"
+category: "expertConsultation"
+description: "在Nacos环境下，消费者调用服务提供者的过程大致如下，依据提供的知识进行分析：### 1. 服务发现- **服务注册：**服务提供者启动时，会向Nacos服务注册中心注册自己的信息，包括服务名、IP地址、端口号等。- **服务订阅：**消费者启动时，会向Nacos服务注册中心订阅它所需要调用的服务"
 tags: ["消费者","调用","提供者"]
 keywords: ["消费者","调用","提供者"]
 ---

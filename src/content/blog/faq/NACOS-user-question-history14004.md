@@ -2,8 +2,8 @@
 id: "question-history-14004"
 title: "nacos启动报错怎么处理？ nacos-opensource"
 date: "2024-05-22"
-category: expertConsultation
-description: "nacos-opensource nacos启动报错怎么处理？"
+category: "expertConsultation"
+description: "当遇到nacos启动报错时，首先应根据错误信息定位问题原因。根据提供的知识内容，这里主要讨论两种常见启动报错情况及处理方法：### 错误1：`java.lang.IllegalArgumentException: the length of secret key must great than or"
 tags: ["启动","报错","处理"]
 keywords: ["启动","报错","处理"]
 ---

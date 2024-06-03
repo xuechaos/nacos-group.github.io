@@ -2,8 +2,8 @@
 id: "question-history-10498"
 title: "#Nacos支持哪些客户端语言？ nacos-opensource"
 date: "2024-05-17"
-category: expertConsultation
-description: "nacos-opensource #Nacos支持哪些客户端语言？"
+category: "expertConsultation"
+description: "Nacos支持以下客户端语言：1. Java - [稳定](https://github.com/alibaba/nacos/tree/develop/client)2. Go - [稳定](https://github.com/nacos-group/nacos-sdk-go)3. Node.js"
 tags: ["Nacos","客户端语言"]
 keywords: ["Nacos","客户端语言"]
 ---

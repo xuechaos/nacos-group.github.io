@@ -2,8 +2,8 @@
 id: "question-history-11840"
 title: "nacos配置pg数据库 nacos-opensource"
 date: "2024-05-17"
-category: expertConsultation
-description: "nacos-opensource nacos配置pg数据库"
+category: "expertConsultation"
+description: "为了配置Nacos使用PostgreSQL（pg数据库），请遵循以下步骤操作：1. **确认Nacos版本**：确保您的Nacos版本是2.2或更高版本，因为从2.2版本开始，Nacos官方开始支持PostgreSQL。如果您使用的是较旧版本，请先进行升级。2. **检查插件是否存在**：访问[Na"
 tags: ["nacos","配置","pg数据库"]
 keywords: ["nacos","配置","pg数据库"]
 ---

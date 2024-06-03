@@ -2,8 +2,8 @@
 id: "question-history-10496"
 title: "#Nacos的数据存储格式是什么？ nacos-opensource"
 date: "2024-05-17"
-category: expertConsultation
-description: "nacos-opensource #Nacos的数据存储格式是什么？"
+category: "expertConsultation"
+description: "Nacos的数据存储格式主要依赖于其配置的存储模型。Nacos支持两种存储模式：嵌入式数据库（如SQLite）和外部数据库（如MySQL、PostgreSQL等）。默认情况下，Nacos使用嵌入式的SQLite数据库来存储配置数据、服务实例信息以及健康检查结果等元数据。这种方式适用于单机测试或小型部"
 tags: ["Nacos","数据存储格式"]
 keywords: ["Nacos","数据存储格式"]
 ---

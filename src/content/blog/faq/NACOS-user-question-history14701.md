@@ -2,8 +2,8 @@
 id: "question-history-14701"
 title: "如何使用 k8s 部署一个 nacos 服务端 nacos-opensource"
 date: "2024-05-29"
-category: expertConsultation
-description: "nacos-opensource 如何使用 k8s 部署一个 nacos 服务端"
+category: "expertConsultation"
+description: "要使用K8s部署一个Nacos服务端，可以遵循以下步骤：1. **准备环境**：   - 确保你的Kubernetes集群已经搭建并运行正常。   - 安装`kubectl`命令行工具，以便与Kubernetes集群交互。2. **获取Nacos-K8s部署脚本**：   - 访问[Nacos-K8"
 tags: ["k8s","部署","nacos","服务端"]
 keywords: ["k8s","部署","nacos","服务端"]
 ---

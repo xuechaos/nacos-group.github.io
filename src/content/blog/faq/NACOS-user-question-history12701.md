@@ -1,9 +1,9 @@
 ---
 id: "question-history-12701"
-title: "could not initialize logback nacos logging from classpath:nacos-logback.xml 怎么处理？ nacos-opensource"
+title: "could not initialize logback nacos logging from class nacos-opensource"
 date: "2024-05-17"
-category: expertConsultation
-description: "nacos-opensource could not initialize logback nacos logging from classpath:nacos-logback.xml 怎么处理？"
+category: "expertConsultation"
+description: "遇到“could not initialize logback nacos logging from classpath:nacos-logback.xml”的问题，其原因在于Spring Cloud Alibaba与Nacos Client使用的logback版本不兼容。具体来说，Spring B"
 tags: ["logback","nacos logging","classpath:nacos-logback.xml","处理"]
 keywords: ["logback","nacos logging","classpath:nacos-logback.xml","处理"]
 ---

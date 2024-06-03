@@ -2,8 +2,8 @@
 id: "question-history-14006"
 title: "nacos 安装的详细步骤说明,linux docker nacos-opensource"
 date: "2024-05-22"
-category: expertConsultation
-description: "nacos-opensource nacos 安装的详细步骤说明,linux docker"
+category: "expertConsultation"
+description: "要在Linux环境下通过Docker安装Nacos，请按照以下详细步骤操作：1. **克隆Nacos-Docker项目**:   首先，打开终端并运行以下命令以克隆Nacos-Docker项目从GitHub到本地环境。   ```bash   git clone https://github.com"
 tags: ["nacos","安装","详细步骤","说明","linux","docker"]
 keywords: ["nacos","安装","详细步骤","说明","linux","docker"]
 ---

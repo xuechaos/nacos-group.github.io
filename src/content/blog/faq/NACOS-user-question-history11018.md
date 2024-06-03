@@ -2,8 +2,8 @@
 id: "question-history-11018"
 title: "Nacos 你们有遇到服务掉线吗   实际服务正常再跑  注册中心上没了 nacos-opensource"
 date: "2024-05-17"
-category: expertConsultation
-description: "nacos-opensource Nacos 你们有遇到服务掉线吗   实际服务正常再跑  注册中心上没了"
+category: "expertConsultation"
+description: "当遇到Nacos服务掉线，而实际服务仍在正常运行，但在注册中心不可见的情况，可以从以下几个方面进行分析与解决：1. **检查Nacos Client版本**：   - 首先确认当前使用的Nacos Client版本是否为1.4.1，因为该版本存在一个关于域名解析失败后停止心跳线程的BUG。如果确认为"
 tags: ["服务掉线","注册中心"]
 keywords: ["服务掉线","注册中心"]
 ---

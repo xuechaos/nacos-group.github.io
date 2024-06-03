@@ -2,17 +2,11 @@
 id: "question-history-11198"
 title: "docker 怎么安装nacos nacos-opensource"
 date: "2024-05-17"
-category: expertConsultation
-description: "nacos-opensource docker 怎么安装nacos"
+category: "expertConsultation"
+description: "要通过Docker安装Nacos，请遵循以下步骤：1. **获取Nacos Docker镜像**：   访问Nacos的Docker镜像仓库，你可以直接使用命令行拉取官方镜像。对于稳定需求，可以选择不带特定后缀的版本，例如：   ```shell   docker pull nacos/nacos-"
 tags: ["nacos","安装"]
 keywords: ["nacos","安装"]
 ---
-
-## 用户问题 ： 
- docker 怎么安装nacos nacos-opensource 
-
----------------
-## 专家官方解答 ：
 
 要通过Docker安装Nacos，请遵循以下步骤：
 
@@ -50,24 +44,6 @@ keywords: ["nacos","安装"]
 以上步骤基于Nacos官方Docker镜像及文档指导，确保了从拉取镜像到启动服务的全过程。更多详细配置和高级用法，请参考Nacos官方文档：
 - [Nacos-Docker仓库](https://github.com/nacos-group/nacos-docker)
 - [Nacos官方文档-鉴权配置](https://nacos.io/docs/latest/guide/user/auth/)
-
-
-<font color="#949494">---------------</font> 
-
-
-## 参考链接 ：
-
-*[Nacos功能和需求列表](https://nacos.io/docs/latest/archive/feature-list)
- 
- *专家经验:Nacos 请问nacos有arm架构的docker镜像么 
- 
- *专家经验:Nacos k8s部署得nacos2.2.3版本集群模式怎么配置鉴权 
-
-
- <font color="#949494">---------------</font> 
- 
-
-
 ## <font color="#FF0000">答疑服务说明：</font> 
 
 本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>，在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。您也可以访问 : [全局专家答疑](https://opensource.alibaba.com/chatBot) 。 咨询其他产品的的问题

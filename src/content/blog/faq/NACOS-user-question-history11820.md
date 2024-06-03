@@ -2,8 +2,8 @@
 id: "question-history-11820"
 title: "nacos 在哪下载？ nacos-opensource"
 date: "2024-05-17"
-category: expertConsultation
-description: "nacos-opensource nacos 在哪下载？"
+category: "expertConsultation"
+description: "Nacos可以在其官方网站或GitHub上下载最新稳定版本。具体步骤如下：1. 访问Nacos官方网站的下载页面：[https://nacos.io/download/nacos-server/](https://nacos.io/download/nacos-server/)2. 在该页面上，你可"
 tags: ["nacos","下载"]
 keywords: ["nacos","下载"]
 ---

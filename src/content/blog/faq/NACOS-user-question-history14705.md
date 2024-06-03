@@ -2,8 +2,8 @@
 id: "question-history-14705"
 title: "nacos.core.auth.server.identity.key nacos-opensource"
 date: "2024-05-29"
-category: expertConsultation
-description: "nacos-opensource nacos.core.auth.server.identity.key"
+category: "expertConsultation"
+description: "在Nacos中配置`nacos.core.auth.server.identity.key`是为了实现服务器身份验证的一部分，它与`nacos.core.auth.server.identity.value`共同构成一个键值对，用于标识Nacos服务器的身份。这一配置尤其重要，当你开启了Nacos的"
 tags: ["auth","server","identity","key"]
 keywords: ["auth","server","identity","key"]
 ---

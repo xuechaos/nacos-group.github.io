@@ -2,8 +2,8 @@
 id: "question-history-10503"
 title: "#负载均衡通过什么实现 nacos-opensource"
 date: "2024-05-17"
-category: expertConsultation
-description: "nacos-opensource #负载均衡通过什么实现"
+category: "expertConsultation"
+description: "在Nacos中实现负载均衡主要依赖于以下几个方面与策略：1. **VIP/SLB配置**：针对Nacos长轮询负载不均的问题，可通过配置VIP（虚拟IP）或SLB（负载均衡器），利用它们的负载均衡能力。具体实施时，可以设置最小连接数算法，以快速实现客户端连接到各个Nacos节点的均衡分布。这是因为长"
 tags: ["负载均衡","实现"]
 keywords: ["负载均衡","实现"]
 ---

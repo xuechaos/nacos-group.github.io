@@ -2,8 +2,8 @@
 id: "question-history-11190"
 title: "nacos ipv6 设置 nacos-opensource"
 date: "2024-05-17"
-category: expertConsultation
-description: "nacos-opensource nacos ipv6 设置"
+category: "expertConsultation"
+description: "Nacos 支持 IPv6 的设置，具体操作步骤如下：1. **Nacos Server 端设置**：   - 对于 Nacos 2.1 及以后的版本，服务器端能够自动识别 IPv4 或 IPv6 环境，通常无需特殊配置。Nacos 会根据系统环境自动适配。   - 如果在双栈环境中需要强制使用 I"
 tags: ["ipv6","设置"]
 keywords: ["ipv6","设置"]
 ---
