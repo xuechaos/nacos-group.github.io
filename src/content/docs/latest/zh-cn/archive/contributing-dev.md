@@ -1,6 +1,6 @@
 ---
 title: 为 Nacos 做贡献
-keywords: [Nacos,贡献]
+keywords: [Nacos, 贡献, 行为守则, GitHub, Pull Request, 社区角色, Committer]
 description: 欢迎来到Nacos！本文档是关于如何为Nacos做出贡献的指南。
 ---
 
