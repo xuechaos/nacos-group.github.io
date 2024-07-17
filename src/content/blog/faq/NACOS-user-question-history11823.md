@@ -54,7 +54,7 @@ Nacos `application.properties` 配置文件是Nacos服务端配置的核心部�
 
 ## 参考链接 ：
 
-*[Nacos系统参数介绍](https://nacos.io/docs/latest/guide/admin/system-configurations)
+* [Nacos系统参数介绍](https://nacos.io/docs/latest/guide/admin/system-configurations)
 
 
  <font color="#949494">---------------</font> 

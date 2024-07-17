@@ -52,11 +52,11 @@ Nacos Server配置文件（如`application.properties`）中可能包含敏感�
 
 ## 参考链接 ：
 
-*专家经验：Nacos 配置加密 
+* 专家经验：Nacos 配置加密 
  
- *专家经验：nacos用户密码设置 
+ * 专家经验：nacos用户密码设置 
  
- *[Nacos 融合 Spring Cloud，成为注册配置中心](https://nacos.io/docs/latest/ecology/use-nacos-with-spring-cloud)
+ * [Nacos 融合 Spring Cloud，成为注册配置中心](https://nacos.io/docs/latest/ecology/use-nacos-with-spring-cloud)
 
 
  <font color="#949494">---------------</font> 

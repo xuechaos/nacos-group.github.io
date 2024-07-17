@@ -67,9 +67,9 @@ spring.cloud.nacos.config.ssl.trust-store-password=your_truststore_password
 
 ## 参考链接 ：
 
-*[Nacos系统参数介绍](https://nacos.io/docs/latest/guide/admin/system-configurations)
+* [Nacos系统参数介绍](https://nacos.io/docs/latest/guide/admin/system-configurations)
  
- *专家经验：nacos 多语言支持 
+ * 专家经验：nacos 多语言支持 
 
 
  <font color="#949494">---------------</font> 

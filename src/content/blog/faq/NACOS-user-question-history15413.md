@@ -57,9 +57,9 @@ description: "在您的问题“nacos-opensource nacos子服务的配置文件�
 
 ## 参考链接 ：
 
-*专家经验：微服务引擎(MSE）介绍 
+* 专家经验：微服务引擎(MSE）介绍 
  
- *专家经验：Nacos 配置加密 
+ * 专家经验：Nacos 配置加密 
 
 
  <font color="#949494">---------------</font> 

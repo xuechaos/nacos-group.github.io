@@ -34,9 +34,9 @@ Nacos-opensource中`@RefreshScope`实现配置自动更新的原理可以依据�
 
 ## 参考链接 ：
 
-*[Nacos 融合 Spring Cloud，成为注册配置中心](https://nacos.io/docs/latest/ecology/use-nacos-with-spring-cloud)
+* [Nacos 融合 Spring Cloud，成为注册配置中心](https://nacos.io/docs/latest/ecology/use-nacos-with-spring-cloud)
  
- *专家经验：Nacos 配置无法动态刷新 
+ * 专家经验：Nacos 配置无法动态刷新 
 
 
  <font color="#949494">---------------</font> 

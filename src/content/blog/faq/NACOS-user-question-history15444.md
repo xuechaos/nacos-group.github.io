@@ -53,11 +53,11 @@ description: "在Windows上部署Nacos的单机模式，可以参照以下步骤
 
 ## 参考链接 ：
 
-*专家经验：Nacos 在windows下不支持:的bug如何处理? 
+* 专家经验：Nacos 在windows下不支持:的bug如何处理? 
  
- *专家经验：Nacos部署集群模式怎么打开鉴权 
+ * 专家经验：Nacos部署集群模式怎么打开鉴权 
  
- *专家经验：nacos的部署 
+ * 专家经验：nacos的部署 
 
 
  <font color="#949494">---------------</font> 

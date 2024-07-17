@@ -52,11 +52,11 @@ keywords: ["io.grpc.netty.shaded.io.netty.util.internal.OutOfDirectMemoryError",
 
 ## 参考链接 ：
 
-*专家经验：io.grpc.netty.shaded.io.netty.util.internal.OutOfDirectMemoryError 
+* 专家经验：io.grpc.netty.shaded.io.netty.util.internal.OutOfDirectMemoryError 
  
- *专家经验：Nacos 内存占用过大 
+ * 专家经验：Nacos 内存占用过大 
  
- *专家经验：Why Use HTTP for Registration of the Nacos2.0 Raft Protocol 
+ * 专家经验：Why Use HTTP for Registration of the Nacos2.0 Raft Protocol 
 
 
  <font color="#949494">---------------</font> 

@@ -47,11 +47,11 @@ description: "根据您的描述和提供的知识内容，您尝试通过设置
 
 ## 参考链接 ：
 
-*[Nacos 融合 Spring，成为注册配置中心](https://nacos.io/docs/latest/ecology/use-nacos-with-spring)
+* [Nacos 融合 Spring，成为注册配置中心](https://nacos.io/docs/latest/ecology/use-nacos-with-spring)
  
- *专家经验：Nacos spring 适配 
+ * 专家经验：Nacos spring 适配 
  
- *专家经验：Nacos 麻烦咨询下 spring actuator 如何关闭 nacosconfig 的健康检查 ？ 
+ * 专家经验：Nacos 麻烦咨询下 spring actuator 如何关闭 nacosconfig 的健康检查 ？ 
 
 
  <font color="#949494">---------------</font> 

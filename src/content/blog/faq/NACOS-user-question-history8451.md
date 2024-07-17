@@ -44,9 +44,9 @@ keywords: ["nacos","java -jar","宿主机","spring boot","docker","Feign","无�
 
 ## 参考链接 ：
 
-*专家经验：应用服务调用了依赖服务的提供者时，提示No provider或找不到服务等错误。 
+* 专家经验：应用服务调用了依赖服务的提供者时，提示No provider或找不到服务等错误。 
  
- *[FAQ](https://nacos.io/docs/latest/guide/user/faq)
+ * [FAQ](https://nacos.io/docs/latest/guide/user/faq)
 
 
  <font color="#949494">---------------</font> 

@@ -20,11 +20,11 @@ description: "我目前了解到的信息可能不足以支持你的问题，关
 
 ## 参考链接 ：
 
-*专家经验：Nacos1.0和Nacos2.0的api有什么区别？2.0的中小版本升级相关问题 
+* 专家经验：Nacos1.0和Nacos2.0的api有什么区别？2.0的中小版本升级相关问题 
  
- *[Nacos功能和需求列表](https://nacos.io/docs/latest/archive/feature-list)
+ * [Nacos功能和需求列表](https://nacos.io/docs/latest/archive/feature-list)
  
- *专家经验：CatalogController 里面的接口和客户端SDK的API区别是什么 
+ * 专家经验：CatalogController 里面的接口和客户端SDK的API区别是什么 
 
 
  <font color="#949494">---------------</font> 

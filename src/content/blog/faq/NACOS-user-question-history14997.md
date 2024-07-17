@@ -45,9 +45,9 @@ description: "根据您提供的问题描述“nacos-opensource core-auth.log文
 
 ## 参考链接 ：
 
-*专家经验：日志报错ERROR [DISTRO-INIT] load snapshot Nacos:Naming:v2:ClientData from 10.111.107.10:8878 failed. com.alibaba.nacos.core.distribu 
+* 专家经验：日志报错ERROR [DISTRO-INIT] load snapshot Nacos:Naming:v2:ClientData from 10.111.107.10:8878 failed. com.alibaba.nacos.core.distribu 
  
- *专家经验：librocksdbjni-linux64.so:无法打开共享对象文件 
+ * 专家经验：librocksdbjni-linux64.so:无法打开共享对象文件 
 
 
  <font color="#949494">---------------</font> 

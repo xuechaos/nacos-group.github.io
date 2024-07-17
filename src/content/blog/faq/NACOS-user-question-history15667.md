@@ -20,9 +20,9 @@ description: "我目前了解到的信息可能不足以支持你的问题，关
 
 ## 参考链接 ：
 
-*专家经验：Nacos 扩缩容问题 
+* 专家经验：Nacos 扩缩容问题 
  
- *专家经验：CatalogController 里面的接口和客户端SDK的API区别是什么 
+ * 专家经验：CatalogController 里面的接口和客户端SDK的API区别是什么 
 
 
  <font color="#949494">---------------</font> 

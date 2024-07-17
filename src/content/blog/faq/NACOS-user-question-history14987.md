@@ -53,11 +53,11 @@ description: "根据您提出的问题“nacos-opensource there was an error que
 
 ## 参考链接 ：
 
-*专家经验：receive invalid redirect request from peer 
+* 专家经验：receive invalid redirect request from peer 
  
- *专家经验：Nacos "status":501,"error":"Not Implemented","message":"no such api:...","path":"... 
+ * 专家经验：Nacos "status":501,"error":"Not Implemented","message":"no such api:...","path":"... 
  
- *专家经验：Request cannot be executed； I/O reactor status: STOPPED 
+ * 专家经验：Request cannot be executed； I/O reactor status: STOPPED 
 
 
  <font color="#949494">---------------</font> 

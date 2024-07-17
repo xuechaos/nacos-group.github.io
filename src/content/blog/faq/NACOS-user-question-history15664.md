@@ -50,9 +50,9 @@ Nacos本身不直接控制 `/nacos/actuator/health` 这个路径的端口，这�
 
 ## 参考链接 ：
 
-*专家经验：怎么能让nacos 的actuator 查不到任何信息呢 
+* 专家经验：怎么能让nacos 的actuator 查不到任何信息呢 
  
- *专家经验：Nacos如何指定端口 
+ * 专家经验：Nacos如何指定端口 
 
 
  <font color="#949494">---------------</font> 

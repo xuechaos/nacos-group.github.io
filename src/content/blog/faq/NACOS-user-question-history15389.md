@@ -40,9 +40,9 @@ description: "在关于`nacos-opensource nacos 配置变更通知`的问题前�
 
 ## 参考链接 ：
 
-*专家经验：nacos配置通知，a服务，b服务都监听相同的dataid和group,a服务消费后b才启动b能接收通知吗？ 
+* 专家经验：nacos配置通知，a服务，b服务都监听相同的dataid和group,a服务消费后b才启动b能接收通知吗？ 
  
- *专家经验：Nacos 配置无法动态刷新 
+ * 专家经验：Nacos 配置无法动态刷新 
 
 
  <font color="#949494">---------------</font> 

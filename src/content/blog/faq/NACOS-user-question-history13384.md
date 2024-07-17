@@ -55,11 +55,11 @@ keywords: ["无法连接","服务器","nacos","本地能登入","访问","nacos�
 
 ## 参考链接 ：
 
-*专家经验：实际服务正常再跑 注册中心上没了怎么回事? 
+* 专家经验：实际服务正常再跑 注册中心上没了怎么回事? 
  
- *[Nacos功能和需求列表](https://nacos.io/docs/latest/archive/feature-list)
+ * [Nacos功能和需求列表](https://nacos.io/docs/latest/archive/feature-list)
  
- *专家经验：服务提供者注册失败 
+ * 专家经验：服务提供者注册失败 
 
 
  <font color="#949494">---------------</font> 

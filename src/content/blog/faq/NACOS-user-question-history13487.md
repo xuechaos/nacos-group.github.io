@@ -30,11 +30,11 @@ Nacos控制台的默认访问地址通常是 `http://localhost:8848/nacos`。这
 
 ## 参考链接 ：
 
-*[控制台手册](https://nacos.io/docs/latest/guide/admin/console-guide)
+* [控制台手册](https://nacos.io/docs/latest/guide/admin/console-guide)
  
- *[Authorization](https://nacos.io/docs/latest/guide/user/auth)
+ * [Authorization](https://nacos.io/docs/latest/guide/user/auth)
  
- *[Nacos功能和需求列表](https://nacos.io/docs/latest/archive/feature-list)
+ * [Nacos功能和需求列表](https://nacos.io/docs/latest/archive/feature-list)
 
 
  <font color="#949494">---------------</font> 

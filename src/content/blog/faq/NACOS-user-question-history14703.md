@@ -65,7 +65,7 @@ keywords: ["鉴权"]
 
 ## 参考链接 ：
 
-*[Authorization](https://nacos.io/docs/latest/guide/user/auth)
+* [Authorization](https://nacos.io/docs/latest/guide/user/auth)
 
 
  <font color="#949494">---------------</font> 

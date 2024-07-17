@@ -34,9 +34,9 @@ description: "关于您询问的nacos-opensource与loadbalancer的版本对应�
 
 ## 参考链接 ：
 
-*专家经验：springcloud alibaba 和nacos版本对应 
+* 专家经验：springcloud alibaba 和nacos版本对应 
  
- *专家经验：Nacos客户端和服务端版本的兼容性问题 
+ * 专家经验：Nacos客户端和服务端版本的兼容性问题 
 
 
  <font color="#949494">---------------</font> 

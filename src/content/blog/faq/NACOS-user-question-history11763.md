@@ -71,11 +71,11 @@ keywords: ["修改","默认","用户名","密码","具体步骤"]
 
 ## 参考链接 ：
 
-*专家经验：nacos用户密码设置 
+* 专家经验：nacos用户密码设置 
  
- *[Nacos 2.0 升级文档](https://nacos.io/docs/latest/upgrading/200-upgrading)
+ * [Nacos 2.0 升级文档](https://nacos.io/docs/latest/upgrading/200-upgrading)
  
- *[Authorization](https://nacos.io/docs/latest/guide/user/auth)
+ * [Authorization](https://nacos.io/docs/latest/guide/user/auth)
 
 
  <font color="#949494">---------------</font> 

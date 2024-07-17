@@ -50,11 +50,11 @@ Nacos利用命名空间（namespace）和分组（group）两个核心概念来�
 
 ## 参考链接 ：
 
-*专家经验：nacos支持服务列表分组隔离了嘛 
+* 专家经验：nacos支持服务列表分组隔离了嘛 
  
- *专家经验：Nacos是否支持跨namespace获取数据 
+ * 专家经验：Nacos是否支持跨namespace获取数据 
  
- *[Nacos2.0服务配置性能测试报告](https://nacos.io/docs/latest/guide/admin/nacos2-config-benchmark)
+ * [Nacos2.0服务配置性能测试报告](https://nacos.io/docs/latest/guide/admin/nacos2-config-benchmark)
 
 
  <font color="#949494">---------------</font> 

@@ -38,7 +38,7 @@ Nacos中的配置项`nacos.core.auth.plugin.nacos.token.secret.key`主要应用�
 
 ## 参考链接 ：
 
-*专家经验：Nacos鉴权相关建议 
+* 专家经验：Nacos鉴权相关建议 
 
 
  <font color="#949494">---------------</font> 

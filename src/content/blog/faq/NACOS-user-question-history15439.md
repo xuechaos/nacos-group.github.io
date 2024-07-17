@@ -43,7 +43,7 @@ description: "根据您提供的问题，该异常“Nacos Driver com.mysql.cj.j
 
 ## 参考链接 ：
 
-*[FAQ](https://nacos.io/docs/latest/guide/user/faq)
+* [FAQ](https://nacos.io/docs/latest/guide/user/faq)
 
 
  <font color="#949494">---------------</font> 

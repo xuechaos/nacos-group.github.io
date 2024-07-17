@@ -57,11 +57,11 @@ keywords: ["nacos","管理页面","设置密码"]
 
 ## 参考链接 ：
 
-*专家经验：nacos用户密码设置 
+* 专家经验：nacos用户密码设置 
  
- *[Open API 指南](https://nacos.io/docs/latest/guide/user/open-api)
+ * [Open API 指南](https://nacos.io/docs/latest/guide/user/open-api)
  
- *专家经验：Nacos 配置加密 
+ * 专家经验：Nacos 配置加密 
 
 
  <font color="#949494">---------------</font> 

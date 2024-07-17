@@ -56,9 +56,9 @@ description: "在Nacos的鉴权机制中，`nacos.core.auth.server.identity.key`
 
 ## 参考链接 ：
 
-*专家经验：Nacos鉴权相关建议 
+* 专家经验：Nacos鉴权相关建议 
  
- *专家经验：NACOS 配置中心和注册中心是分两个集群部署还是放在一个集群中 
+ * 专家经验：NACOS 配置中心和注册中心是分两个集群部署还是放在一个集群中 
 
 
  <font color="#949494">---------------</font> 

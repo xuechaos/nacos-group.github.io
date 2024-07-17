@@ -49,11 +49,11 @@ description: "在处理Nacos no provider available，但是服务实际有注册
 
 ## 参考链接 ：
 
-*专家经验：实际服务正常再跑 注册中心上没了怎么回事? 
+* 专家经验：实际服务正常再跑 注册中心上没了怎么回事? 
  
- *[Java SDK](https://nacos.io/docs/latest/guide/user/sdk)
+ * [Java SDK](https://nacos.io/docs/latest/guide/user/sdk)
  
- *[Nacos 2.0 升级文档](https://nacos.io/docs/latest/upgrading/200-upgrading)
+ * [Nacos 2.0 升级文档](https://nacos.io/docs/latest/upgrading/200-upgrading)
 
 
  <font color="#949494">---------------</font> 

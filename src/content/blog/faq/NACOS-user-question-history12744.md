@@ -47,7 +47,7 @@ keywords: ["com.alibaba.nacos.naming.updater","线程不释放","处理"]
 
 ## 参考链接 ：
 
-*专家经验：如何排查Nacos线程数过多的问题 
+* 专家经验：如何排查Nacos线程数过多的问题 
 
 
  <font color="#949494">---------------</font> 

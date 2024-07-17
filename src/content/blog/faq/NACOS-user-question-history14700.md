@@ -51,9 +51,9 @@ keywords: ["麒麟v10","部署","nacos","coredump"]
 
 ## 参考链接 ：
 
-*[Nacos 2.0 升级文档](https://nacos.io/docs/latest/upgrading/200-upgrading)
+* [Nacos 2.0 升级文档](https://nacos.io/docs/latest/upgrading/200-upgrading)
  
- *专家经验：nacos的部署 
+ * 专家经验：nacos的部署 
 
 
  <font color="#949494">---------------</font> 

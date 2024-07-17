@@ -42,11 +42,11 @@ Nacos 的多租户特性主要通过“命名空间”实现，旨在支持不�
 
 ## 参考链接 ：
 
-*专家经验：介绍一下nacos的多租户 
+* 专家经验：介绍一下nacos的多租户 
  
- *[Nacos系统参数介绍](https://nacos.io/docs/latest/guide/admin/system-configurations)
+ * [Nacos系统参数介绍](https://nacos.io/docs/latest/guide/admin/system-configurations)
  
- *专家经验：Nacos 介绍 
+ * 专家经验：Nacos 介绍 
 
 
  <font color="#949494">---------------</font> 

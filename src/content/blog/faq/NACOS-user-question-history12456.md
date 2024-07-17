@@ -53,11 +53,11 @@ keywords: ["nacos","日志","debug"]
 
 ## 参考链接 ：
 
-*专家经验：如何在启动二进制版本的nacos时，设置日志级别为debug呢？ 
+* 专家经验：如何在启动二进制版本的nacos时，设置日志级别为debug呢？ 
  
- *专家经验：如何获取Nacos-Client的日志？ 
+ * 专家经验：如何获取Nacos-Client的日志？ 
  
- *[开发者](https://nacos.io/docs/latest/community/nacos-dev)
+ * [开发者](https://nacos.io/docs/latest/community/nacos-dev)
 
 
  <font color="#949494">---------------</font> 

@@ -36,7 +36,7 @@ description: "在分析您提出的问题“nacos-opensource Distro protocol is 
 
 ## 参考链接 ：
 
-*专家经验：日志报错ERROR [DISTRO-INIT] load snapshot Nacos:Naming:v2:ClientData from 10.111.107.10:8878 failed. com.alibaba.nacos.core.distribu 
+* 专家经验：日志报错ERROR [DISTRO-INIT] load snapshot Nacos:Naming:v2:ClientData from 10.111.107.10:8878 failed. com.alibaba.nacos.core.distribu 
 
 
  <font color="#949494">---------------</font> 

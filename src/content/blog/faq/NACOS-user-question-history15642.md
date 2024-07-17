@@ -48,11 +48,11 @@ description: "要使本地项目能够读取到Nacos的配置文件，你需要�
 
 ## 参考链接 ：
 
-*[Java SDK](https://nacos.io/docs/latest/guide/user/sdk)
+* [Java SDK](https://nacos.io/docs/latest/guide/user/sdk)
  
- *专家经验：无法在nacos/conf下找到nacos-mysql.sql文件 
+ * 专家经验：无法在nacos/conf下找到nacos-mysql.sql文件 
  
- *专家经验：Nacos用作配置中心的话，能够支持百万级别的客户端连接嘛 
+ * 专家经验：Nacos用作配置中心的话，能够支持百万级别的客户端连接嘛 
 
 
  <font color="#949494">---------------</font> 

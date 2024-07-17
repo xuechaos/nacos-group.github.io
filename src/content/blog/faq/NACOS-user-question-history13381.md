@@ -46,11 +46,11 @@ keywords: ["vm","k8s","混合部署","服务发现","nacos","k8s","应用","注�
 
 ## 参考链接 ：
 
-*专家经验：Nacos中持久化服务和临时服务的区别 
+* 专家经验：Nacos中持久化服务和临时服务的区别 
  
- *[Nacos功能和需求列表](https://nacos.io/docs/latest/archive/feature-list)
+ * [Nacos功能和需求列表](https://nacos.io/docs/latest/archive/feature-list)
  
- *专家经验：Nacos部署开放端口，集群部署开通端口 
+ * 专家经验：Nacos部署开放端口，集群部署开通端口 
 
 
  <font color="#949494">---------------</font> 

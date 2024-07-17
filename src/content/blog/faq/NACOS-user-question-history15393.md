@@ -95,7 +95,7 @@ while (true) {
 
 ## 参考链接 ：
 
-*[Java SDK](https://nacos.io/docs/latest/guide/user/sdk)
+* [Java SDK](https://nacos.io/docs/latest/guide/user/sdk)
 
 
  <font color="#949494">---------------</font> 

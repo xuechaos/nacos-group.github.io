@@ -56,9 +56,9 @@ curl -X POST 'http://${nacos_host}:${nacos_port}/nacos/v1/auth/users?username=${
 
 ## 参考链接 ：
 
-*专家经验：nacos用户密码设置 
+* 专家经验：nacos用户密码设置 
  
- *专家经验：自建用户用于nacos客户端应用验证时，如果对namespace开启只读将也无法注册该空间的服务应该怎么处理？ 
+ * 专家经验：自建用户用于nacos客户端应用验证时，如果对namespace开启只读将也无法注册该空间的服务应该怎么处理？ 
 
 
  <font color="#949494">---------------</font> 

@@ -59,9 +59,9 @@ keywords: ["nacos-client:2.2.3","配置","用户名密码"]
 
 ## 参考链接 ：
 
-*[Authorization](https://nacos.io/docs/latest/guide/user/auth)
+* [Authorization](https://nacos.io/docs/latest/guide/user/auth)
  
- *专家经验：Nacos 配置加密 
+ * 专家经验：Nacos 配置加密 
 
 
  <font color="#949494">---------------</font> 

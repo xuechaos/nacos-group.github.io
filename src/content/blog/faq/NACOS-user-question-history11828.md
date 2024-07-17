@@ -40,11 +40,11 @@ keywords: ["opensource","nacos","standalone","启动命令"]
 
 ## 参考链接 ：
 
-*专家经验：Nacos 快速开始 
+* 专家经验：Nacos 快速开始 
  
- *[Nacos 2.0 升级文档](https://nacos.io/docs/latest/upgrading/200-upgrading)
+ * [Nacos 2.0 升级文档](https://nacos.io/docs/latest/upgrading/200-upgrading)
  
- *专家经验：nacos的部署 
+ * 专家经验：nacos的部署 
 
 
  <font color="#949494">---------------</font> 

@@ -49,7 +49,7 @@ description: "根据您提供的问题“nacos-opensource ./startup.sh -m standa
 
 ## 参考链接 ：
 
-*[Nacos 2.0 升级文档](https://nacos.io/docs/latest/upgrading/200-upgrading)
+* [Nacos 2.0 升级文档](https://nacos.io/docs/latest/upgrading/200-upgrading)
 
 
  <font color="#949494">---------------</font> 

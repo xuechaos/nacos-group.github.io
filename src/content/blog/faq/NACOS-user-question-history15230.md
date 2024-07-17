@@ -35,11 +35,11 @@ description: "根据已有的知识内容，我们可以分析如下：1. **分�
 
 ## 参考链接 ：
 
-*专家经验：Nacos升级的具体步骤 
+* 专家经验：Nacos升级的具体步骤 
  
- *专家经验：Nacos1.0和Nacos2.0的api有什么区别？2.0的中小版本升级相关问题 
+ * 专家经验：Nacos1.0和Nacos2.0的api有什么区别？2.0的中小版本升级相关问题 
  
- *专家经验：无法在nacos/conf下找到nacos-mysql.sql文件 
+ * 专家经验：无法在nacos/conf下找到nacos-mysql.sql文件 
 
 
  <font color="#949494">---------------</font> 

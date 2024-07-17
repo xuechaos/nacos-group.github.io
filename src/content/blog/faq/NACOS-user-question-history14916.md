@@ -28,9 +28,9 @@ description: "针对问题「nacos-opensource nacos修复CVE-2024-22243这个漏
 
 ## 参考链接 ：
 
-*专家经验：nacos CVE-2024-22243 情况说明 
+* 专家经验：nacos CVE-2024-22243 情况说明 
  
- *专家经验：Nacos 身份认证绕过漏洞 
+ * 专家经验：Nacos 身份认证绕过漏洞 
 
 
  <font color="#949494">---------------</font> 

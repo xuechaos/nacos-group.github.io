@@ -62,9 +62,9 @@ description: "要整合Nacos服务发现与动态DNS服务CoreDNS，我们可以
 
 ## 参考链接 ：
 
-*[Nacos功能和需求列表](https://nacos.io/docs/latest/archive/feature-list)
+* [Nacos功能和需求列表](https://nacos.io/docs/latest/archive/feature-list)
  
- *[Dubbo 融合 Nacos 成为注册中心](https://nacos.io/docs/latest/ecology/use-nacos-with-dubbo)
+ * [Dubbo 融合 Nacos 成为注册中心](https://nacos.io/docs/latest/ecology/use-nacos-with-dubbo)
 
 
  <font color="#949494">---------------</font> 

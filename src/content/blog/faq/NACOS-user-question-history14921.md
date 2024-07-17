@@ -48,7 +48,7 @@ description: "在Nacos Config客户端中，日志文件`config-client-request.l
 
 ## 参考链接 ：
 
-*[Nacos系统参数介绍](https://nacos.io/docs/latest/guide/admin/system-configurations)
+* [Nacos系统参数介绍](https://nacos.io/docs/latest/guide/admin/system-configurations)
 
 
  <font color="#949494">---------------</font> 

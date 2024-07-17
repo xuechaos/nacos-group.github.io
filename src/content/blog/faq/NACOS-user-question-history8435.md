@@ -41,11 +41,11 @@ keywords: ["nacos-server","2.2.0","启动","报错","java.lang.IllegalStateExcep
 
 ## 参考链接 ：
 
-*专家经验：Fail to get leader of group naming_persistent_service_v2 
+* 专家经验：Fail to get leader of group naming_persistent_service_v2 
  
- *专家经验：nacos哪个版本最常用 
+ * 专家经验：nacos哪个版本最常用 
  
- *[Nacos系统参数介绍](https://nacos.io/docs/latest/guide/admin/system-configurations)
+ * [Nacos系统参数介绍](https://nacos.io/docs/latest/guide/admin/system-configurations)
 
 
  <font color="#949494">---------------</font> 

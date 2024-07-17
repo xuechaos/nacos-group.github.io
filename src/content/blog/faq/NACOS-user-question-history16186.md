@@ -51,11 +51,11 @@ description: "在Windows上部署Nacos以单机模式运行，首先需要确保
 
 ## 参考链接 ：
 
-*专家经验：Nacos 在windows下不支持:的bug如何处理? 
+* 专家经验：Nacos 在windows下不支持:的bug如何处理? 
  
- *专家经验：nacos的部署 
+ * 专家经验：nacos的部署 
  
- *[Nacos 2.0 升级文档](https://nacos.io/docs/latest/upgrading/200-upgrading)
+ * [Nacos 2.0 升级文档](https://nacos.io/docs/latest/upgrading/200-upgrading)
 
 
  <font color="#949494">---------------</font> 

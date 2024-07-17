@@ -52,9 +52,9 @@ description: "在升级Nacos到2.3.2版本后遇到`Read timed out`问题，可�
 
 ## 参考链接 ：
 
-*专家经验：Nacos升级的具体步骤 
+* 专家经验：Nacos升级的具体步骤 
  
- *[Nacos 2.0 升级文档](https://nacos.io/docs/latest/upgrading/200-upgrading)
+ * [Nacos 2.0 升级文档](https://nacos.io/docs/latest/upgrading/200-upgrading)
 
 
  <font color="#949494">---------------</font> 

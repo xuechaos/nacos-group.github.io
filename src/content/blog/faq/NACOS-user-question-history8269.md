@@ -45,11 +45,11 @@ keywords: ["core-auth","日志文件","无休止打印","异常日志","DEBUG","
 
 ## 参考链接 ：
 
-*专家经验：nacos中的API /auth/users 返回敏感信息 
+* 专家经验：nacos中的API /auth/users 返回敏感信息 
  
- *专家经验：如何在启动二进制版本的nacos时，设置日志级别为debug呢？ 
+ * 专家经验：如何在启动二进制版本的nacos时，设置日志级别为debug呢？ 
  
- *专家经验：如何获取Nacos-Client的日志？ 
+ * 专家经验：如何获取Nacos-Client的日志？ 
 
 
  <font color="#949494">---------------</font> 

@@ -30,7 +30,7 @@ keywords: ["nacos controller","nacos2.3.0","以上版本"]
 
 ## 参考链接 ：
 
-*专家经验：nacos哪个版本最常用 
+* 专家经验：nacos哪个版本最常用 
 
 
  <font color="#949494">---------------</font> 

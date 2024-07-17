@@ -39,11 +39,11 @@ Nacos服务是可以重启的，但重启后可能会遇到如“NacosException:
 
 ## 参考链接 ：
 
-*专家经验：Nacos重启后再启动微服务项目时，后台出现“NacosException: failed to req API”异常解决办法 
+* 专家经验：Nacos重启后再启动微服务项目时，后台出现“NacosException: failed to req API”异常解决办法 
  
- *专家经验：Nacos 快速开始 
+ * 专家经验：Nacos 快速开始 
  
- *专家经验：开源版本可以支持ak/sk鉴权吗？ 
+ * 专家经验：开源版本可以支持ak/sk鉴权吗？ 
 
 
  <font color="#949494">---------------</font> 

@@ -46,11 +46,11 @@ description: "在进行nacos-opensource配置中心技术选型及与Apollo、Sp
 
 ## 参考链接 ：
 
-*专家经验：主流的配置中心有哪些？ 
+* 专家经验：主流的配置中心有哪些？ 
  
- *专家经验：Nacos用作配置中心的话，能够支持百万级别的客户端连接嘛 
+ * 专家经验：Nacos用作配置中心的话，能够支持百万级别的客户端连接嘛 
  
- *[Nacos 融合 Spring Cloud，成为注册配置中心](https://nacos.io/docs/latest/ecology/use-nacos-with-spring-cloud)
+ * [Nacos 融合 Spring Cloud，成为注册配置中心](https://nacos.io/docs/latest/ecology/use-nacos-with-spring-cloud)
 
 
  <font color="#949494">---------------</font> 

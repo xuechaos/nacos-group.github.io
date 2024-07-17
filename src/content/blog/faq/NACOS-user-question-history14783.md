@@ -52,11 +52,11 @@ description: "在Nacos中实现服务列表的同步，主要涉及到对服务�
 
 ## 参考链接 ：
 
-*[Nacos 2.0 升级文档](https://nacos.io/docs/latest/upgrading/200-upgrading)
+* [Nacos 2.0 升级文档](https://nacos.io/docs/latest/upgrading/200-upgrading)
  
- *专家经验：nacos支持服务列表分组隔离了嘛 
+ * 专家经验：nacos支持服务列表分组隔离了嘛 
  
- *[Nacos功能和需求列表](https://nacos.io/docs/latest/archive/feature-list)
+ * [Nacos功能和需求列表](https://nacos.io/docs/latest/archive/feature-list)
 
 
  <font color="#949494">---------------</font> 

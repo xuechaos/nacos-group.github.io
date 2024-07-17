@@ -61,11 +61,11 @@ Spring Cloud提供了多种触发配置刷新的机制，最直接的是通过�
 
 ## 参考链接 ：
 
-*专家经验：Nacos 配置无法动态刷新 
+* 专家经验：Nacos 配置无法动态刷新 
  
- *专家经验：Nacos spring 适配 
+ * 专家经验：Nacos spring 适配 
  
- *[Nacos 融合 Spring Cloud，成为注册配置中心](https://nacos.io/docs/latest/ecology/use-nacos-with-spring-cloud)
+ * [Nacos 融合 Spring Cloud，成为注册配置中心](https://nacos.io/docs/latest/ecology/use-nacos-with-spring-cloud)
 
 
  <font color="#949494">---------------</font> 

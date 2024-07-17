@@ -42,11 +42,11 @@ keywords: ["nacos","1.3.1","升级","2.2.3","具体步骤"]
 
 ## 参考链接 ：
 
-*专家经验：Nacos升级的具体步骤 
+* 专家经验：Nacos升级的具体步骤 
  
- *[Nacos 2.0 升级文档](https://nacos.io/docs/latest/upgrading/200-upgrading)
+ * [Nacos 2.0 升级文档](https://nacos.io/docs/latest/upgrading/200-upgrading)
  
- *专家经验：Nacos客户端和服务端版本的兼容性问题 
+ * 专家经验：Nacos客户端和服务端版本的兼容性问题 
 
 
  <font color="#949494">---------------</font> 

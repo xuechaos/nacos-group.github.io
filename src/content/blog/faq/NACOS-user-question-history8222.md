@@ -52,11 +52,11 @@ keywords: ["healthcheck","超时时间","单位ms"]
 
 ## 参考链接 ：
 
-*专家经验：如何解决Nacos连接超时问题 
+* 专家经验：如何解决Nacos连接超时问题 
  
- *专家经验：Nacos 服务数据一直推送失败 
+ * 专家经验：Nacos 服务数据一直推送失败 
  
- *[Nacos 2.0.0 兼容性文档](https://nacos.io/docs/latest/upgrading/200-compatibility)
+ * [Nacos 2.0.0 兼容性文档](https://nacos.io/docs/latest/upgrading/200-compatibility)
 
 
  <font color="#949494">---------------</font> 

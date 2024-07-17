@@ -39,9 +39,9 @@ keywords: ["Error creating bean","embeddedDumpService","Invocation of init metho
 
 ## 参考链接 ：
 
-*专家经验：No DataSource set 
+* 专家经验：No DataSource set 
  
- *专家经验：Nacos 欢迎你 
+ * 专家经验：Nacos 欢迎你 
 
 
  <font color="#949494">---------------</font> 

@@ -48,11 +48,11 @@ description: "分析问题原因：遇到`nacos.exception.NacosRequestException:
 
 ## 参考链接 ：
 
-*专家经验：Nacos "status":501,"error":"Not Implemented","message":"no such api:...","path":"... 
+* 专家经验：Nacos "status":501,"error":"Not Implemented","message":"no such api:...","path":"... 
  
- *[Nacos功能和需求列表](https://nacos.io/docs/latest/archive/feature-list)
+ * [Nacos功能和需求列表](https://nacos.io/docs/latest/archive/feature-list)
  
- *专家经验：nacos-server 频繁FullGC 
+ * 专家经验：nacos-server 频繁FullGC 
 
 
  <font color="#949494">---------------</font> 

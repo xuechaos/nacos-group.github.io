@@ -42,11 +42,11 @@ description: "在容器部署的Nacos集群升级过程中，需注意以下几�
 
 ## 参考链接 ：
 
-*[Nacos 2.0 升级文档](https://nacos.io/docs/latest/upgrading/200-upgrading)
+* [Nacos 2.0 升级文档](https://nacos.io/docs/latest/upgrading/200-upgrading)
  
- *专家经验：Nacos升级的具体步骤 
+ * 专家经验：Nacos升级的具体步骤 
  
- *专家经验：Nacos部署开放端口，集群部署开通端口 
+ * 专家经验：Nacos部署开放端口，集群部署开通端口 
 
 
  <font color="#949494">---------------</font> 

@@ -53,9 +53,9 @@ description: "遇到问题「nacos Load Logback Configuration of Nacos fail, mes
 
 ## 参考链接 ：
 
-*专家经验：无法初始化logback.xml 
+* 专家经验：无法初始化logback.xml 
  
- *专家经验：Nacos 欢迎你 
+ * 专家经验：Nacos 欢迎你 
 
 
  <font color="#949494">---------------</font> 

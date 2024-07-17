@@ -56,11 +56,11 @@ at java.lang.Thread.run(Thread.java:748)
 
 ## 参考链接 ：
 
-*专家经验：日志报错ERROR [DISTRO-INIT] load snapshot Nacos:Naming:v2:ClientData from 10.111.107.10:8878 failed. com.alibaba.nacos.core.distribu 
+* 专家经验：日志报错ERROR [DISTRO-INIT] load snapshot Nacos:Naming:v2:ClientData from 10.111.107.10:8878 failed. com.alibaba.nacos.core.distribu 
  
- *专家经验：Nacos 扩缩容问题 
+ * 专家经验：Nacos 扩缩容问题 
  
- *专家经验：NACOS 配置中心和注册中心是分两个集群部署还是放在一个集群中 
+ * 专家经验：NACOS 配置中心和注册中心是分两个集群部署还是放在一个集群中 
 
 
  <font color="#949494">---------------</font> 

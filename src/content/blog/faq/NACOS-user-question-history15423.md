@@ -45,9 +45,9 @@ description: "根据您提供的信息，`nacos_exception_totalname='leaderSendB
 
 ## 参考链接 ：
 
-*[Nacos 监控手册](https://nacos.io/docs/latest/guide/admin/monitor-guide)
+* [Nacos 监控手册](https://nacos.io/docs/latest/guide/admin/monitor-guide)
  
- *专家经验：Nacos 欢迎你 
+ * 专家经验：Nacos 欢迎你 
 
 
  <font color="#949494">---------------</font> 

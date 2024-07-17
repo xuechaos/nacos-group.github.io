@@ -28,7 +28,7 @@ description: "根据提供的知识，Nacos-Client记录心跳日志的具体文
 
 ## 参考链接 ：
 
-*专家经验：如何获取Nacos-Client的日志？ 
+* 专家经验：如何获取Nacos-Client的日志？ 
 
 
  <font color="#949494">---------------</font> 

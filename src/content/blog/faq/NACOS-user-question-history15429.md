@@ -45,7 +45,7 @@ description: "要关闭Nacos的健康检查，首先需要确定您使用的具�
 
 ## 参考链接 ：
 
-*专家经验：Nacos 麻烦咨询下 spring actuator 如何关闭 nacosconfig 的健康检查 ？ 
+* 专家经验：Nacos 麻烦咨询下 spring actuator 如何关闭 nacosconfig 的健康检查 ？ 
 
 
  <font color="#949494">---------------</font> 

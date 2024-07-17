@@ -34,11 +34,11 @@ keywords: ["client version 1.4.2","server version 2.1.0","udp push delay","30 mi
 
 ## 参考链接 ：
 
-*专家经验：Nacos UDP推送失败 
+* 专家经验：Nacos UDP推送失败 
  
- *[Nacos系统参数介绍](https://nacos.io/docs/latest/guide/admin/system-configurations)
+ * [Nacos系统参数介绍](https://nacos.io/docs/latest/guide/admin/system-configurations)
  
- *专家经验：nacos-server 频繁FullGC 
+ * 专家经验：nacos-server 频繁FullGC 
 
 
  <font color="#949494">---------------</font> 

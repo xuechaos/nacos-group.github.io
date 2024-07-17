@@ -42,11 +42,11 @@ server.tomcat.accesslog.pattern=%{yyyyMMddHHmmssSSS}t|%a|%h|%H|%r|%{Referer}i|%s
 
 ## 参考链接 ：
 
-*专家经验：Nacos spring 适配 
+* 专家经验：Nacos spring 适配 
  
- *专家经验：Nacos 的典型案例 
+ * 专家经验：Nacos 的典型案例 
  
- *专家经验：Nacos 配置access.log的保留时间 
+ * 专家经验：Nacos 配置access.log的保留时间 
 
 
  <font color="#949494">---------------</font> 

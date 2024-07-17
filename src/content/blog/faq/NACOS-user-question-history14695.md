@@ -30,11 +30,11 @@ keywords: ["Nacos","2.3.2","客户端升级","2.0.3"]
 
 ## 参考链接 ：
 
-*专家经验：Nacos客户端和服务端版本的兼容性问题 
+* 专家经验：Nacos客户端和服务端版本的兼容性问题 
  
- *[Nacos功能和需求列表](https://nacos.io/docs/latest/archive/feature-list)
+ * [Nacos功能和需求列表](https://nacos.io/docs/latest/archive/feature-list)
  
- *[鉴权插件](https://nacos.io/docs/latest/plugin/auth-plugin)
+ * [鉴权插件](https://nacos.io/docs/latest/plugin/auth-plugin)
 
 
  <font color="#949494">---------------</font> 

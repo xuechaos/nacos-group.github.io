@@ -77,11 +77,11 @@ public class NacosConfigDecryption {
 
 ## 参考链接 ：
 
-*专家经验：Nacos 配置加密 
+* 专家经验：Nacos 配置加密 
  
- *专家经验：nacos用户密码设置 
+ * 专家经验：nacos用户密码设置 
  
- *专家经验：无法在nacos/conf下找到nacos-mysql.sql文件 
+ * 专家经验：无法在nacos/conf下找到nacos-mysql.sql文件 
 
 
  <font color="#949494">---------------</font> 

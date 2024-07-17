@@ -35,7 +35,7 @@ echo "" > LOG
 
 ## 参考链接 ：
 
-*专家经验：Nacos raft日志太大怎么清理 
+* 专家经验：Nacos raft日志太大怎么清理 
 
 
  <font color="#949494">---------------</font> 

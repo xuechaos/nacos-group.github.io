@@ -44,9 +44,9 @@ description: "为了下载Nacos的C#客户端，您可以按照以下步骤操�
 
 ## 参考链接 ：
 
-*[Nacos功能和需求列表](https://nacos.io/docs/latest/archive/feature-list)
+* [Nacos功能和需求列表](https://nacos.io/docs/latest/archive/feature-list)
  
- *专家经验：nacos 多语言支持 
+ * 专家经验：nacos 多语言支持 
 
 
  <font color="#949494">---------------</font> 

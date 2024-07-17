@@ -34,11 +34,11 @@ keywords: ["cluster","1.x mode","grpc request"]
 
 ## 参考链接 ：
 
-*专家经验：服务提供者注册失败 
+* 专家经验：服务提供者注册失败 
  
- *专家经验：Nacos客户端与服务端grpc的连接有定期ping-pong机制吗 
+ * 专家经验：Nacos客户端与服务端grpc的连接有定期ping-pong机制吗 
  
- *专家经验：Nacos 介绍 
+ * 专家经验：Nacos 介绍 
 
 
  <font color="#949494">---------------</font> 

@@ -64,11 +64,11 @@ curl -X DELETE '127.0.0.1:8848/nacos/v1/ns/instance?serviceName=nacos.test.1&ip=
 
 ## 参考链接 ：
 
-*[Java SDK](https://nacos.io/docs/latest/guide/user/sdk)
+* [Java SDK](https://nacos.io/docs/latest/guide/user/sdk)
  
- *[Nacos 2.0 升级文档](https://nacos.io/docs/latest/upgrading/200-upgrading)
+ * [Nacos 2.0 升级文档](https://nacos.io/docs/latest/upgrading/200-upgrading)
  
- *专家经验：Nacos nacos 2.3.0 如何关闭cp模式，只保留ap的注册中心？ 
+ * 专家经验：Nacos nacos 2.3.0 如何关闭cp模式，只保留ap的注册中心？ 
 
 
  <font color="#949494">---------------</font> 

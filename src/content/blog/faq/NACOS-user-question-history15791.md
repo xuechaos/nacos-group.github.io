@@ -46,7 +46,7 @@ Nacos配置中心的核心在于其提供了一个集中式的配置管理和服
 
 ## 参考链接 ：
 
-*[Nacos 融合 Spring Boot，成为注册配置中心](https://nacos.io/docs/latest/ecology/use-nacos-with-spring-boot)
+* [Nacos 融合 Spring Boot，成为注册配置中心](https://nacos.io/docs/latest/ecology/use-nacos-with-spring-boot)
 
 
  <font color="#949494">---------------</font> 

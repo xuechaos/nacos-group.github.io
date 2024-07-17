@@ -40,11 +40,11 @@ Nacos在设计上支持两种类型的服务存储方案：持久化服务和临
 
 ## 参考链接 ：
 
-*专家经验：Nacos 介绍 
+* 专家经验：Nacos 介绍 
  
- *[NacosSync 用户手册](https://nacos.io/docs/latest/ecology/use-nacos-sync)
+ * [NacosSync 用户手册](https://nacos.io/docs/latest/ecology/use-nacos-sync)
  
- *专家经验：Nacos中持久化服务和临时服务的区别 
+ * 专家经验：Nacos中持久化服务和临时服务的区别 
 
 
  <font color="#949494">---------------</font> 

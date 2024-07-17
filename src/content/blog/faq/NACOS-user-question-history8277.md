@@ -49,11 +49,11 @@ keywords: ["Nacos","pressure test","development environment","nacos namespace","
 
 ## 参考链接 ：
 
-*专家经验：Nacos 欢迎你 
+* 专家经验：Nacos 欢迎你 
  
- *专家经验：Nacos 介绍 
+ * 专家经验：Nacos 介绍 
  
- *专家经验：Fail to get leader of group naming_persistent_service_v2 
+ * 专家经验：Fail to get leader of group naming_persistent_service_v2 
 
 
  <font color="#949494">---------------</font> 

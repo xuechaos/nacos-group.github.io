@@ -57,9 +57,9 @@ description: "为了解决您遇到的“nacos-opensource 命名空间无法生�
 
 ## 参考链接 ：
 
-*[控制台手册](https://nacos.io/docs/latest/guide/admin/console-guide)
+* [控制台手册](https://nacos.io/docs/latest/guide/admin/console-guide)
  
- *[Open API 指南](https://nacos.io/docs/latest/guide/user/open-api)
+ * [Open API 指南](https://nacos.io/docs/latest/guide/user/open-api)
 
 
  <font color="#949494">---------------</font> 

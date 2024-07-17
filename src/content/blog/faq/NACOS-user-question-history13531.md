@@ -43,11 +43,11 @@ keywords: ["nacos","更改","默认用户名"]
 
 ## 参考链接 ：
 
-*专家经验：nacos用户密码设置 
+* 专家经验：nacos用户密码设置 
  
- *[Authorization](https://nacos.io/docs/latest/guide/user/auth)
+ * [Authorization](https://nacos.io/docs/latest/guide/user/auth)
  
- *专家经验：无法在nacos/conf下找到nacos-mysql.sql文件 
+ * 专家经验：无法在nacos/conf下找到nacos-mysql.sql文件 
 
 
  <font color="#949494">---------------</font> 

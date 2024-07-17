@@ -60,11 +60,11 @@ description: "要进行Nacos配置中心的性能测试并修改相关参数以�
 
 ## 参考链接 ：
 
-*[Nacos 2.0 升级文档](https://nacos.io/docs/latest/upgrading/200-upgrading)
+* [Nacos 2.0 升级文档](https://nacos.io/docs/latest/upgrading/200-upgrading)
  
- *专家经验：Nacos用作配置中心的话，能够支持百万级别的客户端连接嘛 
+ * 专家经验：Nacos用作配置中心的话，能够支持百万级别的客户端连接嘛 
  
- *专家经验：主流的配置中心有哪些？ 
+ * 专家经验：主流的配置中心有哪些？ 
 
 
  <font color="#949494">---------------</font> 

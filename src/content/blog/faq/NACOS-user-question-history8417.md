@@ -45,11 +45,11 @@ keywords: ["com.alibaba.nacos.api.exception.NacosException","Request nacos serve
 
 ## 参考链接 ：
 
-*专家经验：receive invalid redirect request from peer 
+* 专家经验：receive invalid redirect request from peer 
  
- *[Nacos系统参数介绍](https://nacos.io/docs/latest/guide/admin/system-configurations)
+ * [Nacos系统参数介绍](https://nacos.io/docs/latest/guide/admin/system-configurations)
  
- *专家经验：Nacos 欢迎你 
+ * 专家经验：Nacos 欢迎你 
 
 
  <font color="#949494">---------------</font> 

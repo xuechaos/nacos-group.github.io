@@ -22,7 +22,7 @@ description: "根据 我了解的知识 中提供的信息，Nacos确实支持JD
 
 ## 参考链接 ：
 
-*专家经验：Does nacos 2.2.3 support jdk17 
+* 专家经验：Does nacos 2.2.3 support jdk17 
 
 
  <font color="#949494">---------------</font> 

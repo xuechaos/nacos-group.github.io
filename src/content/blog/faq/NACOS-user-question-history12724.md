@@ -41,11 +41,11 @@ keywords: ["Nacos","windows","运行","判断","成功运行"]
 
 ## 参考链接 ：
 
-*[FAQ](https://nacos.io/docs/latest/guide/user/faq)
+* [FAQ](https://nacos.io/docs/latest/guide/user/faq)
  
- *[Dubbo 融合 Nacos 成为注册中心](https://nacos.io/docs/latest/ecology/use-nacos-with-dubbo)
+ * [Dubbo 融合 Nacos 成为注册中心](https://nacos.io/docs/latest/ecology/use-nacos-with-dubbo)
  
- *[Authorization](https://nacos.io/docs/latest/guide/user/auth)
+ * [Authorization](https://nacos.io/docs/latest/guide/user/auth)
 
 
  <font color="#949494">---------------</font> 

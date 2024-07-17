@@ -48,11 +48,11 @@ description: "根据您提供的问题，看起来您在尝试将Nacos的配置�
 
 ## 参考链接 ：
 
-*[Nacos功能和需求列表](https://nacos.io/docs/latest/archive/feature-list)
+* [Nacos功能和需求列表](https://nacos.io/docs/latest/archive/feature-list)
  
- *[Kubernetes Nacos](https://nacos.io/docs/latest/quickstart/quick-start-kubernetes)
+ * [Kubernetes Nacos](https://nacos.io/docs/latest/quickstart/quick-start-kubernetes)
  
- *专家经验：Nacos 请问nacos有arm架构的docker镜像么 
+ * 专家经验：Nacos 请问nacos有arm架构的docker镜像么 
 
 
  <font color="#949494">---------------</font> 

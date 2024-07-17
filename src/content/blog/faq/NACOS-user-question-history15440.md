@@ -30,11 +30,11 @@ description: "根据提供的知识内容，我们可以分析您的问题涉及
 
 ## 参考链接 ：
 
-*专家经验：nacos 各类配置文件都在那？ 
+* 专家经验：nacos 各类配置文件都在那？ 
  
- *[Java SDK](https://nacos.io/docs/latest/guide/user/sdk)
+ * [Java SDK](https://nacos.io/docs/latest/guide/user/sdk)
  
- *专家经验：主流的配置中心有哪些？ 
+ * 专家经验：主流的配置中心有哪些？ 
 
 
  <font color="#949494">---------------</font> 

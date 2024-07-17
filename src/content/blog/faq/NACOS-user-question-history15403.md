@@ -51,9 +51,9 @@ description: "根据您提供的问题“nacos-opensource Java项目，SpringBoo
 
 ## 参考链接 ：
 
-*专家经验：应用配置获取失败 
+* 专家经验：应用配置获取失败 
  
- *专家经验：Nacos 配置无法动态刷新 
+ * 专家经验：Nacos 配置无法动态刷新 
 
 
  <font color="#949494">---------------</font> 

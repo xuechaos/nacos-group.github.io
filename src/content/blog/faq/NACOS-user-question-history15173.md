@@ -44,9 +44,9 @@ description: "根据提供的知识内容，对于nacos-opensource配置中心�
 
 ## 参考链接 ：
 
-*专家经验：主流的配置中心有哪些？ 
+* 专家经验：主流的配置中心有哪些？ 
  
- *[Nacos 融合 Spring，成为注册配置中心](https://nacos.io/docs/latest/ecology/use-nacos-with-spring)
+ * [Nacos 融合 Spring，成为注册配置中心](https://nacos.io/docs/latest/ecology/use-nacos-with-spring)
 
 
  <font color="#949494">---------------</font> 

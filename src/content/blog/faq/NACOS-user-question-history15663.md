@@ -37,11 +37,11 @@ description: "根据已有的知识信息，我没有直接找到关于nacos-ope
 
 ## 参考链接 ：
 
-*专家经验：springcloud alibaba 和nacos版本对应 
+* 专家经验：springcloud alibaba 和nacos版本对应 
  
- *专家经验：Nacos1.0和Nacos2.0的api有什么区别？2.0的中小版本升级相关问题 
+ * 专家经验：Nacos1.0和Nacos2.0的api有什么区别？2.0的中小版本升级相关问题 
  
- *专家经验：nacos哪个版本最常用 
+ * 专家经验：nacos哪个版本最常用 
 
 
  <font color="#949494">---------------</font> 

@@ -37,11 +37,11 @@ keywords: ["客户端SDK","删除实例API","查询实例","管理端页面","�
 
 ## 参考链接 ：
 
-*专家经验：CatalogController 里面的接口和客户端SDK的API区别是什么 
+* 专家经验：CatalogController 里面的接口和客户端SDK的API区别是什么 
  
- *[Nacos功能和需求列表](https://nacos.io/docs/latest/archive/feature-list)
+ * [Nacos功能和需求列表](https://nacos.io/docs/latest/archive/feature-list)
  
- *[鉴权插件](https://nacos.io/docs/latest/plugin/auth-plugin)
+ * [鉴权插件](https://nacos.io/docs/latest/plugin/auth-plugin)
 
 
  <font color="#949494">---------------</font> 

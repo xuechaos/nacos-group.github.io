@@ -47,11 +47,11 @@ keywords: ["java.util.concurrent.RejectedExecutionException","Task","io.grpc.int
 
 ## 参考链接 ：
 
-*专家经验：如何解决Nacos连接超时问题 
+* 专家经验：如何解决Nacos连接超时问题 
  
- *[FAQ](https://nacos.io/docs/latest/guide/user/faq)
+ * [FAQ](https://nacos.io/docs/latest/guide/user/faq)
  
- *专家经验：io.grpc.netty.shaded.io.netty.util.internal.OutOfDirectMemoryError 
+ * 专家经验：io.grpc.netty.shaded.io.netty.util.internal.OutOfDirectMemoryError 
 
 
  <font color="#949494">---------------</font> 

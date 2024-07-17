@@ -43,9 +43,9 @@ keywords: ["nacos","集群","VIP nginx","构建性能","直接注册","集群性
 
 ## 参考链接 ：
 
-*[Nacos 监控手册](https://nacos.io/docs/latest/guide/admin/monitor-guide)
+* [Nacos 监控手册](https://nacos.io/docs/latest/guide/admin/monitor-guide)
  
- *专家经验：NACOS 配置中心和注册中心是分两个集群部署还是放在一个集群中 
+ * 专家经验：NACOS 配置中心和注册中心是分两个集群部署还是放在一个集群中 
 
 
  <font color="#949494">---------------</font> 

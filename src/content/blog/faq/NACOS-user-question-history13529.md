@@ -34,9 +34,9 @@ public class PasswordEncoderUtil {
 
 ## 参考链接 ：
 
-*专家经验：nacos用户密码设置 
+* 专家经验：nacos用户密码设置 
  
- *专家经验：Nacos 配置加密 
+ * 专家经验：Nacos 配置加密 
 
 
  <font color="#949494">---------------</font> 

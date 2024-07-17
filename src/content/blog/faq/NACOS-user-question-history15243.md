@@ -86,11 +86,11 @@ public class NacosConfigReadExample {
 
 ## 参考链接 ：
 
-*[Java SDK](https://nacos.io/docs/latest/guide/user/sdk)
+* [Java SDK](https://nacos.io/docs/latest/guide/user/sdk)
  
- *专家经验：介绍一下nacos的多租户 
+ * 专家经验：介绍一下nacos的多租户 
  
- *专家经验：Nacos 介绍 
+ * 专家经验：Nacos 介绍 
 
 
  <font color="#949494">---------------</font> 

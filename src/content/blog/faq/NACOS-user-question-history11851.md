@@ -45,9 +45,9 @@ keywords: ["alibaba nacos","认证绕过","漏洞","处理"]
 
 ## 参考链接 ：
 
-*专家经验：Nacos 身份认证绕过漏洞 
+* 专家经验：Nacos 身份认证绕过漏洞 
  
- *专家经验：/nacos/v1/cs/ops/derby接口是否有SQL注入漏洞 
+ * 专家经验：/nacos/v1/cs/ops/derby接口是否有SQL注入漏洞 
 
 
  <font color="#949494">---------------</font> 

@@ -32,9 +32,9 @@ keywords: ["Nacos2.0.3","data source","does not support","pgsql"]
 
 ## 参考链接 ：
 
-*专家经验：Nacos 欢迎你 
+* 专家经验：Nacos 欢迎你 
  
- *专家经验：Nacos的数据库支持情况介绍 
+ * 专家经验：Nacos的数据库支持情况介绍 
 
 
  <font color="#949494">---------------</font> 

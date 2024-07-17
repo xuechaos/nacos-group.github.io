@@ -55,9 +55,9 @@ description: "为了解决Nacos配置中心监听配置刷新回调的问题，�
 
 ## 参考链接 ：
 
-*专家经验：Nacos 配置无法动态刷新 
+* 专家经验：Nacos 配置无法动态刷新 
  
- *[Java SDK](https://nacos.io/docs/latest/guide/user/sdk)
+ * [Java SDK](https://nacos.io/docs/latest/guide/user/sdk)
 
 
  <font color="#949494">---------------</font> 

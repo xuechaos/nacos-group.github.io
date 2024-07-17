@@ -31,11 +31,11 @@ description: "根据已有的知识，Nacos服务端2.2.3版本属于Nacos2.X系
 
 ## 参考链接 ：
 
-*专家经验：Nacos客户端和服务端版本的兼容性问题 
+* 专家经验：Nacos客户端和服务端版本的兼容性问题 
  
- *专家经验：Nacos1.0和Nacos2.0的api有什么区别？2.0的中小版本升级相关问题 
+ * 专家经验：Nacos1.0和Nacos2.0的api有什么区别？2.0的中小版本升级相关问题 
  
- *专家经验：Does nacos 2.2.3 support jdk17 
+ * 专家经验：Does nacos 2.2.3 support jdk17 
 
 
  <font color="#949494">---------------</font> 

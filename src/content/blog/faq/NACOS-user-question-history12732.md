@@ -47,9 +47,9 @@ keywords: ["确定","nacos","运行"]
 
 ## 参考链接 ：
 
-*[FAQ](https://nacos.io/docs/latest/guide/user/faq)
+* [FAQ](https://nacos.io/docs/latest/guide/user/faq)
  
- *专家经验：如何排查Nacos连接失败问题 
+ * 专家经验：如何排查Nacos连接失败问题 
 
 
  <font color="#949494">---------------</font> 

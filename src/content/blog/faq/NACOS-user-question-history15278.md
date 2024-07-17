@@ -30,7 +30,7 @@ description: "根据我的知识库，nacos-opensource客户端注册到服务�
 
 ## 参考链接 ：
 
-*[Dubbo 融合 Nacos 成为注册中心](https://nacos.io/docs/latest/ecology/use-nacos-with-dubbo)
+* [Dubbo 融合 Nacos 成为注册中心](https://nacos.io/docs/latest/ecology/use-nacos-with-dubbo)
 
 
  <font color="#949494">---------------</font> 

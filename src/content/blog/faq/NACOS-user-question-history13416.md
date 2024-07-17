@@ -34,7 +34,7 @@ keywords: ["nacos.core.auth.plugin.nacos.token.secret.key","配置建议"]
 
 ## 参考链接 ：
 
-*专家经验：Nacos鉴权相关建议 
+* 专家经验：Nacos鉴权相关建议 
 
 
  <font color="#949494">---------------</font> 

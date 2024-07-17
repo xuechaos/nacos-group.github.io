@@ -65,9 +65,9 @@ description: "要实现Nacos配置中心客户端的鉴权，您可以按照以�
 
 ## 参考链接 ：
 
-*[Authorization](https://nacos.io/docs/latest/guide/user/auth)
+* [Authorization](https://nacos.io/docs/latest/guide/user/auth)
  
- *[鉴权插件](https://nacos.io/docs/latest/plugin/auth-plugin)
+ * [鉴权插件](https://nacos.io/docs/latest/plugin/auth-plugin)
 
 
  <font color="#949494">---------------</font> 

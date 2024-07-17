@@ -57,9 +57,9 @@ description: "根据您提供的信息，您关注的是关于Nacos服务存在�
 
 ## 参考链接 ：
 
-*专家经验：Why Use HTTP for Registration of the Nacos2.0 Raft Protocol 
+* 专家经验：Why Use HTTP for Registration of the Nacos2.0 Raft Protocol 
  
- *专家经验：如何解决Nacos连接超时问题 
+ * 专家经验：如何解决Nacos连接超时问题 
 
 
  <font color="#949494">---------------</font> 

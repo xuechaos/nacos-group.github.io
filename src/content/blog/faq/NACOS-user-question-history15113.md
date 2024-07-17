@@ -33,9 +33,9 @@ description: "根据您的需求，您想了解如何下载Nacos的Node.js客户
 
 ## 参考链接 ：
 
-*[Nacos功能和需求列表](https://nacos.io/docs/latest/archive/feature-list)
+* [Nacos功能和需求列表](https://nacos.io/docs/latest/archive/feature-list)
  
- *专家经验：Nacos客户端和服务端版本的兼容性问题 
+ * 专家经验：Nacos客户端和服务端版本的兼容性问题 
 
 
  <font color="#949494">---------------</font> 

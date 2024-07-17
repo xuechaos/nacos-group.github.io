@@ -28,11 +28,11 @@ Nacos开源版本支持控制台权限配置的间接方式。虽然它本身不
 
 ## 参考链接 ：
 
-*专家经验：关闭默认控制台 
+* 专家经验：关闭默认控制台 
  
- *[控制台手册](https://nacos.io/docs/latest/guide/admin/console-guide)
+ * [控制台手册](https://nacos.io/docs/latest/guide/admin/console-guide)
  
- *专家经验：开源版本可以支持ak/sk鉴权吗？ 
+ * 专家经验：开源版本可以支持ak/sk鉴权吗？ 
 
 
  <font color="#949494">---------------</font> 

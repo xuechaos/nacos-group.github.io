@@ -51,9 +51,9 @@ This guide assumes a basic understanding of Nacos and its role in centralized co
 
 ## 参考链接 ：
 
-*[Nacos Docker 快速开始](https://nacos.io/docs/latest/quickstart/quick-start-docker)
+* [Nacos Docker 快速开始](https://nacos.io/docs/latest/quickstart/quick-start-docker)
  
- *专家经验：Nacos Docker镜像的参数和Nacos系统参数的映射关系 
+ * 专家经验：Nacos Docker镜像的参数和Nacos系统参数的映射关系 
 
 
  <font color="#949494">---------------</font> 

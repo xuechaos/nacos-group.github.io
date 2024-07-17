@@ -42,11 +42,11 @@ keywords: ["2.2.3","nacos","服务端","长时间运行","堆外内存","增长"
 
 ## 参考链接 ：
 
-*专家经验：io.grpc.netty.shaded.io.netty.util.internal.OutOfDirectMemoryError 
+* 专家经验：io.grpc.netty.shaded.io.netty.util.internal.OutOfDirectMemoryError 
  
- *专家经验：Nacos 内存占用过大 
+ * 专家经验：Nacos 内存占用过大 
  
- *[Nacos功能和需求列表](https://nacos.io/docs/latest/archive/feature-list)
+ * [Nacos功能和需求列表](https://nacos.io/docs/latest/archive/feature-list)
 
 
  <font color="#949494">---------------</font> 

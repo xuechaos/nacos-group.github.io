@@ -46,11 +46,11 @@ description: "根据提供的知识内容，针对问题“nacos-opensource spri
 
 ## 参考链接 ：
 
-*专家经验：Nacos重启后再启动微服务项目时，后台出现“NacosException: failed to req API”异常解决办法 
+* 专家经验：Nacos重启后再启动微服务项目时，后台出现“NacosException: failed to req API”异常解决办法 
  
- *专家经验：服务提供者已关闭，但是还在被其他应用调用 
+ * 专家经验：服务提供者已关闭，但是还在被其他应用调用 
  
- *专家经验：实际服务正常再跑 注册中心上没了怎么回事? 
+ * 专家经验：实际服务正常再跑 注册中心上没了怎么回事? 
 
 
  <font color="#949494">---------------</font> 

@@ -37,7 +37,7 @@ keywords: ["API","auth users","返回","敏感信息"]
 
 ## 参考链接 ：
 
-*专家经验：nacos中的API /auth/users 返回敏感信息 
+* 专家经验：nacos中的API /auth/users 返回敏感信息 
 
 
  <font color="#949494">---------------</font> 

@@ -57,11 +57,11 @@ db.pool.config.driverClassName=dm.jdbc.driver.DmDriver
 
 ## 参考链接 ：
 
-*专家经验：如何解决Nacos连接超时问题 
+* 专家经验：如何解决Nacos连接超时问题 
  
- *专家经验：Nacos的数据库支持情况介绍 
+ * 专家经验：Nacos的数据库支持情况介绍 
  
- *专家经验：无法在nacos/conf下找到nacos-mysql.sql文件 
+ * 专家经验：无法在nacos/conf下找到nacos-mysql.sql文件 
 
 
  <font color="#949494">---------------</font> 

@@ -47,11 +47,11 @@ description: "在Nacos 2.0.4版本中，初始化数据库所需的SQL脚本名�
 
 ## 参考链接 ：
 
-*专家经验：无法在nacos/conf下找到nacos-mysql.sql文件 
+* 专家经验：无法在nacos/conf下找到nacos-mysql.sql文件 
  
- *专家经验：nacos哪个版本最常用 
+ * 专家经验：nacos哪个版本最常用 
  
- *专家经验：Nacos的数据库支持情况介绍 
+ * 专家经验：Nacos的数据库支持情况介绍 
 
 
  <font color="#949494">---------------</font> 

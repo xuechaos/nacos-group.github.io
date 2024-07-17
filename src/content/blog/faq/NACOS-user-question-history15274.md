@@ -56,11 +56,11 @@ description: "根据您提供的问题，看起来您在尝试使用Nacos 2.3.2�
 
 ## 参考链接 ：
 
-*专家经验：nacos的部署 
+* 专家经验：nacos的部署 
  
- *[鉴权插件](https://nacos.io/docs/latest/plugin/auth-plugin)
+ * [鉴权插件](https://nacos.io/docs/latest/plugin/auth-plugin)
  
- *专家经验：主流的配置中心有哪些？ 
+ * 专家经验：主流的配置中心有哪些？ 
 
 
  <font color="#949494">---------------</font> 

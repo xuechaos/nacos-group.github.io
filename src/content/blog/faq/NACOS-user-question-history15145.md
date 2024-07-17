@@ -36,7 +36,7 @@ description: "在Nacos开源配置管理场景下，`bootstrap.yml`配置文件�
 
 ## 参考链接 ：
 
-*专家经验：Nacos 配置无法动态刷新 
+* 专家经验：Nacos 配置无法动态刷新 
 
 
  <font color="#949494">---------------</font> 

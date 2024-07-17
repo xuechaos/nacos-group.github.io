@@ -32,11 +32,11 @@ keywords: ["mysql-schema.sql"]
 
 ## 参考链接 ：
 
-*专家经验：nacos 各类配置文件都在那？ 
+* 专家经验：nacos 各类配置文件都在那？ 
  
- *专家经验：无法在nacos/conf下找到nacos-mysql.sql文件 
+ * 专家经验：无法在nacos/conf下找到nacos-mysql.sql文件 
  
- *专家经验：Nacos升级的具体步骤 
+ * 专家经验：Nacos升级的具体步骤 
 
 
  <font color="#949494">---------------</font> 

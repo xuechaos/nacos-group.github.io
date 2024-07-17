@@ -20,9 +20,9 @@ description: "我目前了解到的信息可能不足以支持你的问题nacos-
 
 ## 参考链接 ：
 
-*专家经验：Nacos 配置中心的数据同步和一致性问题 
+* 专家经验：Nacos 配置中心的数据同步和一致性问题 
  
- *专家经验：Nacos spring 适配 
+ * 专家经验：Nacos spring 适配 
 
 
  <font color="#949494">---------------</font> 

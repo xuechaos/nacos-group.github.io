@@ -80,9 +80,9 @@ public class GlobalExceptionHandler {
 
 ## 参考链接 ：
 
-*专家经验：如何排查Nacos连接失败问题 
+* 专家经验：如何排查Nacos连接失败问题 
  
- *[Java SDK](https://nacos.io/docs/latest/guide/user/sdk)
+ * [Java SDK](https://nacos.io/docs/latest/guide/user/sdk)
 
 
  <font color="#949494">---------------</font> 

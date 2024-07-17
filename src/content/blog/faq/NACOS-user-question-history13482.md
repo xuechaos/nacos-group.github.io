@@ -62,11 +62,11 @@ keywords: ["nacos","单例模式","启动"]
 
 ## 参考链接 ：
 
-*专家经验：Nacos 快速开始 
+* 专家经验：Nacos 快速开始 
  
- *专家经验：No DataSource set 
+ * 专家经验：No DataSource set 
  
- *[Nacos 2.0 升级文档](https://nacos.io/docs/latest/upgrading/200-upgrading)
+ * [Nacos 2.0 升级文档](https://nacos.io/docs/latest/upgrading/200-upgrading)
 
 
  <font color="#949494">---------------</font> 

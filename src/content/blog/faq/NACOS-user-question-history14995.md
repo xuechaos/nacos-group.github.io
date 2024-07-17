@@ -53,9 +53,9 @@ description: "根据您的问题，您遇到的情况是使用nacos-opensource�
 
 ## 参考链接 ：
 
-*专家经验：nacos用户密码设置 
+* 专家经验：nacos用户密码设置 
  
- *专家经验：user not found 
+ * 专家经验：user not found 
 
 
  <font color="#949494">---------------</font> 

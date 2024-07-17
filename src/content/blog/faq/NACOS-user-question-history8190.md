@@ -32,9 +32,9 @@ keywords: ["nacos","鉴权","稳定性","业务服务","nacos客户端","链接"
 
 ## 参考链接 ：
 
-*[Authorization](https://nacos.io/docs/latest/guide/user/auth)
+* [Authorization](https://nacos.io/docs/latest/guide/user/auth)
  
- *[鉴权插件](https://nacos.io/docs/latest/plugin/auth-plugin)
+ * [鉴权插件](https://nacos.io/docs/latest/plugin/auth-plugin)
 
 
  <font color="#949494">---------------</font> 

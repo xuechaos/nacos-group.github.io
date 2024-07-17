@@ -38,11 +38,11 @@ curl -X GET '127.0.0.1:8848/nacos/v1/cs/configs?accessToken=your_access_token_he
 
 ## 参考链接 ：
 
-*[Authorization](https://nacos.io/docs/latest/guide/user/auth)
+* [Authorization](https://nacos.io/docs/latest/guide/user/auth)
  
- *专家经验：Nacos部署开放端口，集群部署开通端口 
+ * 专家经验：Nacos部署开放端口，集群部署开通端口 
  
- *专家经验：Nacos如何指定端口 
+ * 专家经验：Nacos如何指定端口 
 
 
  <font color="#949494">---------------</font> 

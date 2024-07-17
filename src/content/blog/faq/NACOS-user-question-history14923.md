@@ -35,11 +35,11 @@ description: "为了确定Spring Boot 3.1.5应用与Nacos的最佳版本搭配�
 
 ## 参考链接 ：
 
-*专家经验：springcloud alibaba 和nacos版本对应 
+* 专家经验：springcloud alibaba 和nacos版本对应 
  
- *专家经验：Nacos客户端和服务端版本的兼容性问题 
+ * 专家经验：Nacos客户端和服务端版本的兼容性问题 
  
- *专家经验：nacos哪个版本最常用 
+ * 专家经验：nacos哪个版本最常用 
 
 
  <font color="#949494">---------------</font> 

@@ -68,11 +68,11 @@ keywords: ["HTTP health check","register instance port"]
 
 ## 参考链接 ：
 
-*专家经验：Why Use HTTP for Registration of the Nacos2.0 Raft Protocol 
+* 专家经验：Why Use HTTP for Registration of the Nacos2.0 Raft Protocol 
  
- *[Open API 指南](https://nacos.io/docs/latest/guide/user/open-api)
+ * [Open API 指南](https://nacos.io/docs/latest/guide/user/open-api)
  
- *[提交需求模板](https://nacos.io/docs/latest/contribution/pull-request)
+ * [提交需求模板](https://nacos.io/docs/latest/contribution/pull-request)
 
 
  <font color="#949494">---------------</font> 

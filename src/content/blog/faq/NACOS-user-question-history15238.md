@@ -38,11 +38,11 @@ description: "根据我的知识库，关于Nacos 2.3.2的Docker镜像信息并�
 
 ## 参考链接 ：
 
-*专家经验：主流的配置中心有哪些？ 
+* 专家经验：主流的配置中心有哪些？ 
  
- *专家经验：Nacos 请问nacos有arm架构的docker镜像么 
+ * 专家经验：Nacos 请问nacos有arm架构的docker镜像么 
  
- *[Nacos功能和需求列表](https://nacos.io/docs/latest/archive/feature-list)
+ * [Nacos功能和需求列表](https://nacos.io/docs/latest/archive/feature-list)
 
 
  <font color="#949494">---------------</font> 

@@ -50,11 +50,11 @@ java -Xms512m -Xmx2048m -Xmn1024m -XX:+UseG1GC -jar nacos-server.jar
 
 ## 参考链接 ：
 
-*专家经验：nacos-server 频繁FullGC 
+* 专家经验：nacos-server 频繁FullGC 
  
- *专家经验：Nacos 快速开始 
+ * 专家经验：Nacos 快速开始 
  
- *[Nacos 2.0 升级文档](https://nacos.io/docs/latest/upgrading/200-upgrading)
+ * [Nacos 2.0 升级文档](https://nacos.io/docs/latest/upgrading/200-upgrading)
 
 
  <font color="#949494">---------------</font> 

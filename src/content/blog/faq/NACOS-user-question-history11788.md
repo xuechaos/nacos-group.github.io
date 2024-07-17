@@ -71,7 +71,7 @@ keywords: ["nacos","微服务","dubbo","注册中心","配置中心","搭建","�
 
 ## 参考链接 ：
 
-*[Dubbo 融合 Nacos 成为注册中心](https://nacos.io/docs/latest/ecology/use-nacos-with-dubbo)
+* [Dubbo 融合 Nacos 成为注册中心](https://nacos.io/docs/latest/ecology/use-nacos-with-dubbo)
 
 
  <font color="#949494">---------------</font> 

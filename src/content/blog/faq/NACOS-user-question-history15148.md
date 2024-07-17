@@ -20,7 +20,7 @@ description: "我目前了解到的信息可能不足以支持你的问题nacos-
 
 ## 参考链接 ：
 
-*[Nacos 监控手册](https://nacos.io/docs/latest/guide/admin/monitor-guide)
+* [Nacos 监控手册](https://nacos.io/docs/latest/guide/admin/monitor-guide)
 
 
  <font color="#949494">---------------</font> 

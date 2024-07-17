@@ -47,7 +47,7 @@ Nacos-opensource确实不支持直接将监控数据推送至AlertManager。根�
 
 ## 参考链接 ：
 
-*专家经验：Nacos支持推送监控数据到监控系统吗？ 
+* 专家经验：Nacos支持推送监控数据到监控系统吗？ 
 
 
  <font color="#949494">---------------</font> 

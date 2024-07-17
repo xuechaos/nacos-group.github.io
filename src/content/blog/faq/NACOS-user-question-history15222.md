@@ -33,7 +33,7 @@ Nacos作为服务发现与注册工具，确实与Eureka有所不同，其中最
 
 ## 参考链接 ：
 
-*专家经验：Nacos和Eureka的区别是什么？ 
+* 专家经验：Nacos和Eureka的区别是什么？ 
 
 
  <font color="#949494">---------------</font> 

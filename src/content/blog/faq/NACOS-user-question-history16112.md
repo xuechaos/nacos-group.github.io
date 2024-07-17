@@ -51,9 +51,9 @@ List<Instance> instances = namingService.getAllInstances("你的服务名", "你
 
 ## 参考链接 ：
 
-*[Authorization](https://nacos.io/docs/latest/guide/user/auth)
+* [Authorization](https://nacos.io/docs/latest/guide/user/auth)
  
- *专家经验：CatalogController 里面的接口和客户端SDK的API区别是什么 
+ * 专家经验：CatalogController 里面的接口和客户端SDK的API区别是什么 
 
 
  <font color="#949494">---------------</font> 

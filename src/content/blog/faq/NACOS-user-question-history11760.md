@@ -75,9 +75,9 @@ Nacos为微服务治理提供了全面的解决方案，从服务注册与发现
 
 ## 参考链接 ：
 
-*[Authorization](https://nacos.io/docs/latest/guide/user/auth)
+* [Authorization](https://nacos.io/docs/latest/guide/user/auth)
  
- *[FAQ](https://nacos.io/docs/latest/guide/user/faq)
+ * [FAQ](https://nacos.io/docs/latest/guide/user/faq)
 
 
  <font color="#949494">---------------</font> 

@@ -59,9 +59,9 @@ java -jar target/nacos-server-{version}.jar --spring.profiles.active=standalone
 
 ## 参考链接 ：
 
-*专家经验：二次开发Nacos 是否存在开源协议的冲突？ 
+* 专家经验：二次开发Nacos 是否存在开源协议的冲突？ 
  
- *专家经验：nacos 代码结构 
+ * 专家经验：nacos 代码结构 
 
 
  <font color="#949494">---------------</font> 

@@ -45,11 +45,11 @@ keywords: ["Nacos","大量报错","Request cannot be executed","I O reactor stat
 
 ## 参考链接 ：
 
-*专家经验：Request cannot be executed； I/O reactor status: STOPPED 
+* 专家经验：Request cannot be executed； I/O reactor status: STOPPED 
  
- *专家经验：日志报错ERROR [DISTRO-INIT] load snapshot Nacos:Naming:v2:ClientData from 10.111.107.10:8878 failed. com.alibaba.nacos.core.distribu 
+ * 专家经验：日志报错ERROR [DISTRO-INIT] load snapshot Nacos:Naming:v2:ClientData from 10.111.107.10:8878 failed. com.alibaba.nacos.core.distribu 
  
- *专家经验：Nacos 内存占用过大 
+ * 专家经验：Nacos 内存占用过大 
 
 
  <font color="#949494">---------------</font> 

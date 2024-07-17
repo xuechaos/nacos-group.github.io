@@ -36,11 +36,11 @@ Nacos 是阿里巴巴开源的一款强大的云原生应用配套工具，它�
 
 ## 参考链接 ：
 
-*专家经验：Nacos 介绍 
+* 专家经验：Nacos 介绍 
  
- *专家经验：Nacos和Eureka的区别是什么？ 
+ * 专家经验：Nacos和Eureka的区别是什么？ 
  
- *[NacosSync 用户手册](https://nacos.io/docs/latest/ecology/use-nacos-sync)
+ * [NacosSync 用户手册](https://nacos.io/docs/latest/ecology/use-nacos-sync)
 
 
  <font color="#949494">---------------</font> 

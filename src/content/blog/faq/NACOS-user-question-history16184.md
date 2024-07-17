@@ -49,11 +49,11 @@ description: "根据您提供的问题，Nacos配置更新时遇到的HTTP 404�
 
 ## 参考链接 ：
 
-*专家经验：Nacos spring 适配 
+* 专家经验：Nacos spring 适配 
  
- *专家经验：Nacos 配置无法动态刷新 
+ * 专家经验：Nacos 配置无法动态刷新 
  
- *专家经验：Nacos 配置中心的数据同步和一致性问题 
+ * 专家经验：Nacos 配置中心的数据同步和一致性问题 
 
 
  <font color="#949494">---------------</font> 

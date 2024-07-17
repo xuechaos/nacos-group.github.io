@@ -52,11 +52,11 @@ keywords: ["ingress","nacos","load balancing","error reporting","STARTING"]
 
 ## 参考链接 ：
 
-*专家经验：如何排查Nacos连接失败问题 
+* 专家经验：如何排查Nacos连接失败问题 
  
- *专家经验：Nacos "status":501,"error":"Not Implemented","message":"no such api:...","path":"... 
+ * 专家经验：Nacos "status":501,"error":"Not Implemented","message":"no such api:...","path":"... 
  
- *专家经验：日志报错ERROR [DISTRO-INIT] load snapshot Nacos:Naming:v2:ClientData from 10.111.107.10:8878 failed. com.alibaba.nacos.core.distribu 
+ * 专家经验：日志报错ERROR [DISTRO-INIT] load snapshot Nacos:Naming:v2:ClientData from 10.111.107.10:8878 failed. com.alibaba.nacos.core.distribu 
 
 
  <font color="#949494">---------------</font> 

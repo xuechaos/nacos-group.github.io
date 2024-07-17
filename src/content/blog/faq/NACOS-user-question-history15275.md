@@ -52,11 +52,11 @@ description: "在Nacos的鉴权过程中，直接涉及的端口主要是Nacos�
 
 ## 参考链接 ：
 
-*专家经验：Nacos如何指定端口 
+* 专家经验：Nacos如何指定端口 
  
- *专家经验：Nacos部署开放端口，集群部署开通端口 
+ * 专家经验：Nacos部署开放端口，集群部署开通端口 
  
- *[Authorization](https://nacos.io/docs/latest/guide/user/auth)
+ * [Authorization](https://nacos.io/docs/latest/guide/user/auth)
 
 
  <font color="#949494">---------------</font> 

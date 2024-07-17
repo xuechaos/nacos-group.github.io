@@ -44,11 +44,11 @@ description: "根据已有的知识，该报错`out of date data received, old-t
 
 ## 参考链接 ：
 
-*专家经验：如何获取Nacos-Client的日志？ 
+* 专家经验：如何获取Nacos-Client的日志？ 
  
- *专家经验：nacos 与 springboot 联合使用 
+ * 专家经验：nacos 与 springboot 联合使用 
  
- *专家经验：Nacos 在windows下不支持:的bug如何处理? 
+ * 专家经验：Nacos 在windows下不支持:的bug如何处理? 
 
 
  <font color="#949494">---------------</font> 

@@ -83,11 +83,11 @@ keywords: ["nacos","安装","详细步骤","说明","linux","docker"]
 
 ## 参考链接 ：
 
-*[Nacos Docker 快速开始](https://nacos.io/docs/latest/quickstart/quick-start-docker)
+* [Nacos Docker 快速开始](https://nacos.io/docs/latest/quickstart/quick-start-docker)
  
- *[Nacos 2.0 升级文档](https://nacos.io/docs/latest/upgrading/200-upgrading)
+ * [Nacos 2.0 升级文档](https://nacos.io/docs/latest/upgrading/200-upgrading)
  
- *[Nacos功能和需求列表](https://nacos.io/docs/latest/archive/feature-list)
+ * [Nacos功能和需求列表](https://nacos.io/docs/latest/archive/feature-list)
 
 
  <font color="#949494">---------------</font> 

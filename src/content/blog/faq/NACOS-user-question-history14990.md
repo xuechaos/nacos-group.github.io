@@ -88,7 +88,7 @@ sh shutdown.sh
 
 ## 参考链接 ：
 
-*专家经验：Nacos 快速开始 
+* 专家经验：Nacos 快速开始 
 
 
  <font color="#949494">---------------</font> 

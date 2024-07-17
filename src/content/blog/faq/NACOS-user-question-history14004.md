@@ -40,11 +40,11 @@ keywords: ["启动","报错","处理"]
 
 ## 参考链接 ：
 
-*专家经验：启动报错java.lang.IllegalArgumentException: the length of secret key must great than or equal 32 bytes... 
+* 专家经验：启动报错java.lang.IllegalArgumentException: the length of secret key must great than or equal 32 bytes... 
  
- *专家经验：启动报错java.lang.IllegalArgumentException: The specified key byte array is x bits which is not secure enough for any JWT HMAC-SHA 
+ * 专家经验：启动报错java.lang.IllegalArgumentException: The specified key byte array is x bits which is not secure enough for any JWT HMAC-SHA 
  
- *专家经验：Nacos 在windows下不支持:的bug如何处理? 
+ * 专家经验：Nacos 在windows下不支持:的bug如何处理? 
 
 
  <font color="#949494">---------------</font> 

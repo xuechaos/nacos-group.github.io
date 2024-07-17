@@ -57,11 +57,11 @@ telnet 10.104.34.53 6848
 
 ## 参考链接 ：
 
-*专家经验：如何解决Nacos连接超时问题 
+* 专家经验：如何解决Nacos连接超时问题 
  
- *专家经验：Nacos重启后再启动微服务项目时，后台出现“NacosException: failed to req API”异常解决办法 
+ * 专家经验：Nacos重启后再启动微服务项目时，后台出现“NacosException: failed to req API”异常解决办法 
  
- *专家经验：Fail to get leader of group naming_persistent_service_v2 
+ * 专家经验：Fail to get leader of group naming_persistent_service_v2 
 
 
  <font color="#949494">---------------</font> 

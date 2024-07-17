@@ -26,11 +26,11 @@ description: "根据已有的知识信息，我们可以分析如下：1. **Spri
 
 ## 参考链接 ：
 
-*专家经验：springcloud alibaba 和nacos版本对应 
+* 专家经验：springcloud alibaba 和nacos版本对应 
  
- *[FAQ](https://nacos.io/docs/latest/guide/user/faq)
+ * [FAQ](https://nacos.io/docs/latest/guide/user/faq)
  
- *专家经验：Does nacos 2.2.3 support jdk17 
+ * 专家经验：Does nacos 2.2.3 support jdk17 
 
 
  <font color="#949494">---------------</font> 

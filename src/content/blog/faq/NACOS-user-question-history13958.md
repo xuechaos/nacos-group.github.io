@@ -47,7 +47,7 @@ Nacos配置中心实现原理主要基于以下几个核心步骤与技术机制
 
 ## 参考链接 ：
 
-*[Nacos 融合 Spring Boot，成为注册配置中心](https://nacos.io/docs/latest/ecology/use-nacos-with-spring-boot)
+* [Nacos 融合 Spring Boot，成为注册配置中心](https://nacos.io/docs/latest/ecology/use-nacos-with-spring-boot)
 
 
  <font color="#949494">---------------</font> 

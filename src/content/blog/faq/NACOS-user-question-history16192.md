@@ -57,11 +57,11 @@ description: "要解决Nacos版本1.4.1中由于Spring框架导致的CVE-2024-22
 
 ## 参考链接 ：
 
-*专家经验：nacos CVE-2024-22243 情况说明 
+* 专家经验：nacos CVE-2024-22243 情况说明 
  
- *专家经验：nacos哪个版本最常用 
+ * 专家经验：nacos哪个版本最常用 
  
- *专家经验：springcloud alibaba 和nacos版本对应 
+ * 专家经验：springcloud alibaba 和nacos版本对应 
 
 
  <font color="#949494">---------------</font> 

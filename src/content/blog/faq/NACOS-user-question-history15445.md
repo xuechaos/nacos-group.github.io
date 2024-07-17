@@ -24,9 +24,9 @@ description: "根据我掌握的知识，Nacos官方文档和示例项目主要�
 
 ## 参考链接 ：
 
-*专家经验：Nacos spring 适配 
+* 专家经验：Nacos spring 适配 
  
- *专家经验：nacos 与 springboot 联合使用 
+ * 专家经验：nacos 与 springboot 联合使用 
 
 
  <font color="#949494">---------------</font> 

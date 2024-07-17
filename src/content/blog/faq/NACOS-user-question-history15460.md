@@ -54,11 +54,11 @@ description: "根据您提供的异常信息`nacos com.alibaba.nacos.api.excepti
 
 ## 参考链接 ：
 
-*专家经验：user not found 
+* 专家经验：user not found 
  
- *[Nacos功能和需求列表](https://nacos.io/docs/latest/archive/feature-list)
+ * [Nacos功能和需求列表](https://nacos.io/docs/latest/archive/feature-list)
  
- *专家经验：自建用户用于nacos客户端应用验证时，如果对namespace开启只读将也无法注册该空间的服务应该怎么处理？ 
+ * 专家经验：自建用户用于nacos客户端应用验证时，如果对namespace开启只读将也无法注册该空间的服务应该怎么处理？ 
 
 
  <font color="#949494">---------------</font> 

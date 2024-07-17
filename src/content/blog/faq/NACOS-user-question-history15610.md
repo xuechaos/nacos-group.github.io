@@ -30,11 +30,11 @@ description: "根据提供的知识内容，为了确定`nacos-spring-cloud-star
 
 ## 参考链接 ：
 
-*专家经验：Nacos spring 适配 
+* 专家经验：Nacos spring 适配 
  
- *专家经验：springcloud alibaba 和nacos版本对应 
+ * 专家经验：springcloud alibaba 和nacos版本对应 
  
- *[FAQ](https://nacos.io/docs/latest/guide/user/faq)
+ * [FAQ](https://nacos.io/docs/latest/guide/user/faq)
 
 
  <font color="#949494">---------------</font> 

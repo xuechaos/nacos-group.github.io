@@ -75,11 +75,11 @@ services:
 
 ## 参考链接 ：
 
-*专家经验：Nacos 请问nacos有arm架构的docker镜像么 
+* 专家经验：Nacos 请问nacos有arm架构的docker镜像么 
  
- *专家经验：Nacos 扩缩容问题 
+ * 专家经验：Nacos 扩缩容问题 
  
- *专家经验：Nacos nacos 2.3.0全新安装也需要关闭双写吗？ 
+ * 专家经验：Nacos nacos 2.3.0全新安装也需要关闭双写吗？ 
 
 
  <font color="#949494">---------------</font> 

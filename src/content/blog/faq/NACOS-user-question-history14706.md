@@ -35,9 +35,9 @@ keywords: ["nacos","清除","缓存"]
 
 ## 参考链接 ：
 
-*专家经验：如何清除本地客户端的缓存 
+* 专家经验：如何清除本地客户端的缓存 
  
- *[Authorization](https://nacos.io/docs/latest/guide/user/auth)
+ * [Authorization](https://nacos.io/docs/latest/guide/user/auth)
 
 
  <font color="#949494">---------------</font> 

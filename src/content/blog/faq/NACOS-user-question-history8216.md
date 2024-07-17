@@ -44,11 +44,11 @@ keywords: ["SpringCloud","nacos","版本匹配","Springboot","2.3.12.RELEASE","s
 
 ## 参考链接 ：
 
-*专家经验：Nacos1.0和Nacos2.0的api有什么区别？2.0的中小版本升级相关问题 
+* 专家经验：Nacos1.0和Nacos2.0的api有什么区别？2.0的中小版本升级相关问题 
  
- *专家经验：nacos哪个版本最常用 
+ * 专家经验：nacos哪个版本最常用 
  
- *专家经验：Nacos客户端和服务端版本的兼容性问题 
+ * 专家经验：Nacos客户端和服务端版本的兼容性问题 
 
 
  <font color="#949494">---------------</font> 

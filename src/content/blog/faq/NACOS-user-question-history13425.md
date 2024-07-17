@@ -75,9 +75,9 @@ keywords: ["nacos2.2.3","开启鉴权配置","权限认证","具体流程"]
 
 ## 参考链接 ：
 
-*[Authorization](https://nacos.io/docs/latest/guide/user/auth)
+* [Authorization](https://nacos.io/docs/latest/guide/user/auth)
  
- *专家经验：Nacos部署集群模式怎么打开鉴权 
+ * 专家经验：Nacos部署集群模式怎么打开鉴权 
 
 
  <font color="#949494">---------------</font> 

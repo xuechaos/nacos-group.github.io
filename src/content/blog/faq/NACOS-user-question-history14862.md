@@ -28,11 +28,11 @@ description: "在 Nacos 2.2.2 版本之后，控制台无需密码就能登录�
 
 ## 参考链接 ：
 
-*[Authorization](https://nacos.io/docs/latest/guide/user/auth)
+* [Authorization](https://nacos.io/docs/latest/guide/user/auth)
  
- *[控制台手册](https://nacos.io/docs/latest/guide/admin/console-guide)
+ * [控制台手册](https://nacos.io/docs/latest/guide/admin/console-guide)
  
- *专家经验：Nacos 快速开始 
+ * 专家经验：Nacos 快速开始 
 
 
  <font color="#949494">---------------</font> 

@@ -46,7 +46,7 @@ description: "针对您提出的问题「nacos-opensource Nacos get changed data
 
 ## 参考链接 ：
 
-*专家经验：应用配置获取失败 
+* 专家经验：应用配置获取失败 
 
 
  <font color="#949494">---------------</font> 

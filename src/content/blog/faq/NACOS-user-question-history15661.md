@@ -38,11 +38,11 @@ description: "根据已有的知识信息，Nacos 2.3.2服务端版本兼容的�
 
 ## 参考链接 ：
 
-*专家经验：Nacos客户端和服务端版本的兼容性问题 
+* 专家经验：Nacos客户端和服务端版本的兼容性问题 
  
- *专家经验：springcloud alibaba 和nacos版本对应 
+ * 专家经验：springcloud alibaba 和nacos版本对应 
  
- *专家经验：nacos哪个版本最常用 
+ * 专家经验：nacos哪个版本最常用 
 
 
  <font color="#949494">---------------</font> 

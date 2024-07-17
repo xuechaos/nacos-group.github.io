@@ -24,11 +24,11 @@ Nacos最常用的版本是2.X的最新稳定版本。根据官方推荐，自从
 
 ## 参考链接 ：
 
-*专家经验：nacos哪个版本最常用 
+* 专家经验：nacos哪个版本最常用 
  
- *专家经验：springcloud alibaba 和nacos版本对应 
+ * 专家经验：springcloud alibaba 和nacos版本对应 
  
- *[FAQ](https://nacos.io/docs/latest/guide/user/faq)
+ * [FAQ](https://nacos.io/docs/latest/guide/user/faq)
 
 
  <font color="#949494">---------------</font> 

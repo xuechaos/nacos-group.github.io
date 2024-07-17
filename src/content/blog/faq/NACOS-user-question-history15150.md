@@ -65,11 +65,11 @@ description: "为了在Linux上安装Nacos，您可以遵循以下详细步骤�
 
 ## 参考链接 ：
 
-*专家经验：Nacos 快速开始 
+* 专家经验：Nacos 快速开始 
  
- *专家经验：Nacos nacos 2.3.0全新安装也需要关闭双写吗？ 
+ * 专家经验：Nacos nacos 2.3.0全新安装也需要关闭双写吗？ 
  
- *专家经验：Nacos 欢迎你 
+ * 专家经验：Nacos 欢迎你 
 
 
  <font color="#949494">---------------</font> 

@@ -43,11 +43,11 @@ description: "根据提供的知识内容，遇到“nacos-opensource 登录naco
 
 ## 参考链接 ：
 
-*[控制台手册](https://nacos.io/docs/latest/guide/admin/console-guide)
+* [控制台手册](https://nacos.io/docs/latest/guide/admin/console-guide)
  
- *[Authorization](https://nacos.io/docs/latest/guide/user/auth)
+ * [Authorization](https://nacos.io/docs/latest/guide/user/auth)
  
- *专家经验：如何排查Nacos连接失败问题 
+ * 专家经验：如何排查Nacos连接失败问题 
 
 
  <font color="#949494">---------------</font> 

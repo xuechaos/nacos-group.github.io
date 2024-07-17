@@ -45,7 +45,7 @@ keywords: ["麒麟V10","loongarch64","龙芯架构","librocksdbjni-linux64.so","
 
 ## 参考链接 ：
 
-*专家经验：librocksdbjni-linux64.so:无法打开共享对象文件 
+* 专家经验：librocksdbjni-linux64.so:无法打开共享对象文件 
 
 
  <font color="#949494">---------------</font> 

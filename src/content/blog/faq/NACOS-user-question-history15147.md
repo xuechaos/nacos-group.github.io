@@ -56,11 +56,11 @@ description: "针对您的问题「nacos-opensource nacos windows启动」，我
 
 ## 参考链接 ：
 
-*专家经验：Nacos 在windows下不支持:的bug如何处理? 
+* 专家经验：Nacos 在windows下不支持:的bug如何处理? 
  
- *专家经验：Nacos 快速开始 
+ * 专家经验：Nacos 快速开始 
  
- *[Nacos 2.0 升级文档](https://nacos.io/docs/latest/upgrading/200-upgrading)
+ * [Nacos 2.0 升级文档](https://nacos.io/docs/latest/upgrading/200-upgrading)
 
 
  <font color="#949494">---------------</font> 

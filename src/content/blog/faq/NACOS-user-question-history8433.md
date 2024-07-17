@@ -52,11 +52,11 @@ keywords: ["单机模式","自建MySQL数据库","创建数据库","创建表"]
 
 ## 参考链接 ：
 
-*专家经验：Nacos的数据库支持情况介绍 
+* 专家经验：Nacos的数据库支持情况介绍 
  
- *专家经验：无法在nacos/conf下找到nacos-mysql.sql文件 
+ * 专家经验：无法在nacos/conf下找到nacos-mysql.sql文件 
  
- *专家经验：为什么Nacos不使用ORM框架访问数据库 
+ * 专家经验：为什么Nacos不使用ORM框架访问数据库 
 
 
  <font color="#949494">---------------</font> 

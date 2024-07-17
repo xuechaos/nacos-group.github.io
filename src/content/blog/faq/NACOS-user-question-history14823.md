@@ -32,11 +32,11 @@ description: "为了获取Spring Cloud Alibaba与Nacos版本之间的对应关�
 
 ## 参考链接 ：
 
-*专家经验：springcloud alibaba 和nacos版本对应 
+* 专家经验：springcloud alibaba 和nacos版本对应 
  
- *专家经验：nacos哪个版本最常用 
+ * 专家经验：nacos哪个版本最常用 
  
- *专家经验：微服务引擎(MSE）介绍 
+ * 专家经验：微服务引擎(MSE）介绍 
 
 
  <font color="#949494">---------------</font> 

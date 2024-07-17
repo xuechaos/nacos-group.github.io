@@ -47,11 +47,11 @@ description: "要在Kubernetes(K8s)环境中部署Nacos 2.2.3版本并启用认�
 
 ## 参考链接 ：
 
-*专家经验：Nacos部署集群模式怎么打开鉴权 
+* 专家经验：Nacos部署集群模式怎么打开鉴权 
  
- *[Kubernetes Nacos](https://nacos.io/docs/latest/quickstart/quick-start-kubernetes)
+ * [Kubernetes Nacos](https://nacos.io/docs/latest/quickstart/quick-start-kubernetes)
  
- *[Nacos功能和需求列表](https://nacos.io/docs/latest/archive/feature-list)
+ * [Nacos功能和需求列表](https://nacos.io/docs/latest/archive/feature-list)
 
 
  <font color="#949494">---------------</font> 

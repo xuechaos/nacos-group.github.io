@@ -59,11 +59,11 @@ description: "为了帮助您配置Nacos通过Docker方式进行部署的样例�
 
 ## 参考链接 ：
 
-*[Nacos功能和需求列表](https://nacos.io/docs/latest/archive/feature-list)
+* [Nacos功能和需求列表](https://nacos.io/docs/latest/archive/feature-list)
  
- *专家经验：Nacos部署集群模式怎么打开鉴权 
+ * 专家经验：Nacos部署集群模式怎么打开鉴权 
  
- *[Kubernetes Nacos](https://nacos.io/docs/latest/quickstart/quick-start-kubernetes)
+ * [Kubernetes Nacos](https://nacos.io/docs/latest/quickstart/quick-start-kubernetes)
 
 
  <font color="#949494">---------------</font> 

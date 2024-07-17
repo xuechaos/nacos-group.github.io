@@ -38,11 +38,11 @@ description: "根据您提供的信息以及相关知识，我们可以这样分
 
 ## 参考链接 ：
 
-*专家经验：nacos 各类配置文件都在那？ 
+* 专家经验：nacos 各类配置文件都在那？ 
  
- *专家经验：无法在nacos/conf下找到nacos-mysql.sql文件 
+ * 专家经验：无法在nacos/conf下找到nacos-mysql.sql文件 
  
- *专家经验：Nacos 配置中心的数据同步和一致性问题 
+ * 专家经验：Nacos 配置中心的数据同步和一致性问题 
 
 
  <font color="#949494">---------------</font> 

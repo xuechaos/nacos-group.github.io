@@ -44,7 +44,7 @@ description: "要禁用Nacos-OpenSource 2.1.2版本的鉴权功能，您需要�
 
 ## 参考链接 ：
 
-*[Authorization](https://nacos.io/docs/latest/guide/user/auth)
+* [Authorization](https://nacos.io/docs/latest/guide/user/auth)
 
 
  <font color="#949494">---------------</font> 

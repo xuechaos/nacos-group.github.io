@@ -38,11 +38,11 @@ description: "首先，根据提供的知识内容，我们了解到Nacos 2.x默
 
 ## 参考链接 ：
 
-*专家经验：Nacos如何指定端口 
+* 专家经验：Nacos如何指定端口 
  
- *专家经验：Nacos部署开放端口，集群部署开通端口 
+ * 专家经验：Nacos部署开放端口，集群部署开通端口 
  
- *[Nacos功能和需求列表](https://nacos.io/docs/latest/archive/feature-list)
+ * [Nacos功能和需求列表](https://nacos.io/docs/latest/archive/feature-list)
 
 
  <font color="#949494">---------------</font> 

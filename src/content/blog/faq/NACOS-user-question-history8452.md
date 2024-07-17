@@ -28,9 +28,9 @@ keywords: ["配置通知","a服务","b服务","dataid","group","消费","启动"
 
 ## 参考链接 ：
 
-*专家经验：nacos配置通知，a服务，b服务都监听相同的dataid和group,a服务消费后b才启动b能接收通知吗？ 
+* 专家经验：nacos配置通知，a服务，b服务都监听相同的dataid和group,a服务消费后b才启动b能接收通知吗？ 
  
- *[Java SDK](https://nacos.io/docs/latest/guide/user/sdk)
+ * [Java SDK](https://nacos.io/docs/latest/guide/user/sdk)
 
 
  <font color="#949494">---------------</font> 

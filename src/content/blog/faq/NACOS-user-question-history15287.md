@@ -33,9 +33,9 @@ description: "要设置Nacos客户端连接服务端时使用的gRPC端口的默
 
 ## 参考链接 ：
 
-*专家经验：Nacos如何指定端口 
+* 专家经验：Nacos如何指定端口 
  
- *[Nacos功能和需求列表](https://nacos.io/docs/latest/archive/feature-list)
+ * [Nacos功能和需求列表](https://nacos.io/docs/latest/archive/feature-list)
 
 
  <font color="#949494">---------------</font> 

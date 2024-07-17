@@ -48,9 +48,9 @@ description: "要将Nacos中已注册为永久实例的服务更改为临时实�
 
 ## 参考链接 ：
 
-*[Java SDK](https://nacos.io/docs/latest/guide/user/sdk)
+* [Java SDK](https://nacos.io/docs/latest/guide/user/sdk)
  
- *[Nacos 2.0 升级文档](https://nacos.io/docs/latest/upgrading/200-upgrading)
+ * [Nacos 2.0 升级文档](https://nacos.io/docs/latest/upgrading/200-upgrading)
 
 
  <font color="#949494">---------------</font> 

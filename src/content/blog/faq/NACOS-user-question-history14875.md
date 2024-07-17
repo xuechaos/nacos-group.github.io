@@ -32,9 +32,9 @@ description: "根据提供的知识内容，对于问题“nacos-opensource sign
 
 ## 参考链接 ：
 
-*专家经验：nacos中的API /auth/users 返回敏感信息 
+* 专家经验：nacos中的API /auth/users 返回敏感信息 
  
- *[Nacos 2.0 升级文档](https://nacos.io/docs/latest/upgrading/200-upgrading)
+ * [Nacos 2.0 升级文档](https://nacos.io/docs/latest/upgrading/200-upgrading)
 
 
  <font color="#949494">---------------</font> 

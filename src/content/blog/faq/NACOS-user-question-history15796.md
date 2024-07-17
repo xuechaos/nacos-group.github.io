@@ -42,9 +42,9 @@ description: "关于您的问题「nacos-opensource nacos配置中心的缓存�
 
 ## 参考链接 ：
 
-*专家经验：Nacos缓存目录修改 
+* 专家经验：Nacos缓存目录修改 
  
- *专家经验：Nacos 配置中心的数据同步和一致性问题 
+ * 专家经验：Nacos 配置中心的数据同步和一致性问题 
 
 
  <font color="#949494">---------------</font> 

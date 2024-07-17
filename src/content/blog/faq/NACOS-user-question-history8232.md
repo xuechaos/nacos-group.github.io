@@ -46,11 +46,11 @@ keywords: ["linux","安装部署","本地页面","nacos","访问","springboot","
 
 ## 参考链接 ：
 
-*专家经验：如何排查Nacos连接失败问题 
+* 专家经验：如何排查Nacos连接失败问题 
  
- *专家经验：nacos哪个版本最常用 
+ * 专家经验：nacos哪个版本最常用 
  
- *专家经验：No DataSource set 
+ * 专家经验：No DataSource set 
 
 
  <font color="#949494">---------------</font> 

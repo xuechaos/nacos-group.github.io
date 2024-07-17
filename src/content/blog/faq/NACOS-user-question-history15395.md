@@ -52,9 +52,9 @@ description: "要将基于MySQL、Nacos、Spring Cloud组成的项目部署到Do
 
 ## 参考链接 ：
 
-*专家经验：nacos的部署 
+* 专家经验：nacos的部署 
  
- *专家经验：Nacos部署集群模式怎么打开鉴权 
+ * 专家经验：Nacos部署集群模式怎么打开鉴权 
 
 
  <font color="#949494">---------------</font> 

@@ -48,11 +48,11 @@ keywords: ["Nacos","新建配置","配置内容","编辑"]
 
 ## 参考链接 ：
 
-*专家经验：Nacos 配置无法动态刷新 
+* 专家经验：Nacos 配置无法动态刷新 
  
- *专家经验：Nacos 配置加密 
+ * 专家经验：Nacos 配置加密 
  
- *专家经验：Nacos 配置access.log的保留时间 
+ * 专家经验：Nacos 配置access.log的保留时间 
 
 
  <font color="#949494">---------------</font> 

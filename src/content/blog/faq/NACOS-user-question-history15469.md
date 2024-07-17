@@ -44,11 +44,11 @@ description: "在“nacos-opensource 多个客户端 同时给 注册中心发�
 
 ## 参考链接 ：
 
-*专家经验：NACOS 配置中心和注册中心是分两个集群部署还是放在一个集群中 
+* 专家经验：NACOS 配置中心和注册中心是分两个集群部署还是放在一个集群中 
  
- *专家经验：Nacos用作配置中心的话，能够支持百万级别的客户端连接嘛 
+ * 专家经验：Nacos用作配置中心的话，能够支持百万级别的客户端连接嘛 
  
- *[Nacos 融合 Spring，成为注册配置中心](https://nacos.io/docs/latest/ecology/use-nacos-with-spring)
+ * [Nacos 融合 Spring，成为注册配置中心](https://nacos.io/docs/latest/ecology/use-nacos-with-spring)
 
 
  <font color="#949494">---------------</font> 

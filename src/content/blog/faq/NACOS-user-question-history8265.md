@@ -40,11 +40,11 @@ keywords: ["客户端注册","nacos","断网","服务端","无法下线服务"]
 
 ## 参考链接 ：
 
-*专家经验：服务提供者已关闭，但是还在被其他应用调用 
+* 专家经验：服务提供者已关闭，但是还在被其他应用调用 
  
- *专家经验：Nacos客户端与服务端grpc的连接有定期ping-pong机制吗 
+ * 专家经验：Nacos客户端与服务端grpc的连接有定期ping-pong机制吗 
  
- *[Nacos功能和需求列表](https://nacos.io/docs/latest/archive/feature-list)
+ * [Nacos功能和需求列表](https://nacos.io/docs/latest/archive/feature-list)
 
 
  <font color="#949494">---------------</font> 

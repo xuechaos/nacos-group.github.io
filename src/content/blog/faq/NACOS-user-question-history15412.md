@@ -81,11 +81,11 @@ description: "在Nacos与Spring Boot集成的场景中，使用Feign客户端进
 
 ## 参考链接 ：
 
-*专家经验：nacos 与 springboot 联合使用 
+* 专家经验：nacos 与 springboot 联合使用 
  
- *[FAQ](https://nacos.io/docs/latest/guide/user/faq)
+ * [FAQ](https://nacos.io/docs/latest/guide/user/faq)
  
- *专家经验：Nacos使用的稳定性说明 
+ * 专家经验：Nacos使用的稳定性说明 
 
 
  <font color="#949494">---------------</font> 

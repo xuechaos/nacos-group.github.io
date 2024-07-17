@@ -64,9 +64,9 @@ nacos.core.auth.server.identity.value=自定义IdentityValue
 
 ## 参考链接 ：
 
-*专家经验：Nacos不开启鉴权&暴露公网会导致风险 
+* 专家经验：Nacos不开启鉴权&暴露公网会导致风险 
  
- *专家经验：Nacos部署集群模式怎么打开鉴权 
+ * 专家经验：Nacos部署集群模式怎么打开鉴权 
 
 
  <font color="#949494">---------------</font> 

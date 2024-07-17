@@ -32,11 +32,11 @@ keywords: ["永久实例","应用场景"]
 
 ## 参考链接 ：
 
-*专家经验：Nacos中持久化服务和临时服务的区别 
+* 专家经验：Nacos中持久化服务和临时服务的区别 
  
- *专家经验：Nacos和Eureka的区别是什么？ 
+ * 专家经验：Nacos和Eureka的区别是什么？ 
  
- *[Nacos2.0服务配置性能测试报告](https://nacos.io/docs/latest/guide/admin/nacos2-config-benchmark)
+ * [Nacos2.0服务配置性能测试报告](https://nacos.io/docs/latest/guide/admin/nacos2-config-benchmark)
 
 
  <font color="#949494">---------------</font> 

@@ -37,11 +37,11 @@ description: "根据您提供的信息，nacos服务端版本是2.0.3，而java�
 
 ## 参考链接 ：
 
-*专家经验：Nacos客户端和服务端版本的兼容性问题 
+* 专家经验：Nacos客户端和服务端版本的兼容性问题 
  
- *专家经验：user not found 
+ * 专家经验：user not found 
  
- *专家经验：nacos哪个版本最常用 
+ * 专家经验：nacos哪个版本最常用 
 
 
  <font color="#949494">---------------</font> 

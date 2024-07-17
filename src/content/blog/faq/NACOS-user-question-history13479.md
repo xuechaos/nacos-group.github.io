@@ -1,11 +1,9 @@
 ---
 id: "question-history-13479"
 title: "linux部署nacos"
-date: "2024-05-17"
+date: "2024-07-01"
 category: "expertConsultation"
-description: "要在Linux环境下部署Nacos，可以遵循以下步骤：1. **环境准备**：   - 确保Linux系统中已安装Java环境，Nacos要求Java 8或更高版本。可以通过命令 `java -version` 来检查Java版本。   - 下载Nacos服务器端软件包。可以从Nacos官方GitH"
-tags: ["linux","部署","nacos"]
-keywords: ["linux","部署","nacos"]
+description: "要在Linux上部署Nacos，可以遵循以下详细步骤，这些步骤基于提供的知识内容：### 1. 准备环境确保您的Linux系统满足以下要求：- **操作系统**: 64位的Linux/Unix/Mac/Windows，推荐使用Linux/Unix/Mac。- **Java**: 需要安装64位的JD"
 ---
 
 ## 用户问题 ： 
@@ -14,32 +12,61 @@ keywords: ["linux","部署","nacos"]
 ---------------
 ## 专家官方解答 ：
 
-要在Linux环境下部署Nacos，可以遵循以下步骤：
+要在Linux上部署Nacos，可以遵循以下详细步骤，这些步骤基于提供的知识内容：
 
-1. **环境准备**：
-   - 确保Linux系统中已安装Java环境，Nacos要求Java 8或更高版本。可以通过命令 `java -version` 来检查Java版本。
-   - 下载Nacos服务器端软件包。可以从Nacos官方GitHub仓库[[1](https://github.com/alibaba/nacos/releases)]下载最新版本的发行包，或者使用wget/curl等工具直接从网页链接获取。
+### 1. 准备环境
 
-2. **解压并配置**：
-   - 将下载的Nacos压缩包解压到一个适当的目录，如 `/usr/local/nacos`。
-   - 进入解压后的目录，修改配置文件 `conf/application.properties`。根据实际情况调整如下参数：
-     - `server.port=8848`：设置Nacos的HTTP端口，默认为8848。
-     - `nacos.core.cluster.server-addr`：如果是集群部署，需要配置此参数来指定其它节点地址。
-     - （可选）开启数据双写功能（针对从Nacos 1.x平滑升级的情况），在application.properties中设置 `nacos.core.support.upgrade.from.1x=true`，但请注意这仅适用于某些特定版本的升级场景。
+确保您的Linux系统满足以下要求：
+- **操作系统**: 64位的Linux/Unix/Mac/Windows，推荐使用Linux/Unix/Mac。
+- **Java**: 需要安装64位的JDK 1.8或更高版本。如果您还没有安装，可以从[这里下载](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)并按照[官方指南](https://docs.oracle.com/cd/E19182-01/820-7851/inst_cli_jdk_javahome_t/)进行配置。
+- **Maven**: 安装Maven 3.2.x或更高版本。您可以通过[此链接下载](https://maven.apache.org/download.cgi)并按照[Maven配置指南](https://maven.apache.org/settings.html)进行配置。
 
-3. **启动Nacos**：
-   - 在Nacos解压目录的bin目录下，根据你的系统类型（Linux），使用shell脚本启动Nacos。对于standalone模式，执行 `sh startup.sh -m standalone`。这将启动一个单机模式的Nacos服务。
+### 2. 获取Nacos
 
-4. **验证部署**：
-   - 打开浏览器，访问 `http://your_server_ip:8848/nacos`，如果部署成功，你应该能看到Nacos的登录界面。默认用户名和密码是 `nacos`/`nacos`。
+#### 通过源码获取
+```bash
+git clone https://github.com/alibaba/nacos.git
+cd nacos/
+mvn -Prelease-nacos -Dmaven.test.skip=true clean install -U
+ls -al distribution/target/
+cd distribution/target/nacos-server-$version/nacos/bin
+```
+这里的`$version`需要替换为您实际克隆的Nacos版本号。
 
-5. **考虑事项**：
-   - 根据生产环境需求，可能需要调整防火墙规则，确保上述提到的Nacos端口（8848、9848等）对外开放。
-   - 对于生产环境部署，考虑使用Nacos集群模式以提高可用性，并且可以考虑使用云服务商提供的解决方案，如阿里云的MSE服务[[2](https://www.aliyun.com/product/aliware/mse)]，它提供了更便捷的管理与维护选项，以及更高的SLA保障。
+#### 或者下载编译后的压缩包
+- 访问[Nacos的GitHub Release页面](https://github.com/alibaba/nacos/releases)，下载最新稳定版本的`nacos-server-$version.zip`或`targz`包。
+- 解压下载的文件：
+```bash
+unzip nacos-server-$version.zip 或者 tar -xvf nacos-server-$version.tar.gz
+cd nacos/bin
+```
 
-根据Nacos官方文档[[3](https://nacos.io/docs/latest/guide/admin/cluster-mode-quick-start/)]，了解更详细的集群部署配置与注意事项。
+### 3. 启动Nacos服务器
 
-通过以上步骤，你可以在Linux系统上成功部署Nacos。请根据实际需求调整配置，并确保遵循最佳实践进行安全与性能优化。
+对于生产环境，推荐以集群模式部署Nacos，但这里提供单机模式作为示例：
+
+```bash
+bash startup.sh -m standalone
+```
+如果您使用的是Ubuntu系统并且运行脚本时报错，尝试使用`bash`代替`sh`。
+
+### 4. 配置与优化
+
+- **端口配置**: 默认情况下，Nacos使用8848作为主端口，但根据您的网络环境，您可能需要调整这些端口并通过`server.port`配置。关于Nacos端口的详细信息，请参考[官方文档](https://nacos.io/docs/latest/guide/admin/cluster-mode-quick-start/)。
+- **关闭双写**: 在集群部署稳定后，考虑性能优化，可以通过API关闭双写功能：
+```bash
+curl -X PUT 'localhost:8848/nacos/v1/ns/operator/switches?entry=doubleWriteEnabled&value=false'
+```
+请确保在关闭双写前，您的集群已成功运行并验证无误，因为这将影响到平滑降级的能力。
+
+### 5. 后续操作与监控
+
+- **日志检查**: 通过查看`logs/naming-server.log`文件，确认Nacos服务启动成功并监控其运行状态。
+- **健康检查**: 根据需要，通过Nacos提供的API或界面进行服务的健康检查和管理。
+
+### 总结
+
+以上步骤涵盖了在Linux系统上部署Nacos的基本流程。请根据实际情况调整配置，比如选择合适的部署模式（单机或集群）、调整端口设置等。确保每一步操作成功后，再进行下一步，以避免部署过程中出现问题。此外，持续关注Nacos的官方文档和社区更新，以便获取最新的部署指导和最佳实践。
 
 
 <font color="#949494">---------------</font> 
@@ -47,11 +74,9 @@ keywords: ["linux","部署","nacos"]
 
 ## 参考链接 ：
 
-*[Nacos 2.0 升级文档](https://nacos.io/docs/latest/upgrading/200-upgrading)
+* 专家经验：Nacos部署开放端口，集群部署开通端口 
  
- *专家经验：nacos的部署 
- 
- *专家经验：Nacos部署开放端口，集群部署开通端口 
+ * [Nacos 2.0 升级文档](https://nacos.io/docs/latest/upgrading/200-upgrading)
 
 
  <font color="#949494">---------------</font> 
@@ -63,4 +88,4 @@ keywords: ["linux","部署","nacos"]
 本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>，在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。您也可以访问 : [全局专家答疑](https://answer.opensource.alibaba.com/docs/intro) 。 咨询其他产品的的问题
 
 ### 反馈
-如问答有错漏，欢迎点：[差评](https://ai.nacos.io/user/feedbackByEnhancerGradePOJOID?enhancerGradePOJOId=13904)给我们反馈。
+如问答有错漏，欢迎点：[差评](https://ai.nacos.io/user/feedbackByEnhancerGradePOJOID?enhancerGradePOJOId=16001)给我们反馈。

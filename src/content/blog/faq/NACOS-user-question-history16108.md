@@ -31,9 +31,9 @@ nacos确实支持ARM架构。根据相关知识，社区提供了slim镜像，�
 
 ## 参考链接 ：
 
-*专家经验：Nacos 请问nacos有arm架构的docker镜像么 
+* 专家经验：Nacos 请问nacos有arm架构的docker镜像么 
  
- *专家经验：nacos 代码结构 
+ * 专家经验：nacos 代码结构 
 
 
  <font color="#949494">---------------</font> 

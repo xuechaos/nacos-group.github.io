@@ -45,9 +45,9 @@ Nacos的Raft日志如果变得过大，主要是因为Nacos采用了Sofa的JRaft
 
 ## 参考链接 ：
 
-*专家经验：Nacos raft日志太大怎么清理 
+* 专家经验：Nacos raft日志太大怎么清理 
  
- *专家经验：Nacos 内存占用过大 
+ * 专家经验：Nacos 内存占用过大 
 
 
  <font color="#949494">---------------</font> 

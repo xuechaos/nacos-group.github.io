@@ -44,9 +44,9 @@ Nacos作为一个开源项目，其多语言支持依赖于社区的贡献。这
 
 ## 参考链接 ：
 
-*专家经验：nacos 多语言支持 
+* 专家经验：nacos 多语言支持 
  
- *[Nacos功能和需求列表](https://nacos.io/docs/latest/archive/feature-list)
+ * [Nacos功能和需求列表](https://nacos.io/docs/latest/archive/feature-list)
 
 
  <font color="#949494">---------------</font> 

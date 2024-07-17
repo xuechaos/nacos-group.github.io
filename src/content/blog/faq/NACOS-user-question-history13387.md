@@ -41,11 +41,11 @@ keywords: ["心跳设置"]
 
 ## 参考链接 ：
 
-*专家经验：Nacos客户端与服务端grpc的连接有定期ping-pong机制吗 
+* 专家经验：Nacos客户端与服务端grpc的连接有定期ping-pong机制吗 
  
- *[Nacos功能和需求列表](https://nacos.io/docs/latest/archive/feature-list)
+ * [Nacos功能和需求列表](https://nacos.io/docs/latest/archive/feature-list)
  
- *专家经验：Nacos 快速开始 
+ * 专家经验：Nacos 快速开始 
 
 
  <font color="#949494">---------------</font> 

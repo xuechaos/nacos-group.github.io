@@ -24,11 +24,11 @@ Nacos的客户端确实支持服务实例信息的缓存。根据提供的知识
 
 ## 参考链接 ：
 
-*[Nacos功能和需求列表](https://nacos.io/docs/latest/archive/feature-list)
+* [Nacos功能和需求列表](https://nacos.io/docs/latest/archive/feature-list)
  
- *专家经验：如何清除本地客户端的缓存 
+ * 专家经验：如何清除本地客户端的缓存 
  
- *专家经验：Nacos如何指定端口 
+ * 专家经验：Nacos如何指定端口 
 
 
  <font color="#949494">---------------</font> 

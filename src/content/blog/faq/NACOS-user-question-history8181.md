@@ -39,11 +39,11 @@ For a deeper dive into Nacos features and configurations, including dynamic serv
 
 ## 参考链接 ：
 
-*专家经验：Nacos "status":501,"error":"Not Implemented","message":"no such api:...","path":"... 
+* 专家经验：Nacos "status":501,"error":"Not Implemented","message":"no such api:...","path":"... 
  
- *专家经验：Nacos 欢迎你 
+ * 专家经验：Nacos 欢迎你 
  
- *专家经验：Nacos 介绍 
+ * 专家经验：Nacos 介绍 
 
 
  <font color="#949494">---------------</font> 

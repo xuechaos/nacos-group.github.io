@@ -39,11 +39,11 @@ keywords: ["nacos-server","2.0.3","2.1.x","升级"]
 
 ## 参考链接 ：
 
-*专家经验：Nacos升级的具体步骤 
+* 专家经验：Nacos升级的具体步骤 
  
- *专家经验：Nacos客户端和服务端版本的兼容性问题 
+ * 专家经验：Nacos客户端和服务端版本的兼容性问题 
  
- *[Nacos 2.0 升级文档](https://nacos.io/docs/latest/upgrading/200-upgrading)
+ * [Nacos 2.0 升级文档](https://nacos.io/docs/latest/upgrading/200-upgrading)
 
 
  <font color="#949494">---------------</font> 

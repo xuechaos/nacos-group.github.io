@@ -38,11 +38,11 @@ Nacos作为一个服务发现与配置管理平台，其静态资源如`main.js`
 
 ## 参考链接 ：
 
-*专家经验：nacos的部署 
+* 专家经验：nacos的部署 
  
- *[Nacos 2.0 升级文档](https://nacos.io/docs/latest/upgrading/200-upgrading)
+ * [Nacos 2.0 升级文档](https://nacos.io/docs/latest/upgrading/200-upgrading)
  
- *[Kubernetes Nacos](https://nacos.io/docs/latest/quickstart/quick-start-kubernetes)
+ * [Kubernetes Nacos](https://nacos.io/docs/latest/quickstart/quick-start-kubernetes)
 
 
  <font color="#949494">---------------</font> 

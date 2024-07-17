@@ -49,11 +49,11 @@ description: "根据提供的知识内容，我们可以分析并尝试解决您
 
 ## 参考链接 ：
 
-*专家经验：实际服务正常再跑 注册中心上没了怎么回事? 
+* 专家经验：实际服务正常再跑 注册中心上没了怎么回事? 
  
- *专家经验：Nacos重启后再启动微服务项目时，后台出现“NacosException: failed to req API”异常解决办法 
+ * 专家经验：Nacos重启后再启动微服务项目时，后台出现“NacosException: failed to req API”异常解决办法 
  
- *专家经验：Nacos 服务数据一直推送失败 
+ * 专家经验：Nacos 服务数据一直推送失败 
 
 
  <font color="#949494">---------------</font> 

@@ -47,11 +47,11 @@ description: "根据您提供的信息，nacos-opensource 启动成功但无法�
 
 ## 参考链接 ：
 
-*[Nacos 2.0 升级文档](https://nacos.io/docs/latest/upgrading/200-upgrading)
+* [Nacos 2.0 升级文档](https://nacos.io/docs/latest/upgrading/200-upgrading)
  
- *[控制台手册](https://nacos.io/docs/latest/guide/admin/console-guide)
+ * [控制台手册](https://nacos.io/docs/latest/guide/admin/console-guide)
  
- *[Nacos功能和需求列表](https://nacos.io/docs/latest/archive/feature-list)
+ * [Nacos功能和需求列表](https://nacos.io/docs/latest/archive/feature-list)
 
 
  <font color="#949494">---------------</font> 

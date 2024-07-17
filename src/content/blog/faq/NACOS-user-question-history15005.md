@@ -48,9 +48,9 @@ description: "根据你提供的信息，关于nacos-opensource k8s-sync的安�
 
 ## 参考链接 ：
 
-*[Nacos功能和需求列表](https://nacos.io/docs/latest/archive/feature-list)
+* [Nacos功能和需求列表](https://nacos.io/docs/latest/archive/feature-list)
  
- *专家经验：nacos的部署 
+ * 专家经验：nacos的部署 
 
 
  <font color="#949494">---------------</font> 

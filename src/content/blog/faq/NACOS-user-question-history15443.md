@@ -42,11 +42,11 @@ description: "在处理Nacos集群中单一节点停机导致微服务无法使�
 
 ## 参考链接 ：
 
-*[Nacos 2.0 升级文档](https://nacos.io/docs/latest/upgrading/200-upgrading)
+* [Nacos 2.0 升级文档](https://nacos.io/docs/latest/upgrading/200-upgrading)
  
- *专家经验：Nacos 扩缩容问题 
+ * 专家经验：Nacos 扩缩容问题 
  
- *专家经验：Nacos负载均衡问题 
+ * 专家经验：Nacos负载均衡问题 
 
 
  <font color="#949494">---------------</font> 

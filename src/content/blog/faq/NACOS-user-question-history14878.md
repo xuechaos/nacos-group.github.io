@@ -42,7 +42,7 @@ Nacos本身不直接处理access token的有效期检查，这通常属于安全
 
 ## 参考链接 ：
 
-*专家经验：怎么能让nacos 的actuator 查不到任何信息呢 
+* 专家经验：怎么能让nacos 的actuator 查不到任何信息呢 
 
 
  <font color="#949494">---------------</font> 

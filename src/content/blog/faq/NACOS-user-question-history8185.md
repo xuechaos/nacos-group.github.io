@@ -58,9 +58,9 @@ keywords: ["服务多实例","滚动更新重启中断"]
 
 ## 参考链接 ：
 
-*专家经验：服务提供者已关闭，但是还在被其他应用调用 
+* 专家经验：服务提供者已关闭，但是还在被其他应用调用 
  
- *[Nacos 融合 Spring Cloud，成为注册配置中心](https://nacos.io/docs/latest/ecology/use-nacos-with-spring-cloud)
+ * [Nacos 融合 Spring Cloud，成为注册配置中心](https://nacos.io/docs/latest/ecology/use-nacos-with-spring-cloud)
 
 
  <font color="#949494">---------------</font> 

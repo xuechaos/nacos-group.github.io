@@ -43,11 +43,11 @@ description: "根据已有的知识，我们可以概括出升级Nacos在Kuberne
 
 ## 参考链接 ：
 
-*专家经验：Nacos升级的具体步骤 
+* 专家经验：Nacos升级的具体步骤 
  
- *[Nacos 2.0 升级文档](https://nacos.io/docs/latest/upgrading/200-upgrading)
+ * [Nacos 2.0 升级文档](https://nacos.io/docs/latest/upgrading/200-upgrading)
  
- *专家经验：Nacos1.0和Nacos2.0的api有什么区别？2.0的中小版本升级相关问题 
+ * 专家经验：Nacos1.0和Nacos2.0的api有什么区别？2.0的中小版本升级相关问题 
 
 
  <font color="#949494">---------------</font> 

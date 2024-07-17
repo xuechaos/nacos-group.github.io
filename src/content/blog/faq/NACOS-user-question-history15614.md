@@ -1,9 +1,9 @@
 ---
 id: "question-history-15614"
 title: "nacos必须开启鉴权吗"
-date: "2024-06-18"
+date: "2024-07-15"
 category: "expertConsultation"
-description: "Nacos并不强制要求必须开启鉴权，但它是一个内网核心组件，主要负责配置管理和服务发现等功能，因此**强烈建议在生产环境中开启鉴权**以保障系统的安全性。根据提供的知识内容，我们可以了解到以下几点原因和建议：### 原因分析：1. **安全风险**：若Nacos不开启鉴权并暴露于公网，其存储的配置和"
+description: "Nacos并不强制要求必须开启鉴权，但它是一个内网核心组件，主要负责配置管理、服务发现等关键功能。根据最佳实践和安全性考虑，**强烈建议**对Nacos集群开启鉴权功能，尤其是在以下情况：1. **暴露公网访问**：当Nacos服务器计划或已经部署在可公开访问的网络环境下，为了防止未经授权的访问和潜"
 ---
 
 ## 用户问题 ： 
@@ -12,38 +12,54 @@ description: "Nacos并不强制要求必须开启鉴权，但它是一个内网�
 ---------------
 ## 专家官方解答 ：
 
-Nacos并不强制要求必须开启鉴权，但它是一个内网核心组件，主要负责配置管理和服务发现等功能，因此**强烈建议在生产环境中开启鉴权**以保障系统的安全性。根据提供的知识内容，我们可以了解到以下几点原因和建议：
+Nacos并不强制要求必须开启鉴权，但它是一个内网核心组件，主要负责配置管理、服务发现等关键功能。根据最佳实践和安全性考虑，**强烈建议**对Nacos集群开启鉴权功能，尤其是在以下情况：
 
-### 原因分析：
-1. **安全风险**：若Nacos不开启鉴权并暴露于公网，其存储的配置和服务信息易受到黑客攻击，导致敏感信息泄露。
-2. **默认设置变更**：自nacos 2.2.3版本起，默认不再提供默认密钥，以避免未修改默认密钥带来的安全隐患。
-3. **鉴权机制**：通过鉴权机制，可以确保只有经过验证的用户或服务能够访问Nacos，增强了系统的防护能力。
+1. **暴露公网访问**：当Nacos服务器计划或已经部署在可公开访问的网络环境下，为了防止未经授权的访问和潜在的安全威胁，必须启用鉴权机制。
+2. **保护敏感信息**：Nacos存储的配置和服务信息可能包含数据库凭证、API密钥等敏感数据，鉴权能有效阻止未授权用户获取这些信息。
 
-### 开启鉴权的步骤（非Docker环境）：
-1. **修改配置文件**：编辑Nacos的`application.properties`文件。
-    - 设置`nacos.core.auth.enabled=true`以开启鉴权功能。
-    - 可选地，设置`nacos.core.auth.system.type=nacos`指定鉴权系统类型（默认为nacos）。
-2. **自定义密钥**：为了提高安全性，应自定义JWT令牌的密钥。例如：
-    ```properties
-    nacos.core.auth.default.token.secret.key=VGhpc0lzTXlDdXN0b21TZWNyZXRLZXkwMTIzNDU2Nzg=
-    ```
-    确保密钥为Base64编码且长度不少于32字符。
-3. **注意事项**：鉴权开关即时生效，无需重启服务端。但修改`token.secret.key`时需谨慎，确保新密钥有效，以免导致登录失败或访问异常。
+### 开启鉴权的具体步骤如下：
 
-### Docker环境下的开启方法：
-- 使用环境变量`NACOS_AUTH_ENABLE=true`在启动容器时开启鉴权。
-- 可通过其他相关环境变量进一步配置鉴权参数，如`NACOS_AUTH_TOKEN_EXPIRE_SECONDS`设置token过期时间等。
+#### 1. 修改配置文件
 
-### 解释：
-以上步骤旨在增强Nacos的安全性，通过鉴权机制限制访问者，确保仅授权用户能访问配置和服务信息。自定义密钥是关键步骤之一，它能够避免使用默认密钥所带来的风险。虽然Nacos不一定非要开启鉴权，但从安全实践的角度出发，特别是在公网暴露或多团队协作的场景下，鉴权是必要的保护措施。
+对于非Docker环境，在`application.properties`中进行如下配置修改：
 
-### 结论：
-虽然技术上Nacos不强制要求鉴权，但从安全最佳实践角度考虑，**强烈建议在生产环境中开启鉴权功能**，并采取相应的安全配置，以保护您的系统免受潜在威胁。
+```properties
+# 开启鉴权并指定系统类型为nacos
+nacos.core.auth.system.type=nacos
+nacos.core.auth.enabled=true
+```
 
-### 相关链接：
-- [阿里云MSE提供的Nacos云服务](https://www.aliyun.com/product/aliware/mse?spm=nacos.cloud.topbar.0.0.0)
-- [平滑迁移至阿里云MSE](https://help.aliyun.com/zh/mse/user-guide/migrate-applications-from-self-managed-instances-to-mse-microservices-registry?spm=a2c4g.11186623.0.0.76e17b26TS1Abr)
-- [免费试用Nacos云服务](https://free.aliyun.com/?searchKey=nacos&spm=nacos.cloud.topbar.0.0.0)
+#### 2. 自定义密钥（可选但强烈推荐）
+
+为了避免使用默认密钥导致的安全风险，自定义JWT令牌生成的密钥。请确保使用Base64编码的字符串，且原始密钥长度不低于32字符：
+
+```properties
+# 自定义默认密钥
+nacos.core.auth.default.token.secret.key=VGhpc0lzTXlDdXN0b21TZWNyZXRLZXkwMTIzNDU2Nzg=
+
+# 2.1.0 版本后，如适用
+nacos.core.auth.plugin.nacos.token.secret.key=VGhpc0lzTXlDxdXN0b21TZWNyZXRLZXkwMTIzNDU2Nzg=
+```
+
+#### 3. Docker环境下的配置
+
+- **官方镜像**：通过环境变量开启鉴权：
+
+```powershell
+docker run --env NACOS_AUTH_ENABLE=true ... other options ...
+```
+
+- **自定义镜像**：在Dockerfile或构建过程中修改`application.properties`文件，确保鉴权相关配置正确设置。
+
+#### 4. 无需重启服务端
+
+鉴权开关修改后立即生效，但动态修改`token.secret.key`时，请确保已有token仍然有效，避免因修改不当导致登录和访问异常。
+
+### 解释说明
+
+以上步骤旨在增强Nacos服务器的安全性，通过鉴权机制限制访问权限，防止信息泄露和未授权操作。使用自定义密钥是关键步骤之一，它能够增加破解难度，提升系统的安全性。此外，阿里云MSE提供的Nacos云服务[[1](https://nacos.io/cloud/?from=wuyi)]是一个更加便捷且安全的选项，它内置了企业级的安全特性，包括但不限于鉴权能力和配置信息加解密，同时支持平滑迁移[[2](https://help.aliyun.com/zh/mse/user-guide/migrate-applications-from-self-managed-instances-to-mse-microservices-registry?spm=a2c4g.11186623.0.0.76e17b26TS1Abr)]，你可以考虑采用以进一步简化管理和提高安全性。
+
+综上所述，虽然不是强制要求，但鉴于安全风险，开启鉴权并在必要时采取额外的安全措施对维护Nacos集群的安全至关重要。
 
 
 <font color="#949494">---------------</font> 
@@ -51,9 +67,9 @@ Nacos并不强制要求必须开启鉴权，但它是一个内网核心组件，
 
 ## 参考链接 ：
 
-*专家经验：Nacos不开启鉴权&暴露公网会导致风险 
+* 专家经验：Nacos不开启鉴权&暴露公网会导致风险 
  
- *[Authorization](https://nacos.io/docs/latest/guide/user/auth)
+ * [Authorization](https://nacos.io/docs/latest/guide/user/auth)
 
 
  <font color="#949494">---------------</font> 
@@ -65,4 +81,4 @@ Nacos并不强制要求必须开启鉴权，但它是一个内网核心组件，
 本内容经由技术专家审阅的用户问答的镜像生成，我们提供了<font color="#FF0000">专家智能答疑服务</font>，在<font color="#FF0000">页面的右下的浮窗”专家答疑“</font>。您也可以访问 : [全局专家答疑](https://answer.opensource.alibaba.com/docs/intro) 。 咨询其他产品的的问题
 
 ### 反馈
-如问答有错漏，欢迎点：[差评](https://ai.nacos.io/user/feedbackByEnhancerGradePOJOID?enhancerGradePOJOId=15628)给我们反馈。
+如问答有错漏，欢迎点：[差评](https://ai.nacos.io/user/feedbackByEnhancerGradePOJOID?enhancerGradePOJOId=16229)给我们反馈。

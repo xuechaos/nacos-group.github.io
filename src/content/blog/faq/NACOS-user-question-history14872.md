@@ -50,7 +50,7 @@ description: "根据提供的知识内容，对于nacos启动时报`[db-load-err
 
 ## 参考链接 ：
 
-*专家经验：No DataSource set 
+* 专家经验：No DataSource set 
 
 
  <font color="#949494">---------------</font> 

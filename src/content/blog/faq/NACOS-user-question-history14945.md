@@ -45,9 +45,9 @@ description: "针对CVE-2021-29441漏洞的修复，可以按照以下步骤操�
 
 ## 参考链接 ：
 
-*专家经验：Nacos 身份认证绕过漏洞 
+* 专家经验：Nacos 身份认证绕过漏洞 
  
- *专家经验：/nacos/v1/cs/ops/derby接口是否有SQL注入漏洞 
+ * 专家经验：/nacos/v1/cs/ops/derby接口是否有SQL注入漏洞 
 
 
  <font color="#949494">---------------</font> 

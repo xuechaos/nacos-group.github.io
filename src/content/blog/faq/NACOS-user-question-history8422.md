@@ -39,11 +39,11 @@ keywords: ["nacos2.3.0","docker","鉴权","项目","yml","连不上","nacos1.4.1
 
 ## 参考链接 ：
 
-*专家经验：Nacos部署集群模式怎么打开鉴权 
+* 专家经验：Nacos部署集群模式怎么打开鉴权 
  
- *专家经验：Nacos和Eureka的区别是什么？ 
+ * 专家经验：Nacos和Eureka的区别是什么？ 
  
- *[Kubernetes Nacos](https://nacos.io/docs/latest/quickstart/quick-start-kubernetes)
+ * [Kubernetes Nacos](https://nacos.io/docs/latest/quickstart/quick-start-kubernetes)
 
 
  <font color="#949494">---------------</font> 

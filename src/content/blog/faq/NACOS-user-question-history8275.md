@@ -50,11 +50,11 @@ keywords: ["nacos2.0.3","集群","naming-push.log","一致推送失败","日志"
 
 ## 参考链接 ：
 
-*专家经验：Nacos 服务数据一直推送失败 
+* 专家经验：Nacos 服务数据一直推送失败 
  
- *专家经验：Nacos UDP推送失败 
+ * 专家经验：Nacos UDP推送失败 
  
- *专家经验：日志报错ERROR [DISTRO-INIT] load snapshot Nacos:Naming:v2:ClientData from 10.111.107.10:8878 failed. com.alibaba.nacos.core.distribu 
+ * 专家经验：日志报错ERROR [DISTRO-INIT] load snapshot Nacos:Naming:v2:ClientData from 10.111.107.10:8878 failed. com.alibaba.nacos.core.distribu 
 
 
  <font color="#949494">---------------</font> 

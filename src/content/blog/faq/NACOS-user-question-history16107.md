@@ -56,9 +56,9 @@ curl -X POST "http://<nacos-server-host>:<port>/v1/configs?dataId=<your-data-id>
 
 ## 参考链接 ：
 
-*[Java SDK](https://nacos.io/docs/latest/guide/user/sdk)
+* [Java SDK](https://nacos.io/docs/latest/guide/user/sdk)
  
- *专家经验：如何解决Nacos连接超时问题 
+ * 专家经验：如何解决Nacos连接超时问题 
 
 
  <font color="#949494">---------------</font> 

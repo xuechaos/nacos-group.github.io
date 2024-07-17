@@ -74,7 +74,7 @@ spring.cloud.nacos.config.password=nacos密码 # 开启鉴权后需填写
 
 ## 参考链接 ：
 
-*专家经验：Nacos部署集群模式怎么打开鉴权 
+* 专家经验：Nacos部署集群模式怎么打开鉴权 
 
 
  <font color="#949494">---------------</font> 

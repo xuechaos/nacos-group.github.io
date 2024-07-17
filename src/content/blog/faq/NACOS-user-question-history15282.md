@@ -28,11 +28,11 @@ description: "为了解答这个问题，我们首先需要查询Spring Cloud 20
 
 ## 参考链接 ：
 
-*专家经验：Nacos客户端和服务端版本的兼容性问题 
+* 专家经验：Nacos客户端和服务端版本的兼容性问题 
  
- *专家经验：Nacos spring 适配 
+ * 专家经验：Nacos spring 适配 
  
- *专家经验：微服务引擎(MSE）介绍 
+ * 专家经验：微服务引擎(MSE）介绍 
 
 
  <font color="#949494">---------------</font> 

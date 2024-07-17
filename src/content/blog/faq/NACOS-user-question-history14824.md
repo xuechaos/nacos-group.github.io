@@ -42,11 +42,11 @@ description: "在Kubernetes(K8s)环境中遇到`nacos-opensource K8S No DataSour
 
 ## 参考链接 ：
 
-*专家经验：No DataSource set 
+* 专家经验：No DataSource set 
  
- *[Nacos功能和需求列表](https://nacos.io/docs/latest/archive/feature-list)
+ * [Nacos功能和需求列表](https://nacos.io/docs/latest/archive/feature-list)
  
- *专家经验：Nacos 欢迎你 
+ * 专家经验：Nacos 欢迎你 
 
 
  <font color="#949494">---------------</font> 

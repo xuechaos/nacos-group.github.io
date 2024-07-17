@@ -80,11 +80,11 @@ spring:
 
 ## 参考链接 ：
 
-*专家经验：Nacos 配置加密 
+* 专家经验：Nacos 配置加密 
  
- *[Nacos功能和需求列表](https://nacos.io/docs/latest/archive/feature-list)
+ * [Nacos功能和需求列表](https://nacos.io/docs/latest/archive/feature-list)
  
- *[Kubernetes Nacos](https://nacos.io/docs/latest/quickstart/quick-start-kubernetes)
+ * [Kubernetes Nacos](https://nacos.io/docs/latest/quickstart/quick-start-kubernetes)
 
 
  <font color="#949494">---------------</font> 

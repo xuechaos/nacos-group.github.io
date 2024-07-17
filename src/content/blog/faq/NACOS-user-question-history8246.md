@@ -34,11 +34,11 @@ keywords: ["Nacos-Sync","zookeeper","Nacos","DemoService","同步任务","保活
 
 ## 参考链接 ：
 
-*专家经验：Nacos中持久化服务和临时服务的区别 
+* 专家经验：Nacos中持久化服务和临时服务的区别 
  
- *专家经验：Nacos 配置中心的数据同步和一致性问题 
+ * 专家经验：Nacos 配置中心的数据同步和一致性问题 
  
- *专家经验：无法在nacos/conf下找到nacos-mysql.sql文件 
+ * 专家经验：无法在nacos/conf下找到nacos-mysql.sql文件 
 
 
  <font color="#949494">---------------</font> 

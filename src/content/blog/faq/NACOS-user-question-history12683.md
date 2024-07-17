@@ -50,11 +50,11 @@ keywords: ["nacos1.3","升级","2.3","步骤","注意","地方"]
 
 ## 参考链接 ：
 
-*[Nacos 2.0 升级文档](https://nacos.io/docs/latest/upgrading/200-upgrading)
+* [Nacos 2.0 升级文档](https://nacos.io/docs/latest/upgrading/200-upgrading)
  
- *专家经验：Nacos升级的具体步骤 
+ * 专家经验：Nacos升级的具体步骤 
  
- *专家经验：Nacos1.0和Nacos2.0的api有什么区别？2.0的中小版本升级相关问题 
+ * 专家经验：Nacos1.0和Nacos2.0的api有什么区别？2.0的中小版本升级相关问题 
 
 
  <font color="#949494">---------------</font> 

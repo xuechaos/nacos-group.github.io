@@ -47,9 +47,9 @@ description: "要进行Nacos集群的健康监测，我们可以采取以下步�
 
 ## 参考链接 ：
 
-*[Java SDK](https://nacos.io/docs/latest/guide/user/sdk)
+* [Java SDK](https://nacos.io/docs/latest/guide/user/sdk)
  
- *[Nacos 监控手册](https://nacos.io/docs/latest/guide/admin/monitor-guide)
+ * [Nacos 监控手册](https://nacos.io/docs/latest/guide/admin/monitor-guide)
 
 
  <font color="#949494">---------------</font> 

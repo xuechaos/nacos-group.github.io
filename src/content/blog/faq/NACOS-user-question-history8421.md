@@ -32,9 +32,9 @@ keywords: ["actuator","查不到任何信息"]
 
 ## 参考链接 ：
 
-*专家经验：怎么能让nacos 的actuator 查不到任何信息呢 
+* 专家经验：怎么能让nacos 的actuator 查不到任何信息呢 
  
- *专家经验：Nacos 麻烦咨询下 spring actuator 如何关闭 nacosconfig 的健康检查 ？ 
+ * 专家经验：Nacos 麻烦咨询下 spring actuator 如何关闭 nacosconfig 的健康检查 ？ 
 
 
  <font color="#949494">---------------</font> 

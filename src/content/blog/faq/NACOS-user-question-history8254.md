@@ -39,11 +39,11 @@ keywords: ["deregisterInstances","instance","offline"]
 
 ## 参考链接 ：
 
-*专家经验：在Nacos控制台上删除服务或实例，过一会儿还会出现 
+* 专家经验：在Nacos控制台上删除服务或实例，过一会儿还会出现 
  
- *专家经验：Why Use HTTP for Registration of the Nacos2.0 Raft Protocol 
+ * 专家经验：Why Use HTTP for Registration of the Nacos2.0 Raft Protocol 
  
- *专家经验：Param 'Metadata' is illegal, the param length should not exceed %d 
+ * 专家经验：Param 'Metadata' is illegal, the param length should not exceed %d 
 
 
  <font color="#949494">---------------</font> 

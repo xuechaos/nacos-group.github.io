@@ -56,9 +56,9 @@ keywords: ["nacos","docker","搭建","本地","集群","配置中心","具体方
 
 ## 参考链接 ：
 
-*[Nacos 监控手册](https://nacos.io/docs/latest/guide/admin/monitor-guide)
+* [Nacos 监控手册](https://nacos.io/docs/latest/guide/admin/monitor-guide)
  
- *专家经验：NACOS 配置中心和注册中心是分两个集群部署还是放在一个集群中 
+ * 专家经验：NACOS 配置中心和注册中心是分两个集群部署还是放在一个集群中 
 
 
  <font color="#949494">---------------</font> 

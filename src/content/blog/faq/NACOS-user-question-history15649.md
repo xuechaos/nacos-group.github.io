@@ -42,7 +42,7 @@ description: "根据您提供的错误信息，`nacos-opensource com.alibaba.nac
 
 ## 参考链接 ：
 
-*[参数校验](https://nacos.io/docs/latest/guide/user/parameters-check)
+* [参数校验](https://nacos.io/docs/latest/guide/user/parameters-check)
 
 
  <font color="#949494">---------------</font> 

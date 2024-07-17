@@ -50,11 +50,11 @@ keywords: ["java.io.IOException","Failed to bind","address","0.0.0.0:9849","io.g
 
 ## 参考链接 ：
 
-*专家经验：Nacos部署开放端口，集群部署开通端口 
+* 专家经验：Nacos部署开放端口，集群部署开通端口 
  
- *专家经验：Nacos 快速开始 
+ * 专家经验：Nacos 快速开始 
  
- *专家经验：nacos哪个版本最常用 
+ * 专家经验：nacos哪个版本最常用 
 
 
  <font color="#949494">---------------</font> 

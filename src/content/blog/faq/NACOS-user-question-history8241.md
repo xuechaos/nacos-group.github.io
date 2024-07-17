@@ -57,11 +57,11 @@ keywords: ["spring-cloud-starter-alibaba-nacos-discovery","nacos-client-2.2.0","
 
 ## 参考链接 ：
 
-*专家经验：Nacos1.0和Nacos2.0的api有什么区别？2.0的中小版本升级相关问题 
+* 专家经验：Nacos1.0和Nacos2.0的api有什么区别？2.0的中小版本升级相关问题 
  
- *专家经验：Nacos客户端和服务端版本的兼容性问题 
+ * 专家经验：Nacos客户端和服务端版本的兼容性问题 
  
- *[Nacos系统参数介绍](https://nacos.io/docs/latest/guide/admin/system-configurations)
+ * [Nacos系统参数介绍](https://nacos.io/docs/latest/guide/admin/system-configurations)
 
 
  <font color="#949494">---------------</font> 

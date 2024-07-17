@@ -47,11 +47,11 @@ description: "首先，让我们分析问题的原因。根据您的描述，您
 
 ## 参考链接 ：
 
-*专家经验：Nacos 如何关闭/nacos/v2/console/namespace，使api不对外开放 
+* 专家经验：Nacos 如何关闭/nacos/v2/console/namespace，使api不对外开放 
  
- *[控制台手册](https://nacos.io/docs/latest/guide/admin/console-guide)
+ * [控制台手册](https://nacos.io/docs/latest/guide/admin/console-guide)
  
- *专家经验：Nacos部署集群模式怎么打开鉴权 
+ * 专家经验：Nacos部署集群模式怎么打开鉴权 
 
 
  <font color="#949494">---------------</font> 

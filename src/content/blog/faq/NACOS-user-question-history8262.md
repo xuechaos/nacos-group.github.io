@@ -48,11 +48,11 @@ Nacos服务有两种类型：持久化服务（persistent）和临时服务（ep
 
 ## 参考链接 ：
 
-*专家经验：Nacos 欢迎你 
+* 专家经验：Nacos 欢迎你 
  
- *专家经验：Nacos 介绍 
+ * 专家经验：Nacos 介绍 
  
- *[Java SDK](https://nacos.io/docs/latest/guide/user/sdk)
+ * [Java SDK](https://nacos.io/docs/latest/guide/user/sdk)
 
 
  <font color="#949494">---------------</font> 

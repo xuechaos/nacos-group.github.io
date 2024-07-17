@@ -50,11 +50,11 @@ keywords: ["invalid server identity key","value","set","nacos.core.auth"]
 
 ## 参考链接 ：
 
-*专家经验：Nacos鉴权相关建议 
+* 专家经验：Nacos鉴权相关建议 
  
- *专家经验：nacso 报 403 invalid token 
+ * 专家经验：nacso 报 403 invalid token 
  
- *专家经验：启动报错java.lang.IllegalArgumentException: the length of secret key must great than or equal 32 bytes... 
+ * 专家经验：启动报错java.lang.IllegalArgumentException: the length of secret key must great than or equal 32 bytes... 
 
 
  <font color="#949494">---------------</font> 

@@ -48,11 +48,11 @@ description: "根据您提供的信息，您遇到了在K8s部署Nacos集群后�
 
 ## 参考链接 ：
 
-*[Nacos功能和需求列表](https://nacos.io/docs/latest/archive/feature-list)
+* [Nacos功能和需求列表](https://nacos.io/docs/latest/archive/feature-list)
  
- *专家经验：NACOS 配置中心和注册中心是分两个集群部署还是放在一个集群中 
+ * 专家经验：NACOS 配置中心和注册中心是分两个集群部署还是放在一个集群中 
  
- *专家经验：nacos的部署 
+ * 专家经验：nacos的部署 
 
 
  <font color="#949494">---------------</font> 

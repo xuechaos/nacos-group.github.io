@@ -46,11 +46,11 @@ keywords: ["get changed dataId error","服务","不停打印","error日志","OOM
 
 ## 参考链接 ：
 
-*专家经验：应用配置获取失败 
+* 专家经验：应用配置获取失败 
  
- *专家经验：如何获取Nacos-Client的日志？ 
+ * 专家经验：如何获取Nacos-Client的日志？ 
  
- *专家经验：如何在启动二进制版本的nacos时，设置日志级别为debug呢？ 
+ * 专家经验：如何在启动二进制版本的nacos时，设置日志级别为debug呢？ 
 
 
  <font color="#949494">---------------</font> 

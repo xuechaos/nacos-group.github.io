@@ -46,11 +46,11 @@ description: "首先，针对问题“nacos-opensource nacos升级版本到2.3.2
 
 ## 参考链接 ：
 
-*专家经验：Nacos 在windows下不支持:的bug如何处理? 
+* 专家经验：Nacos 在windows下不支持:的bug如何处理? 
  
- *专家经验：nacos哪个版本最常用 
+ * 专家经验：nacos哪个版本最常用 
  
- *专家经验：Nacos升级的具体步骤 
+ * 专家经验：Nacos升级的具体步骤 
 
 
  <font color="#949494">---------------</font> 

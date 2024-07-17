@@ -41,11 +41,11 @@ description: "根据提供的知识内容，关于“nacos-opensource nacos 控�
 
 ## 参考链接 ：
 
-*[Nacos功能和需求列表](https://nacos.io/docs/latest/archive/feature-list)
+* [Nacos功能和需求列表](https://nacos.io/docs/latest/archive/feature-list)
  
- *[Java SDK](https://nacos.io/docs/latest/guide/user/sdk)
+ * [Java SDK](https://nacos.io/docs/latest/guide/user/sdk)
  
- *专家经验：Nacos 配置加密 
+ * 专家经验：Nacos 配置加密 
 
 
  <font color="#949494">---------------</font> 

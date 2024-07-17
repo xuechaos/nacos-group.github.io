@@ -73,9 +73,9 @@ config_dict = yaml.safe_load(config)  # 推荐使用 safe_load() 而不是 load(
 
 ## 参考链接 ：
 
-*[Java SDK](https://nacos.io/docs/latest/guide/user/sdk)
+* [Java SDK](https://nacos.io/docs/latest/guide/user/sdk)
  
- *专家经验：应用配置获取失败 
+ * 专家经验：应用配置获取失败 
 
 
  <font color="#949494">---------------</font> 

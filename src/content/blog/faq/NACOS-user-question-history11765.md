@@ -30,11 +30,11 @@ keywords: ["配置","重启"]
 
 ## 参考链接 ：
 
-*专家经验：Nacos 配置无法动态刷新 
+* 专家经验：Nacos 配置无法动态刷新 
  
- *专家经验：Nacos nacos 2.3.0全新安装也需要关闭双写吗？ 
+ * 专家经验：Nacos nacos 2.3.0全新安装也需要关闭双写吗？ 
  
- *[Nacos 2.0 升级文档](https://nacos.io/docs/latest/upgrading/200-upgrading)
+ * [Nacos 2.0 升级文档](https://nacos.io/docs/latest/upgrading/200-upgrading)
 
 
  <font color="#949494">---------------</font> 

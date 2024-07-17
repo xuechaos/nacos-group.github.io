@@ -56,11 +56,11 @@ keywords: ["nacos server","2.3.2","鉴权","java sdk","nacos-client","2.2.0","us
 
 ## 参考链接 ：
 
-*专家经验：user not found 
+* 专家经验：user not found 
  
- *专家经验：Nacos1.0和Nacos2.0的api有什么区别？2.0的中小版本升级相关问题 
+ * 专家经验：Nacos1.0和Nacos2.0的api有什么区别？2.0的中小版本升级相关问题 
  
- *专家经验：Nacos不开启鉴权&暴露公网会导致风险 
+ * 专家经验：Nacos不开启鉴权&暴露公网会导致风险 
 
 
  <font color="#949494">---------------</font> 

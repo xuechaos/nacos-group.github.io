@@ -49,11 +49,11 @@ Nacos 使用的 SofaJRaft 组件基于 RocksDB 存储 Raft 日志，随时间推
 
 ## 参考链接 ：
 
-*专家经验：Nacos raft日志太大怎么清理 
+* 专家经验：Nacos raft日志太大怎么清理 
  
- *专家经验：Nacos 欢迎你 
+ * 专家经验：Nacos 欢迎你 
  
- *[Nacos功能和需求列表](https://nacos.io/docs/latest/archive/feature-list)
+ * [Nacos功能和需求列表](https://nacos.io/docs/latest/archive/feature-list)
 
 
  <font color="#949494">---------------</font> 

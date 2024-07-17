@@ -54,11 +54,11 @@ description: "根据您提供的问题，nacos使用tomcat启动后，尽管naco
 
 ## 参考链接 ：
 
-*[Nacos 2.0 升级文档](https://nacos.io/docs/latest/upgrading/200-upgrading)
+* [Nacos 2.0 升级文档](https://nacos.io/docs/latest/upgrading/200-upgrading)
  
- *专家经验：Nacos 配置无法动态刷新 
+ * 专家经验：Nacos 配置无法动态刷新 
  
- *专家经验：服务提供者注册失败 
+ * 专家经验：服务提供者注册失败 
 
 
  <font color="#949494">---------------</font> 

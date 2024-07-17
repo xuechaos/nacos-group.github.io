@@ -54,11 +54,11 @@ keywords: ["nacos2.3","数据库兼容","postgresql","步骤"]
 
 ## 参考链接 ：
 
-*[Nacos 2.0 升级文档](https://nacos.io/docs/latest/upgrading/200-upgrading)
+* [Nacos 2.0 升级文档](https://nacos.io/docs/latest/upgrading/200-upgrading)
  
- *专家经验：Nacos的数据库支持情况介绍 
+ * 专家经验：Nacos的数据库支持情况介绍 
  
- *专家经验：Nacos升级的具体步骤 
+ * 专家经验：Nacos升级的具体步骤 
 
 
  <font color="#949494">---------------</font> 

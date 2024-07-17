@@ -30,11 +30,11 @@ Nacos确实属于中间件范畴。它是一款由阿里巴巴开源的、用于
 
 ## 参考链接 ：
 
-*专家经验：Nacos 配置access.log的保留时间 
+* 专家经验：Nacos 配置access.log的保留时间 
  
- *专家经验：NACOS 配置中心和注册中心是分两个集群部署还是放在一个集群中 
+ * 专家经验：NACOS 配置中心和注册中心是分两个集群部署还是放在一个集群中 
  
- *专家经验：无法在nacos/conf下找到nacos-mysql.sql文件 
+ * 专家经验：无法在nacos/conf下找到nacos-mysql.sql文件 
 
 
  <font color="#949494">---------------</font> 

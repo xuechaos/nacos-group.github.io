@@ -84,11 +84,11 @@ cd distribution/target/nacos-server-$version/nacos/bin
 
 ## 参考链接 ：
 
-*专家经验：Nacos 快速开始 
+* 专家经验：Nacos 快速开始 
  
- *[Nacos 融合 Spring，成为注册配置中心](https://nacos.io/docs/latest/ecology/use-nacos-with-spring)
+ * [Nacos 融合 Spring，成为注册配置中心](https://nacos.io/docs/latest/ecology/use-nacos-with-spring)
  
- *专家经验：Nacos 请问nacos有arm架构的docker镜像么 
+ * 专家经验：Nacos 请问nacos有arm架构的docker镜像么 
 
 
  <font color="#949494">---------------</font> 

@@ -26,11 +26,11 @@ Nacos的临时服务通过客户端进行心跳续约来维持实例的活跃状
 
 ## 参考链接 ：
 
-*专家经验：Nacos中持久化服务和临时服务的区别 
+* 专家经验：Nacos中持久化服务和临时服务的区别 
  
- *[Java SDK](https://nacos.io/docs/latest/guide/user/sdk)
+ * [Java SDK](https://nacos.io/docs/latest/guide/user/sdk)
  
- *[Nacos 2.0 升级文档](https://nacos.io/docs/latest/upgrading/200-upgrading)
+ * [Nacos 2.0 升级文档](https://nacos.io/docs/latest/upgrading/200-upgrading)
 
 
  <font color="#949494">---------------</font> 

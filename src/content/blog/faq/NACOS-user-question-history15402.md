@@ -60,11 +60,11 @@ description: "要配置Nacos以获取自定义的配置文件，您可以遵循�
 
 ## 参考链接 ：
 
-*[Java SDK](https://nacos.io/docs/latest/guide/user/sdk)
+* [Java SDK](https://nacos.io/docs/latest/guide/user/sdk)
  
- *专家经验：Nacos是否支持跨namespace获取数据 
+ * 专家经验：Nacos是否支持跨namespace获取数据 
  
- *[Nacos 融合 Spring，成为注册配置中心](https://nacos.io/docs/latest/ecology/use-nacos-with-spring)
+ * [Nacos 融合 Spring，成为注册配置中心](https://nacos.io/docs/latest/ecology/use-nacos-with-spring)
 
 
  <font color="#949494">---------------</font> 

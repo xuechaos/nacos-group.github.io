@@ -61,7 +61,7 @@ keywords: ["logback","configuration","nacos","fail","initialize","logb"]
 
 ## 参考链接 ：
 
-*专家经验：无法初始化logback.xml 
+* 专家经验：无法初始化logback.xml 
 
 
  <font color="#949494">---------------</font> 

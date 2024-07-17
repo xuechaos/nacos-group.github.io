@@ -28,11 +28,11 @@ description: "为了确定Spring Boot 3.1版本应搭配哪个版本的Spring Cl
 
 ## 参考链接 ：
 
-*[FAQ](https://nacos.io/docs/latest/guide/user/faq)
+* [FAQ](https://nacos.io/docs/latest/guide/user/faq)
  
- *专家经验：Nacos spring 适配 
+ * 专家经验：Nacos spring 适配 
  
- *专家经验：springcloud alibaba 和nacos版本对应 
+ * 专家经验：springcloud alibaba 和nacos版本对应 
 
 
  <font color="#949494">---------------</font> 

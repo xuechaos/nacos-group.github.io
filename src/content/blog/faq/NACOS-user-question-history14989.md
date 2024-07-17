@@ -44,9 +44,9 @@ description: "根据您提供的错误信息`nacos-opensource error cosole /naco
 
 ## 参考链接 ：
 
-*专家经验：Nacos "status":501,"error":"Not Implemented","message":"no such api:...","path":"... 
+* 专家经验：Nacos "status":501,"error":"Not Implemented","message":"no such api:...","path":"... 
  
- *专家经验：No DataSource set 
+ * 专家经验：No DataSource set 
 
 
  <font color="#949494">---------------</font> 

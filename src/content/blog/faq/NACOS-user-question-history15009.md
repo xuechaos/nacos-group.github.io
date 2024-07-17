@@ -47,11 +47,11 @@ description: "根据您提出的问题「nacos-opensource Nacos [db-error] maste
 
 ## 参考链接 ：
 
-*专家经验：No DataSource set 
+* 专家经验：No DataSource set 
  
- *专家经验：Nacos 欢迎你 
+ * 专家经验：Nacos 欢迎你 
  
- *[Nacos功能和需求列表](https://nacos.io/docs/latest/archive/feature-list)
+ * [Nacos功能和需求列表](https://nacos.io/docs/latest/archive/feature-list)
 
 
  <font color="#949494">---------------</font> 

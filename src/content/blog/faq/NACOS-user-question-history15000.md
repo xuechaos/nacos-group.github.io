@@ -36,11 +36,11 @@ description: "根据您的问题，您希望在Nacos 2.0.3版本中仅关闭前�
 
 ## 参考链接 ：
 
-*[Authorization](https://nacos.io/docs/latest/guide/user/auth)
+* [Authorization](https://nacos.io/docs/latest/guide/user/auth)
  
- *专家经验：关闭默认控制台 
+ * 专家经验：关闭默认控制台 
  
- *[控制台手册](https://nacos.io/docs/latest/guide/admin/console-guide)
+ * [控制台手册](https://nacos.io/docs/latest/guide/admin/console-guide)
 
 
  <font color="#949494">---------------</font> 

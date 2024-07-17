@@ -42,7 +42,7 @@ keywords: ["nacos-cluster-grpc-executor","线程数量","clusterRpcExecutor","sd
 
 ## 参考链接 ：
 
-*专家经验：如何排查Nacos线程数过多的问题 
+* 专家经验：如何排查Nacos线程数过多的问题 
 
 
  <font color="#949494">---------------</font> 

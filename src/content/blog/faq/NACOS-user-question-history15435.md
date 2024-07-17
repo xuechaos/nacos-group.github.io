@@ -46,9 +46,9 @@ description: "在Nacos中，扩展配置(extension-configs)和共享配置(share
 
 ## 参考链接 ：
 
-*专家经验：Nacos spring 适配 
+* 专家经验：Nacos spring 适配 
  
- *[Nacos 融合 Spring Cloud，成为注册配置中心](https://nacos.io/docs/latest/ecology/use-nacos-with-spring-cloud)
+ * [Nacos 融合 Spring Cloud，成为注册配置中心](https://nacos.io/docs/latest/ecology/use-nacos-with-spring-cloud)
 
 
  <font color="#949494">---------------</font> 

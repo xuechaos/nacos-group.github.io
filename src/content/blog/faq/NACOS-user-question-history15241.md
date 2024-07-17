@@ -51,9 +51,9 @@ description: "要查询Nacos中的服务提供者数量，您可以按照以下�
 
 ## 参考链接 ：
 
-*[Nacos 2.0 升级文档](https://nacos.io/docs/latest/upgrading/200-upgrading)
+* [Nacos 2.0 升级文档](https://nacos.io/docs/latest/upgrading/200-upgrading)
  
- *专家经验：应用服务调用了依赖服务的提供者时，提示No provider或找不到服务等错误。 
+ * 专家经验：应用服务调用了依赖服务的提供者时，提示No provider或找不到服务等错误。 
 
 
  <font color="#949494">---------------</font> 

@@ -50,11 +50,11 @@ keywords: ["nacos配置加密插件","性能","报错","修改配置","重新发
 
 ## 参考链接 ：
 
-*专家经验：Nacos 配置加密 
+* 专家经验：Nacos 配置加密 
  
- *专家经验：Nacos缓存目录修改 
+ * 专家经验：Nacos缓存目录修改 
  
- *[Java SDK](https://nacos.io/docs/latest/guide/user/sdk)
+ * [Java SDK](https://nacos.io/docs/latest/guide/user/sdk)
 
 
  <font color="#949494">---------------</font> 

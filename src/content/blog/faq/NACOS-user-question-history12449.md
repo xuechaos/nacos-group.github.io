@@ -43,11 +43,11 @@ keywords: ["com.alibaba.nacos.api.exception.nacosexception","client not connect"
 
 ## 参考链接 ：
 
-*专家经验：如何排查Nacos连接失败问题 
+* 专家经验：如何排查Nacos连接失败问题 
  
- *[Nacos系统参数介绍](https://nacos.io/docs/latest/guide/admin/system-configurations)
+ * [Nacos系统参数介绍](https://nacos.io/docs/latest/guide/admin/system-configurations)
  
- *专家经验：如何获取Nacos-Client的日志？ 
+ * 专家经验：如何获取Nacos-Client的日志？ 
 
 
  <font color="#949494">---------------</font> 

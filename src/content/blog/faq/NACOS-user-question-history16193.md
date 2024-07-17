@@ -63,11 +63,11 @@ java -jar your-app.jar -Dnacos.server.grpc.port.offset=5000
 
 ## 参考链接 ：
 
-*专家经验：Nacos如何指定端口 
+* 专家经验：Nacos如何指定端口 
  
- *专家经验：如何把 brpc 服务注册到 nacos 
+ * 专家经验：如何把 brpc 服务注册到 nacos 
  
- *专家经验：Nacos客户端与服务端grpc的连接有定期ping-pong机制吗 
+ * 专家经验：Nacos客户端与服务端grpc的连接有定期ping-pong机制吗 
 
 
  <font color="#949494">---------------</font> 

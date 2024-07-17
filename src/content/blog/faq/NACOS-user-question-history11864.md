@@ -43,9 +43,9 @@ Nacos配置中心作为一款强大的开源工具，支持以下核心功能：
 
 ## 参考链接 ：
 
-*专家经验：主流的配置中心有哪些？ 
+* 专家经验：主流的配置中心有哪些？ 
  
- *[Nacos 融合 Spring，成为注册配置中心](https://nacos.io/docs/latest/ecology/use-nacos-with-spring)
+ * [Nacos 融合 Spring，成为注册配置中心](https://nacos.io/docs/latest/ecology/use-nacos-with-spring)
 
 
  <font color="#949494">---------------</font> 

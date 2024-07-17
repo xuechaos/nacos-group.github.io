@@ -41,9 +41,9 @@ Nacos为了实现异地多活与异地容灾，理论上可以通过将不同地
 
 ## 参考链接 ：
 
-*专家经验：Nacos如何异地多活，异地容灾 
+* 专家经验：Nacos如何异地多活，异地容灾 
  
- *[Nacos功能和需求列表](https://nacos.io/docs/latest/archive/feature-list)
+ * [Nacos功能和需求列表](https://nacos.io/docs/latest/archive/feature-list)
 
 
  <font color="#949494">---------------</font> 

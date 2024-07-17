@@ -46,9 +46,9 @@ docker pull nacos/nacos-server:2.1.2
 
 ## 参考链接 ：
 
-*[Nacos功能和需求列表](https://nacos.io/docs/latest/archive/feature-list)
+* [Nacos功能和需求列表](https://nacos.io/docs/latest/archive/feature-list)
  
- *专家经验：如何解决Nacos连接超时问题 
+ * 专家经验：如何解决Nacos连接超时问题 
 
 
  <font color="#949494">---------------</font> 

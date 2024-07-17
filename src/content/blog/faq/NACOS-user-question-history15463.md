@@ -56,11 +56,11 @@ description: "要实现在电脑A上的项目连接到电脑B上的Nacos，你�
 
 ## 参考链接 ：
 
-*专家经验：主流的配置中心有哪些？ 
+* 专家经验：主流的配置中心有哪些？ 
  
- *[Nacos Docker 快速开始](https://nacos.io/docs/latest/quickstart/quick-start-docker)
+ * [Nacos Docker 快速开始](https://nacos.io/docs/latest/quickstart/quick-start-docker)
  
- *[Nacos 融合 Spring，成为注册配置中心](https://nacos.io/docs/latest/ecology/use-nacos-with-spring)
+ * [Nacos 融合 Spring，成为注册配置中心](https://nacos.io/docs/latest/ecology/use-nacos-with-spring)
 
 
  <font color="#949494">---------------</font> 

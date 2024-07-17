@@ -48,7 +48,7 @@ description: "根据您提供的问题“nacos-opensource No DataSource set ，C
 
 ## 参考链接 ：
 
-*专家经验：No DataSource set 
+* 专家经验：No DataSource set 
 
 
  <font color="#949494">---------------</font> 

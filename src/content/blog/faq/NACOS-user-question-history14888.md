@@ -47,11 +47,11 @@ description: "在处理Nacos get data from Nacos error的问题时，我们可�
 
 ## 参考链接 ：
 
-*专家经验：日志报错ERROR [DISTRO-INIT] load snapshot Nacos:Naming:v2:ClientData from 10.111.107.10:8878 failed. com.alibaba.nacos.core.distribu 
+* 专家经验：日志报错ERROR [DISTRO-INIT] load snapshot Nacos:Naming:v2:ClientData from 10.111.107.10:8878 failed. com.alibaba.nacos.core.distribu 
  
- *专家经验：receive invalid redirect request from peer 
+ * 专家经验：receive invalid redirect request from peer 
  
- *专家经验：Nacos "status":501,"error":"Not Implemented","message":"no such api:...","path":"... 
+ * 专家经验：Nacos "status":501,"error":"Not Implemented","message":"no such api:...","path":"... 
 
 
  <font color="#949494">---------------</font> 

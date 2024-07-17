@@ -46,9 +46,9 @@ description: "关于您提到的nacos权限绕过漏洞（CVE-2022-0828），当
 
 ## 参考链接 ：
 
-*专家经验：Nacos 身份认证绕过漏洞 
+* 专家经验：Nacos 身份认证绕过漏洞 
  
- *专家经验：/nacos/v1/core/cluster/nodes 这个访问权限如何关闭？ 
+ * 专家经验：/nacos/v1/core/cluster/nodes 这个访问权限如何关闭？ 
 
 
  <font color="#949494">---------------</font> 

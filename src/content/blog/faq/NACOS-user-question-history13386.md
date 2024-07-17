@@ -43,11 +43,11 @@ Nacos 提供了配置管理的 API，虽然直接提及导出导入配置 API �
 
 ## 参考链接 ：
 
-*专家经验：Nacos 介绍 
+* 专家经验：Nacos 介绍 
  
- *专家经验：Nacos1.0和Nacos2.0的api有什么区别？2.0的中小版本升级相关问题 
+ * 专家经验：Nacos1.0和Nacos2.0的api有什么区别？2.0的中小版本升级相关问题 
  
- *专家经验：Nacos spring 适配 
+ * 专家经验：Nacos spring 适配 
 
 
  <font color="#949494">---------------</font> 

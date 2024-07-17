@@ -31,7 +31,7 @@ Nacos开源版本确实提供了与同步相关的开放接口，尽管没有直
 
 ## 参考链接 ：
 
-*[Open API 指南](https://nacos.io/docs/latest/guide/user/open-api)
+* [Open API 指南](https://nacos.io/docs/latest/guide/user/open-api)
 
 
  <font color="#949494">---------------</font> 

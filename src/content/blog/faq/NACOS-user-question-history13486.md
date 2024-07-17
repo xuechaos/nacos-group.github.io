@@ -58,11 +58,11 @@ keywords: ["windows","安装","nacos"]
 
 ## 参考链接 ：
 
-*专家经验：Nacos 快速开始 
+* 专家经验：Nacos 快速开始 
  
- *专家经验：Nacos 欢迎你 
+ * 专家经验：Nacos 欢迎你 
  
- *专家经验：Nacos nacos 2.3.0全新安装也需要关闭双写吗？ 
+ * 专家经验：Nacos nacos 2.3.0全新安装也需要关闭双写吗？ 
 
 
  <font color="#949494">---------------</font> 

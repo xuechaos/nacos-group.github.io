@@ -34,11 +34,11 @@ Nacos部署对外开放时，通常需要考虑以下几个端口：
 
 ## 参考链接 ：
 
-*专家经验：Nacos部署开放端口，集群部署开通端口 
+* 专家经验：Nacos部署开放端口，集群部署开通端口 
  
- *专家经验：主流的配置中心有哪些？ 
+ * 专家经验：主流的配置中心有哪些？ 
  
- *专家经验：Nacos 如何关闭/nacos/v2/console/namespace，使api不对外开放 
+ * 专家经验：Nacos 如何关闭/nacos/v2/console/namespace，使api不对外开放 
 
 
  <font color="#949494">---------------</font> 

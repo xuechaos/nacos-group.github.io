@@ -34,11 +34,11 @@ description: "根据提供的信息，您遇到的问题是`nacos-opensource INF
 
 ## 参考链接 ：
 
-*专家经验：receive invalid redirect request from peer 
+* 专家经验：receive invalid redirect request from peer 
  
- *专家经验：主流的配置中心有哪些？ 
+ * 专家经验：主流的配置中心有哪些？ 
  
- *专家经验：Nacos 订阅者列表 应用名显示 unknown 
+ * 专家经验：Nacos 订阅者列表 应用名显示 unknown 
 
 
  <font color="#949494">---------------</font> 

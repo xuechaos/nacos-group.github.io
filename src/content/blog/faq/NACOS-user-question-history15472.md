@@ -36,11 +36,11 @@ description: "根据您提供的信息，Nacos启动成功，但通过控制台�
 
 ## 参考链接 ：
 
-*[Nacos 2.0 升级文档](https://nacos.io/docs/latest/upgrading/200-upgrading)
+* [Nacos 2.0 升级文档](https://nacos.io/docs/latest/upgrading/200-upgrading)
  
- *专家经验：关闭默认控制台 
+ * 专家经验：关闭默认控制台 
  
- *[控制台手册](https://nacos.io/docs/latest/guide/admin/console-guide)
+ * [控制台手册](https://nacos.io/docs/latest/guide/admin/console-guide)
 
 
  <font color="#949494">---------------</font> 

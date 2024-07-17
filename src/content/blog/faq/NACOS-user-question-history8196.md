@@ -53,11 +53,11 @@ keywords: ["项目启动","注册nacos","本地生成","logs","nacos目录","支
 
 ## 参考链接 ：
 
-*[Kubernetes Nacos](https://nacos.io/docs/latest/quickstart/quick-start-kubernetes)
+* [Kubernetes Nacos](https://nacos.io/docs/latest/quickstart/quick-start-kubernetes)
  
- *专家经验：如何在启动二进制版本的nacos时，设置日志级别为debug呢？ 
+ * 专家经验：如何在启动二进制版本的nacos时，设置日志级别为debug呢？ 
  
- *专家经验：Nacos重启后再启动微服务项目时，后台出现“NacosException: failed to req API”异常解决办法 
+ * 专家经验：Nacos重启后再启动微服务项目时，后台出现“NacosException: failed to req API”异常解决办法 
 
 
  <font color="#949494">---------------</font> 

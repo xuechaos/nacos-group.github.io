@@ -50,11 +50,11 @@ description: "针对您的问题「nacos-opensource nacos server ，基于mysql�
 
 ## 参考链接 ：
 
-*专家经验：无法在nacos/conf下找到nacos-mysql.sql文件 
+* 专家经验：无法在nacos/conf下找到nacos-mysql.sql文件 
  
- *专家经验：nacos用户密码设置 
+ * 专家经验：nacos用户密码设置 
  
- *专家经验：nacos-server 频繁FullGC 
+ * 专家经验：nacos-server 频繁FullGC 
 
 
  <font color="#949494">---------------</font> 

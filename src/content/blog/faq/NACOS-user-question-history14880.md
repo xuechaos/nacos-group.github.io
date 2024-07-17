@@ -56,11 +56,11 @@ description: "在Nacos 2.x中，如果你已经开启了配置加密功能，并
 
 ## 参考链接 ：
 
-*专家经验：Nacos 配置加密 
+* 专家经验：Nacos 配置加密 
  
- *专家经验：nacos用户密码设置 
+ * 专家经验：nacos用户密码设置 
  
- *[Authorization](https://nacos.io/docs/latest/guide/user/auth)
+ * [Authorization](https://nacos.io/docs/latest/guide/user/auth)
 
 
  <font color="#949494">---------------</font> 

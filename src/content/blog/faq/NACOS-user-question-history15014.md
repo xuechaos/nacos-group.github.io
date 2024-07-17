@@ -56,11 +56,11 @@ description: "根据您提供的问题“nacos-opensource 修改nacos密码后�
 
 ## 参考链接 ：
 
-*[控制台手册](https://nacos.io/docs/latest/guide/admin/console-guide)
+* [控制台手册](https://nacos.io/docs/latest/guide/admin/console-guide)
  
- *专家经验：nacos用户密码设置 
+ * 专家经验：nacos用户密码设置 
  
- *[Authorization](https://nacos.io/docs/latest/guide/user/auth)
+ * [Authorization](https://nacos.io/docs/latest/guide/user/auth)
 
 
  <font color="#949494">---------------</font> 

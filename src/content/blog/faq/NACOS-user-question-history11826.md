@@ -36,9 +36,9 @@ keywords: ["双写","关闭"]
 
 ## 参考链接 ：
 
-*[Nacos 2.0 升级文档](https://nacos.io/docs/latest/upgrading/200-upgrading)
+* [Nacos 2.0 升级文档](https://nacos.io/docs/latest/upgrading/200-upgrading)
  
- *专家经验：Nacos nacos 2.3.0 如何关闭cp模式，只保留ap的注册中心？ 
+ * 专家经验：Nacos nacos 2.3.0 如何关闭cp模式，只保留ap的注册中心？ 
 
 
  <font color="#949494">---------------</font> 

@@ -24,9 +24,9 @@ keywords: ["持久化实例","心跳检测","ip:port","nacos服务端"]
 
 ## 参考链接 ：
 
-*专家经验：Nacos中持久化服务和临时服务的区别 
+* 专家经验：Nacos中持久化服务和临时服务的区别 
  
- *[Java SDK](https://nacos.io/docs/latest/guide/user/sdk)
+ * [Java SDK](https://nacos.io/docs/latest/guide/user/sdk)
 
 
  <font color="#949494">---------------</font> 

@@ -51,11 +51,11 @@ description: "为了帮助您安装简易版单机Nacos通过Docker，我将依�
 
 ## 参考链接 ：
 
-*[Nacos功能和需求列表](https://nacos.io/docs/latest/archive/feature-list)
+* [Nacos功能和需求列表](https://nacos.io/docs/latest/archive/feature-list)
  
- *专家经验：Nacos 请问nacos有arm架构的docker镜像么 
+ * 专家经验：Nacos 请问nacos有arm架构的docker镜像么 
  
- *专家经验：Does nacos 2.2.3 support jdk17 
+ * 专家经验：Does nacos 2.2.3 support jdk17 
 
 
  <font color="#949494">---------------</font> 

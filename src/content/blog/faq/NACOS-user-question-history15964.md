@@ -31,11 +31,11 @@ description: "关于您的问题「nacos-opensource nacos python支持」，根�
 
 ## 参考链接 ：
 
-*专家经验：nacos 多语言支持 
+* 专家经验：nacos 多语言支持 
  
- *专家经验：nacos支持服务列表分组隔离了嘛 
+ * 专家经验：nacos支持服务列表分组隔离了嘛 
  
- *专家经验：Nacos最大能水平扩容多少个节点 
+ * 专家经验：Nacos最大能水平扩容多少个节点 
 
 
  <font color="#949494">---------------</font> 

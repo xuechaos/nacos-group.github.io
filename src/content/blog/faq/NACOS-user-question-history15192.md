@@ -94,7 +94,7 @@ description: "为了帮助您解决关于nacos-opensource与dubbo对接注册中
 
 ## 参考链接 ：
 
-*[Dubbo 融合 Nacos 成为注册中心](https://nacos.io/docs/latest/ecology/use-nacos-with-dubbo)
+* [Dubbo 融合 Nacos 成为注册中心](https://nacos.io/docs/latest/ecology/use-nacos-with-dubbo)
 
 
  <font color="#949494">---------------</font> 

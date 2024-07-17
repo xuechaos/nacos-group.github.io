@@ -36,11 +36,11 @@ keywords: ["log monitoring","network intrusion","access_token","configuration ce
 
 ## 参考链接 ：
 
-*专家经验：启动报错java.lang.IllegalArgumentException: the length of secret key must great than or equal 32 bytes... 
+* 专家经验：启动报错java.lang.IllegalArgumentException: the length of secret key must great than or equal 32 bytes... 
  
- *专家经验：Why Use HTTP for Registration of the Nacos2.0 Raft Protocol 
+ * 专家经验：Why Use HTTP for Registration of the Nacos2.0 Raft Protocol 
  
- *专家经验：启动报错java.lang.IllegalArgumentException: The specified key byte array is x bits which is not secure enough for any JWT HMAC-SHA 
+ * 专家经验：启动报错java.lang.IllegalArgumentException: The specified key byte array is x bits which is not secure enough for any JWT HMAC-SHA 
 
 
  <font color="#949494">---------------</font> 

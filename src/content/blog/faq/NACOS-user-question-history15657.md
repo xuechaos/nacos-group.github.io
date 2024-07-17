@@ -48,11 +48,11 @@ description: "针对您的问题「nacos-opensource nacos2.3.0版本运行一段
 
 ## 参考链接 ：
 
-*专家经验：Nacos 控制台下线按钮不符合预期问题 
+* 专家经验：Nacos 控制台下线按钮不符合预期问题 
  
- *专家经验：io.grpc.netty.shaded.io.netty.util.internal.OutOfDirectMemoryError 
+ * 专家经验：io.grpc.netty.shaded.io.netty.util.internal.OutOfDirectMemoryError 
  
- *专家经验：nacos哪个版本最常用 
+ * 专家经验：nacos哪个版本最常用 
 
 
  <font color="#949494">---------------</font> 

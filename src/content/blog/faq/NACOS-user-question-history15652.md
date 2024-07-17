@@ -61,9 +61,9 @@ description: "根据您提供的问题“nacos-opensource Nacos 配置 tomcat.co
 
 ## 参考链接 ：
 
-*专家经验：Nacos spring 适配 
+* 专家经验：Nacos spring 适配 
  
- *专家经验：Nacos 配置无法动态刷新 
+ * 专家经验：Nacos 配置无法动态刷新 
 
 
  <font color="#949494">---------------</font> 

@@ -30,11 +30,11 @@ description: "关于Nacos集群网络延时要求的问题，在提供的知识�
 
 ## 参考链接 ：
 
-*[Nacos 监控手册](https://nacos.io/docs/latest/guide/admin/monitor-guide)
+* [Nacos 监控手册](https://nacos.io/docs/latest/guide/admin/monitor-guide)
  
- *专家经验：Nacos如何异地多活，异地容灾 
+ * 专家经验：Nacos如何异地多活，异地容灾 
  
- *专家经验：NACOS 配置中心和注册中心是分两个集群部署还是放在一个集群中 
+ * 专家经验：NACOS 配置中心和注册中心是分两个集群部署还是放在一个集群中 
 
 
  <font color="#949494">---------------</font> 

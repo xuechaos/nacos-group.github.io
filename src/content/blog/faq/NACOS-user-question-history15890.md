@@ -50,11 +50,11 @@ description: "根据提供的知识内容，对于问题“nacos-opensource naco
 
 ## 参考链接 ：
 
-*专家经验：user not found 
+* 专家经验：user not found 
  
- *专家经验：自建用户用于nacos客户端应用验证时，如果对namespace开启只读将也无法注册该空间的服务应该怎么处理？ 
+ * 专家经验：自建用户用于nacos客户端应用验证时，如果对namespace开启只读将也无法注册该空间的服务应该怎么处理？ 
  
- *[Nacos功能和需求列表](https://nacos.io/docs/latest/archive/feature-list)
+ * [Nacos功能和需求列表](https://nacos.io/docs/latest/archive/feature-list)
 
 
  <font color="#949494">---------------</font> 

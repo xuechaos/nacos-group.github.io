@@ -29,11 +29,11 @@ description: "在调用Nacos的发布配置接口时，实际上无需直接区�
 
 ## 参考链接 ：
 
-*[Java SDK](https://nacos.io/docs/latest/guide/user/sdk)
+* [Java SDK](https://nacos.io/docs/latest/guide/user/sdk)
  
- *专家经验：NACOS 配置中心和注册中心是分两个集群部署还是放在一个集群中 
+ * 专家经验：NACOS 配置中心和注册中心是分两个集群部署还是放在一个集群中 
  
- *专家经验：Nacos和Eureka的区别是什么？ 
+ * 专家经验：Nacos和Eureka的区别是什么？ 
 
 
  <font color="#949494">---------------</font> 

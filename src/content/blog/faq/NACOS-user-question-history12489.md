@@ -33,11 +33,11 @@ Nacos作为配置中心，其设计目的是为了让微服务在启动时以及
 
 ## 参考链接 ：
 
-*专家经验：nacos配置通知，a服务，b服务都监听相同的dataid和group,a服务消费后b才启动b能接收通知吗？ 
+* 专家经验：nacos配置通知，a服务，b服务都监听相同的dataid和group,a服务消费后b才启动b能接收通知吗？ 
  
- *[Nacos功能和需求列表](https://nacos.io/docs/latest/archive/feature-list)
+ * [Nacos功能和需求列表](https://nacos.io/docs/latest/archive/feature-list)
  
- *专家经验：Does nacos 2.2.3 support jdk17 
+ * 专家经验：Does nacos 2.2.3 support jdk17 
 
 
  <font color="#949494">---------------</font> 

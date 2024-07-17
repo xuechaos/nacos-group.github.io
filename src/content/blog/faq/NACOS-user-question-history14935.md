@@ -30,9 +30,9 @@ bash startup.sh -m standalone
 
 ## 参考链接 ：
 
-*专家经验：Nacos 快速开始 
+* 专家经验：Nacos 快速开始 
  
- *专家经验：应用配置获取失败 
+ * 专家经验：应用配置获取失败 
 
 
  <font color="#949494">---------------</font> 

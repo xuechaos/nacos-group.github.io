@@ -69,11 +69,11 @@ keywords: ["Unresolved dependency","com.alibaba.cloud","spring-cloud-starter-ali
 
 ## 参考链接 ：
 
-*[FAQ](https://nacos.io/docs/latest/guide/user/faq)
+* [FAQ](https://nacos.io/docs/latest/guide/user/faq)
  
- *[Nacos 融合 Spring Cloud，成为注册配置中心](https://nacos.io/docs/latest/ecology/use-nacos-with-spring-cloud)
+ * [Nacos 融合 Spring Cloud，成为注册配置中心](https://nacos.io/docs/latest/ecology/use-nacos-with-spring-cloud)
  
- *专家经验：Nacos spring 适配 
+ * 专家经验：Nacos spring 适配 
 
 
  <font color="#949494">---------------</font> 

@@ -42,11 +42,11 @@ keywords: ["nacos","docker","单机模式","derby","配置"]
 
 ## 参考链接 ：
 
-*专家经验：Nacos 请问nacos有arm架构的docker镜像么 
+* 专家经验：Nacos 请问nacos有arm架构的docker镜像么 
  
- *专家经验：Nacos部署集群模式怎么打开鉴权 
+ * 专家经验：Nacos部署集群模式怎么打开鉴权 
  
- *[Nacos功能和需求列表](https://nacos.io/docs/latest/archive/feature-list)
+ * [Nacos功能和需求列表](https://nacos.io/docs/latest/archive/feature-list)
 
 
  <font color="#949494">---------------</font> 

@@ -58,11 +58,11 @@ spring.cloud.nacos.discovery.server-addr=localhost:8848
 
 ## 参考链接 ：
 
-*[Nacos 融合 Spring Cloud，成为注册配置中心](https://nacos.io/docs/latest/ecology/use-nacos-with-spring-cloud)
+* [Nacos 融合 Spring Cloud，成为注册配置中心](https://nacos.io/docs/latest/ecology/use-nacos-with-spring-cloud)
  
- *[Nacos功能和需求列表](https://nacos.io/docs/latest/archive/feature-list)
+ * [Nacos功能和需求列表](https://nacos.io/docs/latest/archive/feature-list)
  
- *专家经验：如何清除本地客户端的缓存 
+ * 专家经验：如何清除本地客户端的缓存 
 
 
  <font color="#949494">---------------</font> 

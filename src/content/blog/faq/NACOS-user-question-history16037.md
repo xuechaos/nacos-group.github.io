@@ -36,7 +36,7 @@ description: "根据您提供的错误信息，`nacos-opensource caused: Service
 
 ## 参考链接 ：
 
-*专家经验：Nacos 介绍 
+* 专家经验：Nacos 介绍 
 
 
  <font color="#949494">---------------</font> 

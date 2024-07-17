@@ -57,11 +57,11 @@ description: "在Nacos v2.1.0中平衡客户端连接数，主要涉及到客户
 
 ## 参考链接 ：
 
-*专家经验：如何解决Nacos连接超时问题 
+* 专家经验：如何解决Nacos连接超时问题 
  
- *专家经验：如何排查Nacos连接失败问题 
+ * 专家经验：如何排查Nacos连接失败问题 
  
- *[Nacos功能和需求列表](https://nacos.io/docs/latest/archive/feature-list)
+ * [Nacos功能和需求列表](https://nacos.io/docs/latest/archive/feature-list)
 
 
  <font color="#949494">---------------</font> 

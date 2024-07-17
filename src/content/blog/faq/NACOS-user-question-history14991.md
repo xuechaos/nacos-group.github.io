@@ -44,9 +44,9 @@ description: "首先，根据您的问题描述，您在使用Nacos 2.2.3版本�
 
 ## 参考链接 ：
 
-*专家经验：无法在nacos/conf下找到nacos-mysql.sql文件 
+* 专家经验：无法在nacos/conf下找到nacos-mysql.sql文件 
  
- *专家经验：Nacos的数据库支持情况介绍 
+ * 专家经验：Nacos的数据库支持情况介绍 
 
 
  <font color="#949494">---------------</font> 

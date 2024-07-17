@@ -51,11 +51,11 @@ keywords: ["pod","服务建康实例数","上线"]
 
 ## 参考链接 ：
 
-*专家经验：服务提供者已关闭，但是还在被其他应用调用 
+* 专家经验：服务提供者已关闭，但是还在被其他应用调用 
  
- *专家经验：在Nacos控制台上删除服务或实例，过一会儿还会出现 
+ * 专家经验：在Nacos控制台上删除服务或实例，过一会儿还会出现 
  
- *[Java SDK](https://nacos.io/docs/latest/guide/user/sdk)
+ * [Java SDK](https://nacos.io/docs/latest/guide/user/sdk)
 
 
  <font color="#949494">---------------</font> 

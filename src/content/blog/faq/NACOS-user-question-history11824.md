@@ -52,9 +52,9 @@ CMDB模块涉及资源管理和同步：
 
 ## 参考链接 ：
 
-*[Nacos系统参数介绍](https://nacos.io/docs/latest/guide/admin/system-configurations)
+* [Nacos系统参数介绍](https://nacos.io/docs/latest/guide/admin/system-configurations)
  
- *专家经验：Nacos 介绍 
+ * 专家经验：Nacos 介绍 
 
 
  <font color="#949494">---------------</font> 

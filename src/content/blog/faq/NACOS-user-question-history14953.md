@@ -40,7 +40,7 @@ description: "根据提供的知识内容，分析`nacos-opensource`通过`@Naco
 
 ## 参考链接 ：
 
-*专家经验：Nacos 配置中心的数据同步和一致性问题 
+* 专家经验：Nacos 配置中心的数据同步和一致性问题 
 
 
  <font color="#949494">---------------</font> 

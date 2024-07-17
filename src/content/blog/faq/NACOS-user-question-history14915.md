@@ -37,11 +37,11 @@ description: "根据提供的知识内容，我们可以分析您遇到的问题
 
 ## 参考链接 ：
 
-*[Java SDK](https://nacos.io/docs/latest/guide/user/sdk)
+* [Java SDK](https://nacos.io/docs/latest/guide/user/sdk)
  
- *专家经验：Nacos是否支持跨namespace获取数据 
+ * 专家经验：Nacos是否支持跨namespace获取数据 
  
- *专家经验：nacos支持服务列表分组隔离了嘛 
+ * 专家经验：nacos支持服务列表分组隔离了嘛 
 
 
  <font color="#949494">---------------</font> 

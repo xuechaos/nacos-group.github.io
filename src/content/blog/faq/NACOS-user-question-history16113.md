@@ -46,11 +46,11 @@ description: "根据您提供的问题“nacos-opensource nacos2.3.2控制台提
 
 ## 参考链接 ：
 
-*专家经验：关闭默认控制台 
+* 专家经验：关闭默认控制台 
  
- *[Authorization](https://nacos.io/docs/latest/guide/user/auth)
+ * [Authorization](https://nacos.io/docs/latest/guide/user/auth)
  
- *专家经验：Nacos "status":501,"error":"Not Implemented","message":"no such api:...","path":"... 
+ * 专家经验：Nacos "status":501,"error":"Not Implemented","message":"no such api:...","path":"... 
 
 
  <font color="#949494">---------------</font> 

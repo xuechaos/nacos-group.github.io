@@ -52,11 +52,11 @@ keywords: ["auth","server","identity","key"]
 
 ## 参考链接 ：
 
-*专家经验：Nacos鉴权相关建议 
+* 专家经验：Nacos鉴权相关建议 
  
- *专家经验：Nacos 欢迎你 
+ * 专家经验：Nacos 欢迎你 
  
- *[Nacos功能和需求列表](https://nacos.io/docs/latest/archive/feature-list)
+ * [Nacos功能和需求列表](https://nacos.io/docs/latest/archive/feature-list)
 
 
  <font color="#949494">---------------</font> 

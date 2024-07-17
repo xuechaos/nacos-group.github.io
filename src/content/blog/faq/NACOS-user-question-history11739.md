@@ -37,7 +37,7 @@ keywords: ["code:400","msg:param metadata is illegal the param length should not
 
 ## 参考链接 ：
 
-*专家经验：Param 'Metadata' is illegal, the param length should not exceed %d 
+* 专家经验：Param 'Metadata' is illegal, the param length should not exceed %d 
 
 
  <font color="#949494">---------------</font> 

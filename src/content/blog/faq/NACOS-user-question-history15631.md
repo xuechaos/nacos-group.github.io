@@ -26,11 +26,11 @@ description: "根据我的知识库，Nacos 2.3.2版本支持Jdk1.8。因为在N
 
 ## 参考链接 ：
 
-*专家经验：Does nacos 2.2.3 support jdk17 
+* 专家经验：Does nacos 2.2.3 support jdk17 
  
- *专家经验：nacos 多语言支持 
+ * 专家经验：nacos 多语言支持 
  
- *专家经验：Nacos是否支持IPV6 
+ * 专家经验：Nacos是否支持IPV6 
 
 
  <font color="#949494">---------------</font> 

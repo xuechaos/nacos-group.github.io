@@ -56,11 +56,11 @@ description: "关于您的问题「nacos-opensource spring cloud alibaba 分布�
 
 ## 参考链接 ：
 
-*[FAQ](https://nacos.io/docs/latest/guide/user/faq)
+* [FAQ](https://nacos.io/docs/latest/guide/user/faq)
  
- *专家经验：Nacos spring 适配 
+ * 专家经验：Nacos spring 适配 
  
- *专家经验：nacos支持服务列表分组隔离了嘛 
+ * 专家经验：nacos支持服务列表分组隔离了嘛 
 
 
  <font color="#949494">---------------</font> 

@@ -24,11 +24,11 @@ description: "根据提供的知识内容，目前最常用的Nacos版本应该�
 
 ## 参考链接 ：
 
-*专家经验：nacos哪个版本最常用 
+* 专家经验：nacos哪个版本最常用 
  
- *专家经验：微服务引擎(MSE）介绍 
+ * 专家经验：微服务引擎(MSE）介绍 
  
- *专家经验：Does nacos 2.2.3 support jdk17 
+ * 专家经验：Does nacos 2.2.3 support jdk17 
 
 
  <font color="#949494">---------------</font> 

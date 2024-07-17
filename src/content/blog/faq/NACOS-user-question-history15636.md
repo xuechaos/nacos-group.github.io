@@ -56,9 +56,9 @@ description: "要使用Nacos删除配置文件，您可以依据以下步骤操�
 
 ## 参考链接 ：
 
-*[Java SDK](https://nacos.io/docs/latest/guide/user/sdk)
+* [Java SDK](https://nacos.io/docs/latest/guide/user/sdk)
  
- *专家经验：nacos 各类配置文件都在那？ 
+ * 专家经验：nacos 各类配置文件都在那？ 
 
 
  <font color="#949494">---------------</font> 

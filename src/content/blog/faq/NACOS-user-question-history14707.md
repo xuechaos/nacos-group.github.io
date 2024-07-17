@@ -46,9 +46,9 @@ Nacos确实支持达梦数据库的连接。从Nacos2.2版本开始，官方增�
 
 ## 参考链接 ：
 
-*专家经验：Nacos的数据库支持情况介绍 
+* 专家经验：Nacos的数据库支持情况介绍 
  
- *专家经验：No DataSource set 
+ * 专家经验：No DataSource set 
 
 
  <font color="#949494">---------------</font> 

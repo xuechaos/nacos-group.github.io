@@ -54,7 +54,7 @@ description: "针对您的问题「nacos-opensource nacos 配置中心 @value动
 
 ## 参考链接 ：
 
-*专家经验：Nacos 配置无法动态刷新 
+* 专家经验：Nacos 配置无法动态刷新 
 
 
  <font color="#949494">---------------</font> 

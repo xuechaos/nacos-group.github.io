@@ -55,11 +55,11 @@ keywords: ["nacos","配置","pg数据库","具体方法"]
 
 ## 参考链接 ：
 
-*专家经验：Nacos的数据库支持情况介绍 
+* 专家经验：Nacos的数据库支持情况介绍 
  
- *专家经验：无法在nacos/conf下找到nacos-mysql.sql文件 
+ * 专家经验：无法在nacos/conf下找到nacos-mysql.sql文件 
  
- *专家经验：Nacos升级的具体步骤 
+ * 专家经验：Nacos升级的具体步骤 
 
 
  <font color="#949494">---------------</font> 

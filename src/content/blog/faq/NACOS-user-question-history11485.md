@@ -42,11 +42,11 @@ keywords: ["failed","req api","nacos v1 ns instance","all servers"]
 
 ## 参考链接 ：
 
-*专家经验：Nacos重启后再启动微服务项目时，后台出现“NacosException: failed to req API”异常解决办法 
+* 专家经验：Nacos重启后再启动微服务项目时，后台出现“NacosException: failed to req API”异常解决办法 
  
- *专家经验：Nacos "status":501,"error":"Not Implemented","message":"no such api:...","path":"... 
+ * 专家经验：Nacos "status":501,"error":"Not Implemented","message":"no such api:...","path":"... 
  
- *专家经验：Nacos 欢迎你 
+ * 专家经验：Nacos 欢迎你 
 
 
  <font color="#949494">---------------</font> 

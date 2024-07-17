@@ -34,7 +34,7 @@ Nacos确实不支持跨namespace直接获取数据。这是由于命名空间（
 
 ## 参考链接 ：
 
-*专家经验：Nacos是否支持跨namespace获取数据 
+* 专家经验：Nacos是否支持跨namespace获取数据 
 
 
  <font color="#949494">---------------</font> 

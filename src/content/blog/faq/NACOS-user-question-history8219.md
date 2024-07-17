@@ -38,7 +38,7 @@ keywords: ["Param check invalid","Metadata","illegal","param length","exceed 102
 
 ## 参考链接 ：
 
-*专家经验：Param 'Metadata' is illegal, the param length should not exceed %d 
+* 专家经验：Param 'Metadata' is illegal, the param length should not exceed %d 
 
 
  <font color="#949494">---------------</font> 

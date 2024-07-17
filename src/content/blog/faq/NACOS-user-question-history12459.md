@@ -57,11 +57,11 @@ keywords: ["nacos","docker","单机版","部署"]
 
 ## 参考链接 ：
 
-*专家经验：Nacos部署集群模式怎么打开鉴权 
+* 专家经验：Nacos部署集群模式怎么打开鉴权 
  
- *[Nacos功能和需求列表](https://nacos.io/docs/latest/archive/feature-list)
+ * [Nacos功能和需求列表](https://nacos.io/docs/latest/archive/feature-list)
  
- *专家经验：Nacos部署开放端口，集群部署开通端口 
+ * 专家经验：Nacos部署开放端口，集群部署开通端口 
 
 
  <font color="#949494">---------------</font> 

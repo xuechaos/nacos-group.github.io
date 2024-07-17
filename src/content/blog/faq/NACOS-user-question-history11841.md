@@ -43,7 +43,7 @@ keywords: ["could not find leader","naming_persistent_service_v2"]
 
 ## 参考链接 ：
 
-*专家经验：Fail to get leader of group naming_persistent_service_v2 
+* 专家经验：Fail to get leader of group naming_persistent_service_v2 
 
 
  <font color="#949494">---------------</font> 

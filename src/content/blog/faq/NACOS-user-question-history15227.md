@@ -69,11 +69,11 @@ http {
 
 ## 参考链接 ：
 
-*专家经验：Nacos部署开放端口，集群部署开通端口 
+* 专家经验：Nacos部署开放端口，集群部署开通端口 
  
- *[Nacos 2.0 升级文档](https://nacos.io/docs/latest/upgrading/200-upgrading)
+ * [Nacos 2.0 升级文档](https://nacos.io/docs/latest/upgrading/200-upgrading)
  
- *专家经验：NACOS 配置中心和注册中心是分两个集群部署还是放在一个集群中 
+ * 专家经验：NACOS 配置中心和注册中心是分两个集群部署还是放在一个集群中 
 
 
  <font color="#949494">---------------</font> 

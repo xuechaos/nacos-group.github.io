@@ -51,9 +51,9 @@ description: "首先，我们来分析问题的原因。根据您的描述，您
 
 ## 参考链接 ：
 
-*专家经验：应用配置获取失败 
+* 专家经验：应用配置获取失败 
  
- *专家经验：无法在nacos/conf下找到nacos-mysql.sql文件 
+ * 专家经验：无法在nacos/conf下找到nacos-mysql.sql文件 
 
 
  <font color="#949494">---------------</font> 

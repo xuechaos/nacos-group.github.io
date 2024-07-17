@@ -38,11 +38,11 @@ keywords: ["升级","nacos2.2.3","漏洞扫描","身份认证绕过漏洞"]
 
 ## 参考链接 ：
 
-*专家经验：Nacos 身份认证绕过漏洞 
+* 专家经验：Nacos 身份认证绕过漏洞 
  
- *[Nacos 2.0 升级文档](https://nacos.io/docs/latest/upgrading/200-upgrading)
+ * [Nacos 2.0 升级文档](https://nacos.io/docs/latest/upgrading/200-upgrading)
  
- *[Authorization](https://nacos.io/docs/latest/guide/user/auth)
+ * [Authorization](https://nacos.io/docs/latest/guide/user/auth)
 
 
  <font color="#949494">---------------</font> 

@@ -42,11 +42,11 @@ keywords: ["nacos","内置数据源","配置文件","mysql","注释","启动提�
 
 ## 参考链接 ：
 
-*专家经验：无法在nacos/conf下找到nacos-mysql.sql文件 
+* 专家经验：无法在nacos/conf下找到nacos-mysql.sql文件 
  
- *专家经验：Nacos使用的稳定性说明 
+ * 专家经验：Nacos使用的稳定性说明 
  
- *专家经验：nacos 各类配置文件都在那？ 
+ * 专家经验：nacos 各类配置文件都在那？ 
 
 
  <font color="#949494">---------------</font> 

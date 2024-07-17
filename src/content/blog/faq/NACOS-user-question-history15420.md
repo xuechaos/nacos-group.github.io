@@ -42,11 +42,11 @@ description: "在Nacos中，实例的相关信息并不直接存储在数据库�
 
 ## 参考链接 ：
 
-*专家经验：在Nacos控制台上删除服务或实例，过一会儿还会出现 
+* 专家经验：在Nacos控制台上删除服务或实例，过一会儿还会出现 
  
- *[Nacos 2.0 升级文档](https://nacos.io/docs/latest/upgrading/200-upgrading)
+ * [Nacos 2.0 升级文档](https://nacos.io/docs/latest/upgrading/200-upgrading)
  
- *专家经验：Nacos中持久化服务和临时服务的区别 
+ * 专家经验：Nacos中持久化服务和临时服务的区别 
 
 
  <font color="#949494">---------------</font> 

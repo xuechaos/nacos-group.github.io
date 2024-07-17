@@ -44,9 +44,9 @@ description: "根据您描述的问题“nacos-opensource nacos 没有开启认�
 
 ## 参考链接 ：
 
-*专家经验：Nacos 身份认证绕过漏洞 
+* 专家经验：Nacos 身份认证绕过漏洞 
  
- *专家经验：Nacos 如何关闭/nacos/v2/console/namespace，使api不对外开放 
+ * 专家经验：Nacos 如何关闭/nacos/v2/console/namespace，使api不对外开放 
 
 
  <font color="#949494">---------------</font> 

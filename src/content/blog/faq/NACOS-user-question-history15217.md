@@ -48,9 +48,9 @@ Nacos 默认情况下可能允许所有网络访问其暴露的 Actuator 端点�
 
 ## 参考链接 ：
 
-*专家经验：如何把 brpc 服务注册到 nacos 
+* 专家经验：如何把 brpc 服务注册到 nacos 
  
- *专家经验：怎么能让nacos 的actuator 查不到任何信息呢 
+ * 专家经验：怎么能让nacos 的actuator 查不到任何信息呢 
 
 
  <font color="#949494">---------------</font> 

@@ -42,9 +42,9 @@ description: "根据您的问题，您希望了解如何下载Nacos的Python客�
 
 ## 参考链接 ：
 
-*[Nacos功能和需求列表](https://nacos.io/docs/latest/archive/feature-list)
+* [Nacos功能和需求列表](https://nacos.io/docs/latest/archive/feature-list)
  
- *专家经验：介绍一下nacos的多租户 
+ * 专家经验：介绍一下nacos的多租户 
 
 
  <font color="#949494">---------------</font> 

@@ -36,7 +36,7 @@ Nacos（阿里巴巴开源的项目）作为一个动态服务发现、配置管
 
 ## 参考链接 ：
 
-*[Dubbo 融合 Nacos 成为注册中心](https://nacos.io/docs/latest/ecology/use-nacos-with-dubbo)
+* [Dubbo 融合 Nacos 成为注册中心](https://nacos.io/docs/latest/ecology/use-nacos-with-dubbo)
 
 
  <font color="#949494">---------------</font> 

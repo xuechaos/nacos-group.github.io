@@ -73,11 +73,11 @@ spring.profiles.active=你的环境标识，如dev, prod等
 
 ## 参考链接 ：
 
-*[Nacos 融合 Spring Cloud，成为注册配置中心](https://nacos.io/docs/latest/ecology/use-nacos-with-spring-cloud)
+* [Nacos 融合 Spring Cloud，成为注册配置中心](https://nacos.io/docs/latest/ecology/use-nacos-with-spring-cloud)
  
- *[Nacos 融合 Spring，成为注册配置中心](https://nacos.io/docs/latest/ecology/use-nacos-with-spring)
+ * [Nacos 融合 Spring，成为注册配置中心](https://nacos.io/docs/latest/ecology/use-nacos-with-spring)
  
- *[Nacos Docker 快速开始](https://nacos.io/docs/latest/quickstart/quick-start-docker)
+ * [Nacos Docker 快速开始](https://nacos.io/docs/latest/quickstart/quick-start-docker)
 
 
  <font color="#949494">---------------</font> 

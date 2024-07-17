@@ -44,11 +44,11 @@ keywords: ["Nacos2.0.1","控制台","readyToUpgrade","false"]
 
 ## 参考链接 ：
 
-*专家经验：Nacos2.0.0～2.1.X版本，控制台显示 "readyToUpgrade": false 
+* 专家经验：Nacos2.0.0～2.1.X版本，控制台显示 "readyToUpgrade": false 
  
- *[控制台手册](https://nacos.io/docs/latest/guide/admin/console-guide)
+ * [控制台手册](https://nacos.io/docs/latest/guide/admin/console-guide)
  
- *[Nacos 监控手册](https://nacos.io/docs/latest/guide/admin/monitor-guide)
+ * [Nacos 监控手册](https://nacos.io/docs/latest/guide/admin/monitor-guide)
 
 
  <font color="#949494">---------------</font> 

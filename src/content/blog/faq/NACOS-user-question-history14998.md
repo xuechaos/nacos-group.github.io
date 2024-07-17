@@ -42,9 +42,9 @@ description: "根据提供的知识内容，我可以这样您的问题：当Nac
 
 ## 参考链接 ：
 
-*[Authorization](https://nacos.io/docs/latest/guide/user/auth)
+* [Authorization](https://nacos.io/docs/latest/guide/user/auth)
  
- *专家经验：关闭默认控制台 
+ * 专家经验：关闭默认控制台 
 
 
  <font color="#949494">---------------</font> 

@@ -62,11 +62,11 @@ try {
 
 ## 参考链接 ：
 
-*专家经验：Nacos是否支持跨namespace获取数据 
+* 专家经验：Nacos是否支持跨namespace获取数据 
  
- *[控制台手册](https://nacos.io/docs/latest/guide/admin/console-guide)
+ * [控制台手册](https://nacos.io/docs/latest/guide/admin/console-guide)
  
- *[Java SDK](https://nacos.io/docs/latest/guide/user/sdk)
+ * [Java SDK](https://nacos.io/docs/latest/guide/user/sdk)
 
 
  <font color="#949494">---------------</font> 

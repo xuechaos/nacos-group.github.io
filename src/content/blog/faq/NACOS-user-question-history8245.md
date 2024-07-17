@@ -44,9 +44,9 @@ keywords: ["Why Use HTTP","Registration","Nacos2.0","Raft Protocol"]
 
 ## 参考链接 ：
 
-*专家经验：Why Use HTTP for Registration of the Nacos2.0 Raft Protocol 
+* 专家经验：Why Use HTTP for Registration of the Nacos2.0 Raft Protocol 
  
- *[Nacos 2.0.0 兼容性文档](https://nacos.io/docs/latest/upgrading/200-compatibility)
+ * [Nacos 2.0.0 兼容性文档](https://nacos.io/docs/latest/upgrading/200-compatibility)
 
 
  <font color="#949494">---------------</font> 

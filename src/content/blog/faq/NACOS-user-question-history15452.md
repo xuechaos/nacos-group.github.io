@@ -53,7 +53,7 @@ description: "### 分析问题原因在Nacos开源版本中，一旦用户通过
 
 ## 参考链接 ：
 
-*专家经验：/nacos/v1/core/cluster/nodes 这个访问权限如何关闭？ 
+* 专家经验：/nacos/v1/core/cluster/nodes 这个访问权限如何关闭？ 
 
 
  <font color="#949494">---------------</font> 

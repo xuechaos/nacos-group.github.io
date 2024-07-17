@@ -28,9 +28,9 @@ description: "确实存在针对ARM架构的Nacos Docker镜像。根据相关信
 
 ## 参考链接 ：
 
-*专家经验：Nacos 请问nacos有arm架构的docker镜像么 
+* 专家经验：Nacos 请问nacos有arm架构的docker镜像么 
  
- *[Nacos功能和需求列表](https://nacos.io/docs/latest/archive/feature-list)
+ * [Nacos功能和需求列表](https://nacos.io/docs/latest/archive/feature-list)
 
 
  <font color="#949494">---------------</font> 
