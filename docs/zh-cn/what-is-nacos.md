@@ -10,6 +10,8 @@ description: 什么是 Nacos
 
 欢迎来到 Nacos 的世界！
 
+Nacos /nɑ:kəʊs/  是 Dynamic Naming and Configuration Service的首字母简称，一个更易于构建云原生应用的动态服务发现、配置管理和服务管理平台。
+
 Nacos 致力于帮助您发现、配置和管理微服务。Nacos 提供了一组简单易用的特性集，帮助您快速实现动态服务发现、服务配置、服务元数据及流量管理。
 
 Nacos 帮助您更敏捷和容易地构建、交付和管理微服务平台。 Nacos 是构建以“服务”为中心的现代应用架构 (例如微服务范式、云原生范式) 的服务基础设施。
@@ -21,13 +23,13 @@ Nacos 帮助您更敏捷和容易地构建、交付和管理微服务平台。 N
 
 [gRPC](https://grpc.io/docs/guides/concepts.html#service-definition) & [Dubbo RPC Service](https://dubbo.incubator.apache.org)
  
-[Spring Cloud RESTful Service](https://spring.io/understanding/REST)
+[Spring Cloud RESTful Service](https://spring.io/projects/spring-restdocs)
 
 Nacos 的关键特性包括:
 
 * **服务发现和服务健康监测**
 	
-    Nacos 支持基于 DNS 和基于 RPC 的服务发现。服务提供者使用 [原生SDK](./sdk.md)、[OpenAPI](./open-API.md)、或一个[独立的Agent TODO](./other-language.md)注册 Service 后，服务消费者可以使用[DNS TODO](xx) 或[HTTP&API](./open-API.md)查找和发现服务。
+    Nacos 支持基于 DNS 和基于 RPC 的服务发现。服务提供者使用 [原生SDK](./sdk.md)、[OpenAPI](./open-api.md)、或一个[独立的Agent TODO](./other-language.md)注册 Service 后，服务消费者可以使用[DNS TODO](xx) 或[HTTP&API](./open-api.md)查找和发现服务。
     
     Nacos 提供对服务的实时的健康检查，阻止向不健康的主机或服务实例发送请求。Nacos 支持传输层 (PING 或 TCP)和应用层 (如 HTTP、MySQL、用户自定义）的健康检查。 对于复杂的云环境和网络拓扑环境中（如 VPC、边缘网络等）服务的健康检查，Nacos 提供了 agent 上报模式和服务端主动检测2种健康检查模式。Nacos 还提供了统一的健康检查仪表盘，帮助您根据健康状态管理服务的可用性及流量。
                  
@@ -52,7 +54,7 @@ Nacos 的关键特性包括:
 
     Nacos 能让您从微服务平台建设的视角管理数据中心的所有服务及元数据，包括管理服务的描述、生命周期、服务的静态依赖分析、服务的健康状态、服务的流量管理、路由及安全策略、服务的 SLA 以及最首要的 metrics 统计数据。
 
-* [更多的特性列表 ...](./roadmap.md)
+* [更多的特性列表 ...](docs/zh-cn/archive/roadmap.md)
 
 ## Nacos 地图
 一图看懂 Nacos，下面架构部分会详细介绍。
@@ -71,22 +73,22 @@ Nacos 的关键特性包括:
 如 Nacos 全景图所示，Nacos 无缝支持一些主流的开源生态，例如 
 
 * [Spring Cloud](https://nacos.io/en-us/docs/quick-start-spring-cloud.html)
-* [Apache Dubbo and Dubbo Mesh TODO](xx)
-* [Kubernetes and CNCF TODO](xx)。
+* [Apache Dubbo and Dubbo Mesh](./use-nacos-with-dubbo.md)
+* [Kubernetes and CNCF](./use-nacos-with-kubernetes.md)。
 
 使用 Nacos 简化服务发现、配置管理、服务治理及管理的解决方案，让微服务的发现、管理、共享、组合更加容易。
 
 关于如何在这些生态中使用 Nacos，请参考以下文档：
 
-[Nacos与Spring Cloud一起使用](./use-nacos-with-springcloud.md)
+[Nacos与Spring Cloud一起使用](./archive/use-nacos-with-springcloud.md)
 
 [Nacos与Kubernetes一起使用](./use-nacos-with-kubernetes.md)
 
 [Nacos与Dubbo一起使用](./use-nacos-with-dubbo.md)
 
-[Nacos与gRPC一起使用](./roadmap.md)
+[Nacos与gRPC一起使用](./archive/roadmap.md)
 
-[Nacos与Istio一起使用](./use-nacos-with-istio.md)
+[Nacos与Istio一起使用](./archive/use-nacos-with-istio.md)
 
 
 ## 下一步

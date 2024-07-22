@@ -4,29 +4,40 @@ keywords: Nacos,deployment modes
 description: Nacos supports three types of deployment modes
 ---
 
+# Nacos deployment environment
+
+Nacos is defined as an IDC internal application component, not a product for the public network environment. It is not recommended expose it to the public network environment directly.
+
+All network related concepts such as VIP and network interface mentioned in the following documents are in the **internal network environment**.
+
 # Nacos supports three types of deployment modes
 
 * Standalone Mode - used in DEV or TEST environment.
 * Cluster Mode - used in production environment to ensure high-availability.
 * Multi-Cluster Mode - in complicated production mode, you may want to deploy multi-cluster mode to support different business units.
 
+# Environment preparation
+- JDK installed, 1.8 and above are required
+- Recommendation: 2 core CPU / 4G RAM and above
+- Recommendation: Production environment with 3 nodes and above
+
 ## Running Nacos in Standalone Mode
 
 ### Linux/Unix/Mac
 
 * Standalone means it is non-cluster Mode. * 
-sh startup.sh standalone
+sh startup.sh -m standalone
 
 ### Windows
 
-* standalone means it is non-cluster Mode. * 
-cmd startup.cmd standalone
+* Standalone means it is non-cluster Mode. * 
+cmd startup.cmd -m standalone
 
 ### Running Nacos with mysql in Standalone Mode
 
 #### Initialize MySQL database
 
-[sql statement source file](https://github.com/alibaba/nacos/blob/master/distribution/conf/nacos-mysql.sql)
+[sql statement source file](https://github.com/alibaba/nacos/blob/master/distribution/conf/mysql-schema.sql)
 
 #### application.properties configuration
 

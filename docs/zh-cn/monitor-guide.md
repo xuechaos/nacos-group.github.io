@@ -33,7 +33,7 @@ cd prometheus-*
 ```
     metrics_path: '/nacos/actuator/prometheus'
     static_configs:
-      - targets:['{ip1}:8848','{ip2}:8848','{ip3}:8848']
+      - targets: ['{ip1}:8848','{ip2}:8848','{ip3}:8848']
 ```
 
 启动prometheus服务
@@ -49,7 +49,7 @@ cd prometheus-*
 ```
     metrics_path: '/nacos/actuator/prometheus'
     static_configs:
-      - targets:['{ip1}:8848','{ip2}:8848','{ip3}:8848']
+      - targets: ['{ip1}:8848','{ip2}:8848','{ip3}:8848']
 ```
 
 启动prometheus服务
@@ -165,7 +165,8 @@ nacos_monitor{name='notifyTask'}|Nacos config配置水平通知任务堆积数
 nacos_monitor{name='getConfig'}|Nacos config读配置统计数
 nacos_monitor{name='publish'}|Nacos config写配置统计数
 nacos_monitor{name='ipCount'}|Nacos naming ip个数
-nacos_monitor{name='domCount'}|Nacos naming域名个数
+nacos_monitor{name='domCount'}|Nacos naming域名个数(1.x 版本)
+nacos_monitor{name='serviceCount'}|Nacos naming域名个数(2.x 版本) 
 nacos_monitor{name='failedPush'}|Nacos naming推送失败数
 nacos_monitor{name='avgPushCost'}|Nacos naming平均推送耗时
 nacos_monitor{name='leaderStatus'}|Nacos naming角色状态

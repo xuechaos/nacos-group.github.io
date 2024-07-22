@@ -16,11 +16,11 @@ Therefore, when it is open source, it is recommended that users put all server l
 
 Http://ip1:port/openAPI Directly connected to ip mode, the machine needs to be modified to use ip.
 
-Http://VIP:port/openAPI Mount the VIP mode, directly connect to vip, the following server ip real ip, readability is not good.
+Http://SLB:port/openAPI Mount the SLB mode(Intranet, do not expose internet to avoid security risks), directly connect to SLB, the following server ip real ip, readability is not good.
 
-Http://nacos.com:port/openAPI Domain name + VIP mode, good readability, and easy to change ip, recommended mode
+Http://nacos.com:port/openAPI Domain name + SLB mode(Intranet, do not expose internet to avoid security risks), good readability, and easy to change ip, recommended mode
 
-![deployDnsVipMode.jpg](https://cdn.nlark.com/yuque/0/2019/jpeg/338441/1561258986171-4ddec33c-a632-4ec3-bfff-7ef4ffc33fb9.jpeg) 
+![deployDnsVipMode.jpg](/img/deployDnsVipMode.jpg) 
 
 ## 1. Preparing for the Environment
 
@@ -80,7 +80,7 @@ No configuration is required
 
 #### Initializes the MySQL database
 
-[sql statement source file](https://github.com/alibaba/nacos/blob/master/distribution/conf/nacos-mysql.sql)
+[sql statement source file](https://github.com/alibaba/nacos/blob/master/distribution/conf/mysql-schema.sql)
 
 ### application. properties configuration
 
@@ -118,7 +118,7 @@ sh startup.sh
 
 ### Service discovery
 
-`curl -X GET 'http://127.0.0.1:8848/nacos/v1/ns/instances?serviceName=nacos.naming.serviceName'`
+`curl -X GET 'http://127.0.0.1:8848/nacos/v1/ns/instance/list?serviceName=nacos.naming.serviceName'`
 
 ### Publish configuration
 

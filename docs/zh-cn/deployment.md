@@ -4,30 +4,46 @@ keywords: Nacos,部署模式
 description: Nacos支持三种部署模式
 ---
 
+# Nacos部署环境
+
+Nacos定义为一个IDC内部应用组件，并非面向公网环境的产品，建议在内部隔离网络环境中部署，强烈不建议部署在公共网络环境。
+
+以下文档中提及的VIP，网卡等所有网络相关概念均处于内部网络环境。
+
 # Nacos支持三种部署模式
 
 * 单机模式 - 用于测试和单机试用。
 * 集群模式 - 用于生产环境，确保高可用。
 * 多集群模式 - 用于多数据中心场景。
 
+# 环境准备
+
+- 安装好 JDK，需要 1.8 及其以上版本
+- 建议: 2核 CPU / 4G 内存 及其以上
+- 建议: 生产环境 3 个节点 及其以上
+
 ## 单机模式下运行Nacos
 
 ### Linux/Unix/Mac
 
-* Standalone means it is non-cluster Mode. * 
-sh startup.sh -m standalone
+```shell
+# Standalone means it is non-cluster Mode.
+$ sh startup.sh -m standalone
+```
 
 ### Windows
 
-cmd startup.cmd 
-或者双击 startup.cmd 文件
+```shell
+# Standalone means it is non-cluster Mode.
+$ cmd startup.cmd -m standalone
+```
 
 ### 单机模式支持mysql
 
 在0.7版本之前，在单机模式时nacos使用嵌入式数据库实现数据的存储，不方便观察数据存储的基本情况。0.7版本增加了支持mysql数据源能力，具体的操作步骤：
 
 - 1.安装数据库，版本要求：5.6.5+
-- 2.初始化mysql数据库，数据库初始化文件：nacos-mysql.sql
+- 2.初始化mysql数据库，数据库初始化文件：mysql-schema.sql
 - 3.修改conf/application.properties文件，增加支持mysql数据源配置（目前只支持mysql），添加mysql数据源的url、用户名和密码。
 
 ```
@@ -51,7 +67,8 @@ Nacos支持NameServer路由请求模式，通过它您可以设计一个有用�
 
 ## 多网卡IP选择
 
-当本地环境比较复杂的时候，Nacos服务在启动的时候需要选择运行时使用的IP或者网卡。Nacos从多网卡获取IP参考Spring Cloud设计，通过nacos.inetutils参数，可以指定Nacos使用的网卡和IP地址。目前支持的配置参数有:
+当本地环境比较复杂的时候，Nacos服务在启动的时候需要选择运行时使用的IP或者网卡。Nacos从多网卡获取IP参考Spring
+Cloud设计，通过nacos.inetutils参数，可以指定Nacos使用的网卡和IP地址。目前支持的配置参数有:
 
 - ip-address参数可以直接设置nacos的ip
 

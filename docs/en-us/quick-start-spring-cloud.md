@@ -50,12 +50,12 @@ spring.application.name=example
 In Nacos Spring Cloud, the format of `dataId` is as follows:
 
 ```plain
-${prefix}-${spring.profile.active}.${file-extension}
+${prefix}-${spring.profiles.active}.${file-extension}
 ```
 
 * The value of `prefix` is the value of `spring.application.name` by default. You can also configure this value in `spring.cloud.nacos.config.prefix`.
-* `spring.profile.active` is the profile of the current environment. For more details, refer to [Spring Boot Document](https://docs.spring.io/spring-boot/docs/current/reference/html/boot-features-profiles.html#boot-features-profiles).
-    **Note: When the value of `spring.profile.active` is empty, the corresponding hyphen `-` will be deleted, and the format of dataId becomes: `${prefix}.${file-extension}`**
+* `spring.profiles.active` is the profile of the current environment. For more details, refer to [Spring Boot Document](https://docs.spring.io/spring-boot/docs/current/reference/html/boot-features-profiles.html#boot-features-profiles).
+    **Note: When the value of `spring.profiles.active` is empty, the corresponding hyphen `-` will be deleted, and the format of dataId becomes: `${prefix}.${file-extension}`**
 * `file-exetension` is the data format of the configuration content, and can be configured in `spring.cloud.nacos.config.file-extension` . Currently only the `properties` and `yaml` type is supported.
 
 4. Add the native `@RefreshScope` annotation of Spring Cloud to enable autorefresh of configuration updates:
@@ -77,7 +77,7 @@ public class ConfigController {
 ```
 
 
-5. Call [Nacos Open API](https://nacos.io/zh-cn/docs/open-API.html) to publish a configuration to the Nacos server. Assume the dataId is `example.properties`，and the content is `useLocalCache=true`.
+5. Call [Nacos Open API](https://nacos.io/zh-cn/docs/open-api.html) to publish a configuration to the Nacos server. Assume the dataId is `example.properties`，and the content is `useLocalCache=true`.
 
 ```
 curl -X POST "http://127.0.0.1:8848/nacos/v1/cs/configs?dataId=example.properties&group=DEFAULT_GROUP&content=useLocalCache=true"
@@ -85,7 +85,7 @@ curl -X POST "http://127.0.0.1:8848/nacos/v1/cs/configs?dataId=example.propertie
 
 6. Run `NacosConfigApplication`and call  `curl http://localhost:8080/config/get`，You will get a returned value of `true`.
 
-7. Call [Nacos Open API](https://nacos.io/zh-cn/docs/open-API.html) again to publish an updated configuration to the Nacos server. Assume the dataId is`example.properties`，and the content is `useLocalCache=false`.
+7. Call [Nacos Open API](https://nacos.io/zh-cn/docs/open-api.html) again to publish an updated configuration to the Nacos server. Assume the dataId is`example.properties`，and the content is `useLocalCache=false`.
 
 ```
 curl -X POST "http://127.0.0.1:8848/nacos/v1/cs/configs?dataId=example.properties&group=DEFAULT_GROUP&content=useLocalCache=false"

@@ -3,16 +3,19 @@
 
 <head>
 	<meta charset="UTF-8">
+	<meta name="aes-config" content="pid=xux-opensource&user_type=101&uid=&username=&dim10=nacos"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<meta name="keywords" content="nacos 1.1.0" />
 	<meta name="description" content="nacos 1.1.0" />
+  <meta name="baidu-site-verification" content="code-wzq5sw7io3" />
 	<!-- 网页标签标题 -->
 	<title>nacos 1.1.0</title>
 	<link rel="shortcut icon" href="https://img.alicdn.com/tfs/TB1hgJpHAPoK1RjSZKbXXX1IXXa-64-64.png"/>
 	<link rel="stylesheet" href="/build/blogDetail.css" />
+	<link rel="stylesheet" href="https://g.alicdn.com/mamba/assets/0.0.19/mse-arc-ui.min.css" />
 </head>
 <body>
-	<div id="root"><div class="blog-detail-page" data-reactroot=""><header class="header-container header-container-normal"><div class="header-body"><a href="/en-us/index.html"><img class="logo" src="/img/nacos_colorful.png"/></a><div class="search search-normal"><span class="icon-search"></span></div><span class="language-switch language-switch-normal">中</span><div class="header-menu"><img class="header-menu-toggle" src="/img/menu_gray.png"/><ul><li class="menu-item menu-item-normal"><a href="/en-us/index.html">HOME</a></li><li class="menu-item menu-item-normal"><a href="/en-us/docs/quick-start.html">DOCS</a></li><li class="menu-item menu-item-normal menu-item-normal-active"><a href="/en-us/blog">BLOG</a></li><li class="menu-item menu-item-normal"><a href="/en-us/community">COMMUNITY</a></li><li class="menu-item menu-item-normal"><a href="https://cn.aliyun.com/product/aliware/mse?spm=nacos-website.topbar.0.0.0">NACOS IN CLOUD</a><img class="menu-img" src="https://img.alicdn.com/tfs/TB1esl_m.T1gK0jSZFrXXcNCXXa-200-200.png"/></li><li class="menu-item menu-item-normal"><a href="https://job.alibaba.com/zhaopin/position_detail.htm?trace=qrcode_share&amp;positionCode=GP633620">HIRING</a><img class="menu-img" src="https://img.alicdn.com/tfs/TB1esl_m.T1gK0jSZFrXXcNCXXa-200-200.png"/></li><li class="menu-item menu-item-normal"><a href="http://console.nacos.io/nacos/index.html">DEMO-CONSOLE</a></li></ul></div></div></header><section class="blog-content markdown-body"><h1>Nacos 1.1.0发布，支持灰度配置和地址服务器模式</h1>
+	<div id="root"><div class="blog-detail-page" data-reactroot=""><header class="header-container header-container-normal"><div class="header-body"><a href="/en-us/index.html"><img class="logo" src="/img/nacos_colorful.png"/></a><div class="search search-normal"><span class="icon-search"></span></div><span class="language-switch language-switch-normal">中</span><div class="header-menu"><img class="header-menu-toggle" src="/img/menu_gray.png"/><ul><li class="menu-item menu-item-normal"><span><a href="/en-us/index.html">HOME</a></span></li><li class="menu-item menu-item-normal"><div class="nav-container"><div class="word"><a>DOCS</a></div><ul class="sub-nav-container" style="width:290px"><li><a href="/en-us/docs/v2/quickstart/quick-start.html" target="_blank">2.X（Recommend）</a></li><li><a href="/en-us/docs/quick-start.html" target="_blank">1.X</a></li></ul> </div></li><li class="menu-item menu-item-normal"><span><a href="/en/cloud">NACOS IN CLOUD</a><img class="menu-img" src="https://img.alicdn.com/tfs/TB1esl_m.T1gK0jSZFrXXcNCXXa-200-200.png"/></span></li><li class="menu-item menu-item-normal"><span><a href="https://free.aliyun.com/?searchKey=nacos&amp;spm=nacos.io.topbar.0.0.0">FREE TIER</a><img class="menu-img" src="https://img.alicdn.com/tfs/TB1esl_m.T1gK0jSZFrXXcNCXXa-200-200.png"/></span></li><li class="menu-item menu-item-normal"><span><a href="https://developer.aliyun.com/ebook/36?spm=a2c6h.20345107.ebook-index.18.152c2984fsi5ST">E-BOOK-NACOS</a><img class="menu-img" src="https://img.alicdn.com/tfs/TB1esl_m.T1gK0jSZFrXXcNCXXa-200-200.png"/></span></li><li class="menu-item menu-item-normal menu-item-normal-active"><span><a href="/en-us/blog">BLOG</a></span></li><li class="menu-item menu-item-normal"><span><a href="/en-us/community">COMMUNITY</a></span></li><li class="menu-item menu-item-normal"><span><a href="http://console.nacos.io/nacos/index.html">DEMO-CONSOLE</a></span></li></ul></div></div></header><section class="blog-content markdown-body"><h1>Nacos 1.1.0发布，支持灰度配置和地址服务器模式</h1>
 <p>Nacos 是阿里巴巴开源的配置中心和服务发现产品，开源距今已经超过一年的时间。本次1.1.0的发布，带来了许多重量级的特性更新，包括灰度配置等社区呼声很高的特性，下面会介绍1.1.0版本发布的新特性和每个特性的使用方式。</p>
 <p><a name="CQSXH"></a></p>
 <h2>升级指南</h2>
@@ -180,7 +183,7 @@ naming.registerInstance(serviceName, instance);
 <li>作为代码贡献者加入 Nacos 社区</li>
 </ul>
 <p>为了能够与代码贡献者更方便的交流，我们组建了钉钉群“Nacos社区核心贡献小组（<strong>23335652</strong>）”，这个群里都是都是对Nacos贡献非常感兴趣的小伙伴，如果你也想成为Nacos贡献者，甚至成为Committer，欢迎加入这个群和群里的小伙伴一起切磋！</p>
-<p>在Nacos官网 <a href="http://nacos.io/">nacos.io</a> 中，已经添加<a href="https://nacos.io/zh-cn/docs/nacos-dev.html">团队介绍页</a>，里面包括Nacos的开发者角色定义及职责划分，同时包含了Naocs的开发者们介绍和靓照哦，欢迎大家加入Nacos社区，贡献社区。用Apache的话说，<strong>“社区高于代码”!</strong></p>
+<p>在Nacos官网 <a href="http://nacos.io/">nacos.io</a> 中，已经添加<a href="https://nacos.io/zh-cn/docs/nacos-dev.html">团队介绍页</a>，里面包括Nacos的开发者角色定义及职责划分，同时包含了Nacos的开发者们介绍和靓照哦，欢迎大家加入Nacos社区，贡献社区。用Apache的话说，<strong>“社区高于代码”!</strong></p>
 <p><img src="https://cdn.nlark.com/lark/0/2018/png/15914/1542704700864-a9d54856-9bf6-4176-b449-c13fa02c5800.png#align=left&amp;display=inline&amp;height=387&amp;linkTarget=_blank&amp;originHeight=888&amp;originWidth=1716&amp;width=748#align=left&amp;display=inline&amp;height=386&amp;originHeight=888&amp;originWidth=1716&amp;status=done&amp;width=746" alt=""></p>
 <p><a name="2461e1c0"></a></p>
 <h2>新人时刻 - &quot;什么是Nacos？&quot;</h2>
@@ -206,12 +209,33 @@ naming.registerInstance(serviceName, instance);
 <li><a href="https://github.com/Nepxion/Discovery">Nepxion Discovery</a></li>
 <li><a href="https://github.com/SpringCloud/spring-cloud-gateway-nacos">Spring Cloud Gateway Nacos</a></li>
 </ul>
-</section><footer class="footer-container"><div class="footer-body"><img src="/img/nacos_gray.png"/><div class="cols-container"><div class="col col-12"><h3>Vision</h3><p>By providing an easy-to-use service infrastructure such as dynamic service discovery, service configuration, service sharing and management and etc., Nacos help users better construct, deliver and manage their own service platform, reuse and composite business service faster and deliver value of business innovation more quickly so as to win market for users in the era of cloud native and in all cloud environments, such as private, mixed, or public clouds.</p></div><div class="col col-6"><dl><dt>Documentation</dt><dd><a href="/en-us/docs/what-is-nacos.html" target="_self">Overview</a></dd><dd><a href="/en-us/docs/quick-start.html" target="_self">Quick start</a></dd><dd><a href="/en-us/docs/contributing.html" target="_self">Developer guide</a></dd></dl></div><div class="col col-6"><dl><dt>Resources</dt><dd><a href="/en-us/community/index.html" target="_self">Community</a></dd><dd><a href="https://www.aliyun.com/product/acm?source_type=nacos_pc_20181219" target="_self">Cloud Service ACM</a></dd><dd><a href="https://www.aliyun.com/product/edas?source_type=nacos_pc_20181219" target="_self">Cloud Service EDAS</a></dd><dd><a href="https://www.aliyun.com/product/ahas?source_type=nacos_pc_20190225" target="_self">Cloud Service AHAS</a></dd></dl></div></div><div class="copyright"><span>@ 2018 The Nacos Authors | An Alibaba Middleware (Aliware) Project</span></div></div></footer></div></div>
+</section><footer class="footer-container"><div class="footer-body"><img src="/img/nacos_gray.png"/><div class="cols-container"><div class="col col-12"><h3>Vision</h3><p>By providing an easy-to-use service infrastructure such as dynamic service discovery, service configuration, service sharing and management and etc., Nacos help users better construct, deliver and manage their own service platform, reuse and composite business service faster and deliver value of business innovation more quickly so as to win market for users in the era of cloud native and in all cloud environments, such as private, mixed, or public clouds.</p></div><div class="col col-6"><dl><dt>Documentation</dt><dd><a href="/en-us/docs/what-is-nacos.html" target="_self">Overview</a></dd><dd><a href="/en-us/docs/quick-start.html" target="_self">Quick start</a></dd><dd><a href="/en-us/docs/contributing.html" target="_self">Developer guide</a></dd></dl></div><div class="col col-6"><dl><dt>Resources</dt><dd><a href="/en-us/community/index.html" target="_self">Community</a></dd><dd><a href="https://www.aliyun.com/product/aliware/mse?spm=nacos.io.topbar.0.0.0" target="_self">Cloud Service MSE</a></dd><dd><a href="https://www.aliyun.com/product/edas?source_type=nacos_pc_20181219" target="_self">Cloud Service EDAS</a></dd><dd><a href="https://www.aliyun.com/product/ahas?source_type=nacos_pc_20190225" target="_self">Cloud Service AHAS</a></dd></dl></div></div><div class="copyright"><span>@ 2022 The Nacos Authors | An Alibaba Middleware (Aliware) Project</span></div></div></footer></div></div>
 	<script src="https://f.alicdn.com/react/15.4.1/react-with-addons.min.js"></script>
 	<script src="https://f.alicdn.com/react/15.4.1/react-dom.min.js"></script>
+	<script src="//g.alicdn.com/alilog/mlog/aplus_v2.js" id="beacon-aplus" exparams="clog=o&aplus&sidx=aplusSidx&ckx=aplusCkx"></script>
+  <script src="//g.alicdn.com/aes/??tracker/1.0.34/index.js,tracker-plugin-pv/2.4.5/index.js,tracker-plugin-event/1.2.5/index.js,tracker-plugin-jserror/1.0.13/index.js,tracker-plugin-api/1.1.14/index.js,tracker-plugin-perf/1.1.8/index.js,tracker-plugin-eventTiming/1.0.4/index.js"></script>
 	<script>
 		window.rootPath = '';
   </script>
-	<script src="/build/blogDetail.js"></script>
+	<script src="/build/blogDetail.js">
+	</script>
+	<script src="https://g.alicdn.com/mamba/assets/0.0.19/mse-arc-ui.min.js"></script>
+	<script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?e3a5cec56ef8619cf9d7c2abebd509e3";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0YDFJ7LX7F"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-0YDFJ7LX7F');
+    </script>
 </body>
 </html>

@@ -21,6 +21,7 @@ description: Nacos FAQ
   - [Nacos如何Docker部署](#2.4)
   - [如何在k8s中部署Nacos](#2.5)
   - [如何监控Nacos](#2.6)
+  - [Nacos在Docker环境下集群部署，无法正常启动，日志一直打印 Nacos is starting...](#2.7)
 
 - Nacos使用问题
   - [Zookeeper服务可以迁移到Nacos上吗](#3.1)
@@ -41,6 +42,9 @@ description: Nacos FAQ
   - [客户端CPU高，或者内存耗尽的问题](#3.16)
   - [日志打印频繁的问题](#3.17)
   - [集群管理页面，raft term显示不一致问题](#3.18)
+  - [找不到符号`com.alibaba.nacos.consistency.entity`](#3.19)
+  - [Beta发布如何使用](#3.20)
+  
   
 
 - Nacos原理问题
@@ -94,6 +98,10 @@ Nacos单机模式默认使用内嵌的数据库作为存储引擎，如果想换
 <h4 id="2.6">如何监控Nacos</h4>
 
 Nacos0.8版本提供了Metrics数据暴露能力，能通过Metrics数据的内容对Nacos的运行状态进行监控，详情参考[Nacos监控](https://nacos.io/zh-cn/docs/monitor-guide.html)。
+
+<h4 id="2.7">Nacos在Docker环境下集群部署，无法正常启动，日志一直打印 Nacos is starting...</h4>
+
+原因可能是由于Docker环境下，内存不足导致另外的服务无法正常启动，最后导致服务报错，一直重启，可以通过增大Docker限制内存尝试解决。
 
 ## Nacos使用问题
 <h4 id="3.1">Zookeeper上的服务可以迁移到Nacos上吗</h4>
@@ -281,5 +289,15 @@ curl '127.0.0.1:8848/nacos/v1/ns/raft/state'
 
 然后在返回信息中查找本节点的集群任期。因为每个节点返回的集群任期中，只有当前节点的信息是准确的，返回的其他节点的信息都是不准确的。
 
+<h4 id="3.19">找不到符号`com.alibaba.nacos.consistency.entity`</h4>
+
+这个包目录是由`protobuf`在编译时自动生成，您可以通过`mvn compile`来自动生成他们。如果您使用的是IDEA，也可以使用IDEA的protobuf插件。
+
+<h4 id="3.20">Beta发布如何使用</h4>
+
+service-a服务在192.168.31.114,192.168.31.115,192.168.31.116启动了三个实例。
+我们想把其中192.168.31.114实例的配置项"user.password"的值改为xxx（即：Beta发布），192.168.31.115,192.168.31.116的配置不做更改。
+
+![beta](/img/beta.png)
 
 ## Nacos原理问题

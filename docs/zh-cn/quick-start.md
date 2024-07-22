@@ -9,7 +9,10 @@ description: 这个快速开始手册是帮忙您快速在您的电脑上，下�
 这个快速开始手册是帮忙您快速在您的电脑上，下载、安装并使用 Nacos。
 
 ## 0.版本选择
-您可以在Nacos的[release notes](https://github.com/alibaba/nacos/releases)及[博客](https://nacos.io/zh-cn/blog/index.html)中找到每个版本支持的功能的介绍，当前推荐的稳定版本为1.2.1。
+
+Nacos 1.X 是老版本，将来会停止维护。 建议您使用2.X版本。 请移步到 [Nacos2.X相关文档](./v2/quickstart/quick-start.md).
+
+您可以在Nacos的[release notes](https://github.com/alibaba/nacos/releases)及[博客](https://nacos.io/zh-cn/blog/index.html)中找到每个版本支持的功能的介绍，当前推荐的稳定版本为2.2.3。
 
 ## 1.预备环境准备
 
@@ -48,6 +51,8 @@ cd distribution/target/nacos-server-$version/nacos/bin
 
 ## 3.启动服务器
 
+* 注：Nacos的运行需要以至少2C4g60g*3的机器配置下运行。
+
 ### Linux/Unix/Mac 
 
 启动命令(standalone代表着单机模式运行，非集群模式):
@@ -60,11 +65,9 @@ cd distribution/target/nacos-server-$version/nacos/bin
 
 ### Windows
 
-启动命令：
+启动命令(standalone代表着单机模式运行，非集群模式):
 
-`cmd startup.cmd`
-
-或者双击startup.cmd运行文件。
+`startup.cmd -m standalone`
 
 ## 4.服务注册&发现和配置管理
 
@@ -92,6 +95,6 @@ cd distribution/target/nacos-server-$version/nacos/bin
 
 ### Windows
 
-`cmd shutdown.cmd`
+`shutdown.cmd`
 
 或者双击shutdown.cmd运行文件。

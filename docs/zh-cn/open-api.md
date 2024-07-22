@@ -11,6 +11,9 @@ description: Open API 指南
   - [监听配置](#1.2)
   - [发布配置](#1.3)
   - [删除配置](#1.4)
+  - [查询历史版本](#1.5)
+  - [查询历史版本详情](#1.6)
+  - [查询配置上一版本信息](#1.7)
 
 - 服务发现
   - [注册实例](#2.1)
@@ -30,6 +33,14 @@ description: Open API 指南
   - [查看当前集群Server列表](#2.15)
   - [查看当前集群leader](#2.16)
   - [更新实例的健康状态](#2.17)
+  - [批量更新实例元数据(Beta)](#2.18)
+  - [批量删除实例元数据(Beta)](#2.19)
+
+- 命名空间
+  - [查询命名空间列表](#3.1)
+  - [创建命名空间](#3.2)
+  - [修改命名空间](#3.3)
+  - [删除命名空间](#3.4)
 
 ## 配置管理
 
@@ -76,7 +87,7 @@ GET
 * 请求示例
 
     ```plain
-    http:serverIp:8848/nacos/v1/cs/configs?dataId=dataIdparam&group=groupParam&tenant=tenantParam
+    curl -X GET 'http://127.0.0.1:8848/nacos/v1/cs/configs?dataId=nacos.example&group=com.alibaba.nacos'
 
     ```
 * 返回示例
@@ -166,8 +177,8 @@ POST
 
 
 ### 参数说明
-* 配置多个字段间分隔符：^2  = Character.toString((char) 2
-* 配置间分隔符：^1 = Character.toString((char) 1)
+* 配置多个字段间分隔符：^2 = Character.toString((char) 2，`urlencode` 后值为 `%02`
+* 配置间分隔符：^1 = Character.toString((char) 1)，`urlencode` 后值为 `%01`
 * contentMD5:  MD5(content)，第一次本地缓存为空，所以这块为空串
 
 ### 返回参数
@@ -196,7 +207,7 @@ http://serverIp:8848/nacos/v1/cs/configs/listener
 
 POST 请求体数据内容：
 
-Listening-Configs=dataId^2group^2contentMD5^2tenant^1
+Listening-Configs=dataId%02group%02contentMD5%02tenant%01
 ```
 
 * 返回示例
@@ -204,7 +215,7 @@ Listening-Configs=dataId^2group^2contentMD5^2tenant^1
 ```
 如果配置变化
 
-dataId^2group^2tenant^1
+dataId%02group%02tenant%01
 
 如果配置无变化：会返回空串
 ```
@@ -255,10 +266,7 @@ POST
 * 请求示例
 
 ```
-http:serverIp:8848/nacos/v1/cs/configs
-
-http body：
-dataId=dataIdparam&group=groupParam&tenant=tenantParam&content=contentParam&type=typeParam
+curl -X POST 'http://127.0.0.1:8848/nacos/v1/cs/configs' -d 'dataId=nacos.example&group=com.alibaba.nacos&content=contentTest'
 
 ```
 * 返回示例
@@ -310,7 +318,7 @@ DELETE
 * 请求示例
 
 ```
-http:serverIp:8848/nacos/v1/cs/configs?dataId=dataIdparam&group=groupParam
+curl -X DELETE 'http://127.0.0.1:8848/nacos/v1/cs/configs?dataId=nacos.example&group=com.alibaba.nacos'
 
 ```
 
@@ -318,6 +326,193 @@ http:serverIp:8848/nacos/v1/cs/configs?dataId=dataIdparam&group=groupParam
 
 ```
 true
+```
+
+<h2 id="1.5">查询历史版本</h2>
+
+### 描述
+
+查询配置项历史版本。
+
+### 请求类型
+GET
+
+### 请求 URL
+/nacos/v1/cs/history?search=accurate
+
+### 请求参数
+
+| 名称 | 类型 | 是否必须 | 描述 |
+| :--- | :--- | :--- | :--- |
+| tenant | string | 否 | 租户信息，对应 Naocs 的命名空间ID字段 |
+| dataId | string | 是 | 配置 ID |
+| group | string | 是 | 配置分组 |
+| pageNo | integer | 否 | 当前页码 |
+| pageSize | integer | 否 | 分页条数(默认100条,最大为500) |
+
+### 错误编码
+
+| 错误代码 | 描述 | 语义 |
+| :--- | :--- | :--- |
+| 400 | Bad Request | 客户端请求中的语法错误 |
+| 403 | Forbidden | 没有权限 |
+| 404 | Not Found | 无法找到资源 |
+| 500 | Internal Server Error | 服务器内部错误 |
+| 200 | OK | 正常 |
+
+
+### 示例
+* 请求示例
+
+```
+curl -X GET 'http://127.0.0.1:8848/nacos/v1/cs/history?search=accurate&dataId=nacos.example&group=com.alibaba.nacos'
+```
+
+* 返回示例
+
+```
+{
+  "totalCount": 1,
+  "pageNumber": 1,
+  "pagesAvailable": 1,
+  "pageItems": [
+    {
+      "id": "203",
+      "lastId": -1,
+      "dataId": "nacos.example",
+      "group": "com.alibaba.nacos",
+      "tenant": "",
+      "appName": "",
+      "md5": null,
+      "content": null,
+      "srcIp": "0:0:0:0:0:0:0:1",
+      "srcUser": null,
+      "opType": "I         ",
+      "createdTime": "2010-05-04T16:00:00.000+0000",
+      "lastModifiedTime": "2020-12-05T01:48:03.380+0000"
+    }
+  ]
+}
+```
+
+<h2 id="1.6">查询历史版本详情</h2>
+
+### 描述
+
+查询配置项历史版本详情
+
+### 请求类型
+GET
+
+### 请求 URL
+/nacos/v1/cs/history
+
+### 请求参数
+
+| 名称 | 类型 | 是否必须 | 描述 |
+| :--- | :--- | :--- | :--- |
+| nid | Integer | 是 | 配置项历史版本ID |
+| tenant | string | 否 | 租户信息，对应 Naocs 的命名空间ID字段 （2.0.3起） |
+| dataId | string | 是 | 配置 ID （2.0.3起）|
+| group | string | 是 | 配置分组 （2.0.3起）|
+> 注意：2.0.3版本起，此接口需要新增字段tenant、dataId和group，其中tenant非必填。
+
+### 错误编码
+
+| 错误代码 | 描述 | 语义 |
+| :--- | :--- | :--- |
+| 400 | Bad Request | 客户端请求中的语法错误 |
+| 403 | Forbidden | 没有权限 |
+| 404 | Not Found | 无法找到资源 |
+| 500 | Internal Server Error | 服务器内部错误 |
+| 200 | OK | 正常 |
+
+
+### 示例
+* 请求示例
+
+```
+curl -X GET 'http://127.0.0.1:8848/nacos/v1/cs/history?nid=203&tenant=&dataId=nacos.example&group=com.alibaba.nacos'
+```
+
+* 返回示例
+
+```
+{
+  "id": "203",
+  "lastId": -1,
+  "dataId": "nacos.example",
+  "group": "com.alibaba.nacos",
+  "tenant": "",
+  "appName": "",
+  "md5": "9f67e6977b100e00cab385a75597db58",
+  "content": "contentTest",
+  "srcIp": "0:0:0:0:0:0:0:1",
+  "srcUser": null,
+  "opType": "I         ",
+  "createdTime": "2010-05-04T16:00:00.000+0000",
+  "lastModifiedTime": "2020-12-05T01:48:03.380+0000"
+}
+```
+
+<h2 id="1.7">查询配置上一版本信息</h2>
+
+### 描述
+
+查询配置上一版本信息(1.4起)
+
+### 请求类型
+GET
+
+### 请求 URL
+/nacos/v1/cs/history/previous
+
+### 请求参数
+
+| 名称 | 类型 | 是否必须 | 描述 |
+| :--- | :--- | :--- | :--- |
+| id | Integer | 是 | 配置ID |
+| tenant | string | 否 | 租户信息，对应 Naocs 的命名空间ID字段 （2.0.3起） |
+| dataId | string | 是 | 配置 ID （2.0.3起）|
+| group | string | 是 | 配置分组 （2.0.3起）|
+> 说明：2.0.3版本起，此接口需要新增字段tenant、dataId和group，其中tenant非必填。
+
+### 错误编码
+
+| 错误代码 | 描述 | 语义 |
+| :--- | :--- | :--- |
+| 400 | Bad Request | 客户端请求中的语法错误 |
+| 403 | Forbidden | 没有权限 |
+| 404 | Not Found | 无法找到资源 |
+| 500 | Internal Server Error | 服务器内部错误 |
+| 200 | OK | 正常 |
+
+
+### 示例
+* 请求示例
+
+```
+curl -X GET 'http://127.0.0.1:8848/nacos/v1/cs/history/previous?id=309135486247505920&tenant=&dataId=nacos.example&group=com.alibaba.nacos'
+```
+
+* 返回示例
+
+```
+{
+  "id": "203",
+  "lastId": -1,
+  "dataId": "nacos.example",
+  "group": "com.alibaba.nacos",
+  "tenant": "",
+  "appName": "",
+  "md5": "9f67e6977b100e00cab385a75597db58",
+  "content": "contentTest",
+  "srcIp": "0:0:0:0:0:0:0:1",
+  "srcUser": null,
+  "opType": "I         ",
+  "createdTime": "2010-05-04T16:00:00.000+0000",
+  "lastModifiedTime": "2020-12-05T01:48:03.380+0000"
+}
 ```
 
 ## 服务发现
@@ -351,9 +546,19 @@ POST
 | groupName | 字符串 | 否 | 分组名 |
 | ephemeral | boolean | 否 | 是否临时实例 |
 
+### 错误编码
+
+| 错误代码 | 描述 | 语义 |
+| :--- | :--- | :--- |
+| 400 | Bad Request | 客户端请求中的语法错误 |
+| 403 | Forbidden | 没有权限 |
+| 404 | Not Found | 无法找到资源 |
+| 500 | Internal Server Error | 服务器内部错误 |
+| 200 | OK | 正常 |
+
 ### 示例请求
 ```plain
-curl -X POST 'http://127.0.0.1:8848/nacos/v1/ns/instance?port=8848&healthy=true&ip=11.11.11.11&weight=1.0&serviceName=nacos.test.3&encoding=GBK&namespaceId=n1''
+curl -X POST 'http://127.0.0.1:8848/nacos/v1/ns/instance?port=8848&healthy=true&ip=11.11.11.11&weight=1.0&serviceName=nacos.test.3&encoding=GBK&namespaceId=n1'
 ```
 ### 示例返回
 ok
@@ -383,9 +588,19 @@ DELETE
 | namespaceId | 字符串 | 否 | 命名空间ID |
 | ephemeral | boolean | 否 | 是否临时实例 |
 
+### 错误编码
+
+| 错误代码 | 描述 | 语义 |
+| :--- | :--- | :--- |
+| 400 | Bad Request | 客户端请求中的语法错误 |
+| 403 | Forbidden | 没有权限 |
+| 404 | Not Found | 无法找到资源 |
+| 500 | Internal Server Error | 服务器内部错误 |
+| 200 | OK | 正常 |
+
 ### 示例请求
 ```plain
-curl -X DELETE 127.0.0.1:8848/nacos/v1/ns/instance?serviceName=nacos.test.1&ip=1.1.1.1&port=8888&clusterName=TEST1
+curl -X DELETE '127.0.0.1:8848/nacos/v1/ns/instance?serviceName=nacos.test.1&ip=1.1.1.1&port=8888&clusterName=TEST1'
 ```
 ### 示例返回
 ok
@@ -394,6 +609,8 @@ ok
 
 ### 描述
 修改服务下的一个实例。
+
+**注意：在Nacos2.0版本后，通过该接口更新的元数据拥有更高的优先级，且具有记忆能力；会在对应实例删除后，依旧存在一段时间，如果在此期间实例重新注册，该元数据依旧生效；您可以通过**`nacos.naming.clean.expired-metadata.expired-time`**及**`nacos.naming.clean.expired-metadata.interval`**对记忆时间进行修改**
 
 ### 请求类型
 PUT
@@ -418,9 +635,19 @@ PUT
 | enabled | boolean | 否 | 是否打开流量 |
 | ephemeral | boolean | 否 | 是否临时实例 |
 
+### 错误编码
+
+| 错误代码 | 描述 | 语义 |
+| :--- | :--- | :--- |
+| 400 | Bad Request | 客户端请求中的语法错误 |
+| 403 | Forbidden | 没有权限 |
+| 404 | Not Found | 无法找到资源 |
+| 500 | Internal Server Error | 服务器内部错误 |
+| 200 | OK | 正常 |
+
 ### 示例请求
 ```plain
-curl -X PUT 127.0.0.1:8848/nacos/v1/ns/instance?serviceName=nacos.test.1&ip=1.1.1.1&port=8888&clusterName=TEST1&weight=8&metadata={}
+curl -X PUT '127.0.0.1:8848/nacos/v1/ns/instance?serviceName=nacos.test.1&ip=1.1.1.1&port=8888&clusterName=TEST1&weight=8&metadata={}'
 ```
 ### 示例返回
 ok
@@ -448,29 +675,50 @@ GET
 | clusters | 字符串，多个集群用逗号分隔 | 否 | 集群名称 |
 | healthyOnly | boolean | 否，默认为false | 是否只返回健康实例 |
 
+### 错误编码
+
+| 错误代码 | 描述 | 语义 |
+| :--- | :--- | :--- |
+| 400 | Bad Request | 客户端请求中的语法错误 |
+| 403 | Forbidden | 没有权限 |
+| 404 | Not Found | 无法找到资源 |
+| 500 | Internal Server Error | 服务器内部错误 |
+| 200 | OK | 正常 |
+
 ### 示例请求
 ```plain
-curl -X GET 127.0.0.1:8848/nacos/v1/ns/instance/list?serviceName=nacos.test.1
+curl -X GET '127.0.0.1:8848/nacos/v1/ns/instance/list?serviceName=nacos.test.1'
 ```
 ### 示例返回
 ```json
 {
-	"dom": "nacos.test.1",
-	"cacheMillis": 1000,
-	"useSpecifiedURL": false,
-	"hosts": [{
-		"valid": true,
-		"marked": false,
-		"instanceId": "10.10.10.10-8888-DEFAULT-nacos.test.1",
-		"port": 8888,
-		"ip": "10.10.10.10",
-		"weight": 1.0,
-		"metadata": {}
-	}],
-	"checksum": "3bbcf6dd1175203a8afdade0e77a27cd1528787794594",
-	"lastRefTime": 1528787794594,
-	"env": "",
-	"clusters": ""
+  "name": "DEFAULT_GROUP@@nacos.test.1", 
+  "groupName": "DEFAULT_GROUP", 
+  "clusters": "", 
+  "cacheMillis": 10000, 
+  "hosts": [
+    {
+      "instanceId": "10.10.10.10#8888#DEFAULT#DEFAULT_GROUP@@nacos.test.1", 
+      "ip": "10.10.10.10", 
+      "port": 8888, 
+      "weight": 1, 
+      "healthy": false, 
+      "enabled": true, 
+      "ephemeral": false, 
+      "clusterName": "DEFAULT", 
+      "serviceName": "DEFAULT_GROUP@@nacos.test.1", 
+      "metadata": { }, 
+      "instanceHeartBeatInterval": 5000, 
+      "instanceIdGenerator": "simple", 
+      "instanceHeartBeatTimeOut": 15000, 
+      "ipDeleteTimeout": 30000
+    }
+  ], 
+  "lastRefTime": 1528787794594, 
+  "checksum": "", 
+  "allIPs": false, 
+  "reachProtectionThreshold": false, 
+  "valid": true
 }
 ```
 <h2 id="2.5">查询实例详情</h2>
@@ -498,6 +746,16 @@ GET
 | cluster | 字符串 | 否 | 集群名称 |
 | healthyOnly | boolean | 否，默认为false | 是否只返回健康实例 |
 | ephemeral | boolean | 否 | 是否临时实例 |
+
+### 错误编码
+
+| 错误代码 | 描述 | 语义 |
+| :--- | :--- | :--- |
+| 400 | Bad Request | 客户端请求中的语法错误 |
+| 403 | Forbidden | 没有权限 |
+| 404 | Not Found | 无法找到资源 |
+| 500 | Internal Server Error | 服务器内部错误 |
+| 200 | OK | 正常 |
 
 ### 示例请求
 ```plain
@@ -535,9 +793,22 @@ PUT
 | 名称 | 类型 | 是否必选 | 描述 |
 | :--- | :--- | :--- | --- |
 | serviceName | 字符串 | 是 | 服务名 |
+| ip | 字符串 | 是 | 服务实例IP |
+| port | int | 是 | 服务实例PORT |
+| namespaceId | 字符串 | 否 | 命名空间ID |
 | groupName | 字符串 | 否 | 分组名 |
 | ephemeral | boolean | 否 | 是否临时实例 |
 | beat | JSON格式字符串 | 是 | 实例心跳内容 |
+
+### 错误编码
+
+| 错误代码 | 描述 | 语义 |
+| :--- | :--- | :--- |
+| 400 | Bad Request | 客户端请求中的语法错误 |
+| 403 | Forbidden | 没有权限 |
+| 404 | Not Found | 无法找到资源 |
+| 500 | Internal Server Error | 服务器内部错误 |
+| 200 | OK | 正常 |
 
 ### 示例请求
 ```plain
@@ -547,7 +818,6 @@ curl -X PUT '127.0.0.1:8848/nacos/v1/ns/instance/beat?serviceName=nacos.test.2&b
 ```
 ok
 ```
-
 
 <h2 id="2.7">创建服务</h2>
 
@@ -573,6 +843,16 @@ POST
 | metadata | 字符串 | 否 | 元数据 |
 | selector | JSON格式字符串 | 否 | 访问策略 |
 
+### 错误编码
+
+| 错误代码 | 描述 | 语义 |
+| :--- | :--- | :--- |
+| 400 | Bad Request | 客户端请求中的语法错误 |
+| 403 | Forbidden | 没有权限 |
+| 404 | Not Found | 无法找到资源 |
+| 500 | Internal Server Error | 服务器内部错误 |
+| 200 | OK | 正常 |
+
 ### 示例请求
 ```plain
 curl -X POST '127.0.0.1:8848/nacos/v1/ns/service?serviceName=nacos.test.2&metadata=k1%3dv1'
@@ -581,7 +861,6 @@ curl -X POST '127.0.0.1:8848/nacos/v1/ns/service?serviceName=nacos.test.2&metada
 ```
 ok
 ```
-
 
 <h2 id="2.8">删除服务</h2>
 
@@ -604,6 +883,15 @@ DELETE
 | groupName | 字符串 | 否 | 分组名 |
 | namespaceId | 字符串 | 否 | 命名空间ID |
 
+### 错误编码
+
+| 错误代码 | 描述 | 语义 |
+| :--- | :--- | :--- |
+| 400 | Bad Request | 客户端请求中的语法错误 |
+| 403 | Forbidden | 没有权限 |
+| 404 | Not Found | 无法找到资源 |
+| 500 | Internal Server Error | 服务器内部错误 |
+| 200 | OK | 正常 |
 
 ### 示例请求
 ```plain
@@ -638,6 +926,16 @@ PUT
 | metadata | 字符串 | 否 | 元数据 |
 | selector | JSON格式字符串 | 否 | 访问策略 |
 
+### 错误编码
+
+| 错误代码 | 描述 | 语义 |
+| :--- | :--- | :--- |
+| 400 | Bad Request | 客户端请求中的语法错误 |
+| 403 | Forbidden | 没有权限 |
+| 404 | Not Found | 无法找到资源 |
+| 500 | Internal Server Error | 服务器内部错误 |
+| 200 | OK | 正常 |
+
 ### 示例请求
 ```plain
 curl -X PUT '127.0.0.1:8848/nacos/v1/ns/service?serviceName=nacos.test.2&metadata=k1%3dv1'
@@ -669,6 +967,15 @@ GET
 | groupName | 字符串 | 否 | 分组名 |
 | namespaceId | 字符串 | 否 | 命名空间ID |
 
+### 错误编码
+
+| 错误代码 | 描述 | 语义 |
+| :--- | :--- | :--- |
+| 400 | Bad Request | 客户端请求中的语法错误 |
+| 403 | Forbidden | 没有权限 |
+| 404 | Not Found | 无法找到资源 |
+| 500 | Internal Server Error | 服务器内部错误 |
+| 200 | OK | 正常 |
 
 ### 示例请求
 ```plain
@@ -720,6 +1027,15 @@ GET
 | groupName | 字符串 | 否 | 分组名 |
 | namespaceId | 字符串 | 否 | 命名空间ID |
 
+### 错误编码
+
+| 错误代码 | 描述 | 语义 |
+| :--- | :--- | :--- |
+| 400 | Bad Request | 客户端请求中的语法错误 |
+| 403 | Forbidden | 没有权限 |
+| 404 | Not Found | 无法找到资源 |
+| 500 | Internal Server Error | 服务器内部错误 |
+| 200 | OK | 正常 |
 
 ### 示例请求
 ```plain
@@ -751,6 +1067,15 @@ GET
 
 ### 请求参数
 
+### 错误编码
+
+| 错误代码 | 描述 | 语义 |
+| :--- | :--- | :--- |
+| 400 | Bad Request | 客户端请求中的语法错误 |
+| 403 | Forbidden | 没有权限 |
+| 404 | Not Found | 无法找到资源 |
+| 500 | Internal Server Error | 服务器内部错误 |
+| 200 | OK | 正常 |
 
 ### 示例请求
 ```plain
@@ -826,6 +1151,15 @@ PUT
 | value | 字符串 | 是 | 开关值 |
 | debug | boolean | 否 | 是否只在本机生效,true表示本机生效,false表示集群生效 |
 
+### 错误编码
+
+| 错误代码 | 描述 | 语义 |
+| :--- | :--- | :--- |
+| 400 | Bad Request | 客户端请求中的语法错误 |
+| 403 | Forbidden | 没有权限 |
+| 404 | Not Found | 无法找到资源 |
+| 500 | Internal Server Error | 服务器内部错误 |
+| 200 | OK | 正常 |
 
 ### 示例请求
 ```plain
@@ -851,6 +1185,15 @@ GET
 
 ### 请求参数
 
+### 错误编码
+
+| 错误代码 | 描述 | 语义 |
+| :--- | :--- | :--- |
+| 400 | Bad Request | 客户端请求中的语法错误 |
+| 403 | Forbidden | 没有权限 |
+| 404 | Not Found | 无法找到资源 |
+| 500 | Internal Server Error | 服务器内部错误 |
+| 200 | OK | 正常 |
 
 ### 示例请求
 ```plain
@@ -888,6 +1231,16 @@ GET
 | 名称 | 类型 | 是否必选 | 描述 |
 | :--- | :--- | :--- | --- |
 | healthy | boolean | 否 | 是否只返回健康Server节点 |
+
+### 错误编码
+
+| 错误代码 | 描述 | 语义 |
+| :--- | :--- | :--- |
+| 400 | Bad Request | 客户端请求中的语法错误 |
+| 403 | Forbidden | 没有权限 |
+| 404 | Not Found | 无法找到资源 |
+| 500 | Internal Server Error | 服务器内部错误 |
+| 200 | OK | 正常 |
 
 ### 示例请求
 ```plain
@@ -951,6 +1304,16 @@ GET
 
 ### 请求参数
 
+### 错误编码
+
+| 错误代码 | 描述 | 语义 |
+| :--- | :--- | :--- |
+| 400 | Bad Request | 客户端请求中的语法错误 |
+| 403 | Forbidden | 没有权限 |
+| 404 | Not Found | 无法找到资源 |
+| 500 | Internal Server Error | 服务器内部错误 |
+| 200 | OK | 正常 |
+
 ### 示例请求
 ```plain
 curl -X GET '127.0.0.1:8848/nacos/v1/ns/raft/leader'
@@ -987,9 +1350,262 @@ PUT
 | port | int | 是 | 服务实例port |
 | healthy | boolean | 是 | 是否健康 |
 
+### 错误编码
+
+| 错误代码 | 描述 | 语义 |
+| :--- | :--- | :--- |
+| 400 | Bad Request | 客户端请求中的语法错误 |
+| 403 | Forbidden | 没有权限 |
+| 404 | Not Found | 无法找到资源 |
+| 500 | Internal Server Error | 服务器内部错误 |
+| 200 | OK | 正常 |
+
 ### 示例请求
 ```plain
-curl -X PUT 'http://127.0.0.1:8848/nacos/v1/ns/health/instance?port=8848&healthy=true&ip=11.11.11.11&serviceName=nacos.test.3&namespaceId=n1''
+curl -X PUT 'http://127.0.0.1:8848/nacos/v1/ns/health/instance?port=8848&healthy=true&ip=11.11.11.11&serviceName=nacos.test.3&namespaceId=n1'
 ```
 ### 示例返回
 ok
+
+<h2 id="2.18">批量更新实例元数据(Beta)</h2>
+
+### 描述
+批量更新实例元数据(1.4起)
+
+> 注意：该接口为Beta接口，后续版本可能有所修改，甚至删除，请谨慎使用。
+
+### 请求类型
+PUT
+
+### 请求路径
+```plain
+/nacos/v1/ns/instance/metadata/batch
+```
+
+### 请求参数
+
+| 名称 | 类型 | 是否必选 | 描述 |
+| :--- | :--- | :--- | --- |
+| namespaceId | 字符串 | 是 | 命名空间ID |
+| serviceName | 字符串 | 是 | 服务名(group@@serviceName) |
+| consistencyType | 字符串 | 否 | 实例的类型(ephemeral/persist) |
+| instances | JSON格式字符串 | 否 | 需要更新的实例 |
+| metadata | JSON格式字符串 | 是 | 元数据信息 |
+
+### 错误编码
+
+| 错误代码 | 描述 | 语义 |
+| :--- | :--- | :--- |
+| 400 | Bad Request | 客户端请求中的语法错误 |
+| 403 | Forbidden | 没有权限 |
+| 404 | Not Found | 无法找到资源 |
+| 500 | Internal Server Error | 服务器内部错误 |
+| 200 | OK | 正常 |
+
+### 参数说明
+* consistencyType: 优先级高于instances参数，如果进行配置，则忽略instances参数的值。当值为'ephemeral'，则对serviceName下的所有非持久化实例进行更新。当值为'persist'，则对serviceName下的所有持久化实例进行更新。当为其他值，没有实例进行更新。
+* instances: json数组。通过ip+port+ephemeral+cluster定位到某一实例。
+
+### 示例请求
+```plain
+curl -X PUT 'http://localhost:8848/nacos/v1/ns/instance/metadata/batch' -d 'namespaceId=public&serviceName=xxxx@@xxxx&instances=[{"ip":"3.3.3.3","port": "8080","ephemeral":"true","clusterName":"xxxx-cluster"},{"ip":"2.2.2.2","port":"8080","ephemeral":"true","clusterName":"xxxx-cluster"}]&metadata={"age":"20","name":"cocolan"}' 
+or
+curl -X PUT 'http://localhost:8848/nacos/v1/ns/instance/metadata/batch' -d 'namespaceId=public&serviceName=xxxx@@xxxx&consistencyType=ephemeral&metadata={"age":"20","name":"cocolan"}'
+```
+### 示例返回
+```
+{"updated":["2.2.2.2:8080:unknown:xxxx-cluster:ephemeral","3.3.3.3:8080:unknown:xxxx-cluster:ephemeral"]}
+```
+
+<h2 id="2.19">批量删除实例元数据(Beta)</h2>
+
+### 描述
+批量删除实例元数据(1.4起)
+
+> 注意：该接口为Beta接口，后续版本可能有所修改，甚至删除，请谨慎使用。
+
+### 请求类型
+DELETE
+
+### 请求路径
+```plain
+/nacos/v1/ns/instance/metadata/batch
+```
+
+### 请求参数
+
+| 名称 | 类型 | 是否必选 | 描述 |
+| :--- | :--- | :--- | --- |
+| namespaceId | 字符串 | 是 | 命名空间ID |
+| serviceName | 字符串 | 是 | 服务名(group@@serviceName) |
+| consistencyType | 字符串 | 否 | 实例的类型(ephemeral/persist) |
+| instances | JSON格式字符串 | 否 | 需要更新的实例 |
+| metadata | JSON格式字符串 | 是 | 元数据信息 |
+
+### 错误编码
+
+| 错误代码 | 描述 | 语义 |
+| :--- | :--- | :--- |
+| 400 | Bad Request | 客户端请求中的语法错误 |
+| 403 | Forbidden | 没有权限 |
+| 404 | Not Found | 无法找到资源 |
+| 500 | Internal Server Error | 服务器内部错误 |
+| 200 | OK | 正常 |
+
+### 参数说明
+* consistencyType: 优先级高于instances参数，如果进行配置，则忽略instances参数的值。当值为ephemeral，则对serviceName下的所有非持久化实例进行更新。当值为persist，则对serviceName下的所有持久化实例进行更新。当为其他值，没有实例进行更新。
+* instances: json数组。通过ip+port+ephemeral+cluster定位到某一实例。
+
+### 示例请求
+```plain
+curl -X DELETE 'http://localhost:8848/nacos/v1/ns/instance/metadata/batch' -d 'namespaceId=public&serviceName=xxxx@@xxxx&instances=[{"ip":"3.3.3.3","port": "8080","ephemeral":"true","clusterName":"xxxx-cluster"},{"ip":"2.2.2.2","port":"8080","ephemeral":"true","clusterName":"xxxx-cluster"}]&metadata={"age":"20","name":"cocolan"}' 
+or
+curl -X DELETE 'http://localhost:8848/nacos/v1/ns/instance/metadata/batch' -d 'namespaceId=public&serviceName=xxxx@@xxxx&consistencyType=ephemeral&metadata={"age":"20","name":"cocolan"}'
+```
+### 示例返回
+```
+{"updated":["2.2.2.2:8080:unknown:xxxx-cluster:ephemeral","3.3.3.3:8080:unknown:xxxx-cluster:ephemeral"]}
+```
+
+## 命名空间
+
+<h2 id="3.1">查询命名空间列表</h2>
+
+### 请求类型
+GET
+
+### 请求路径
+```plain
+/nacos/v1/console/namespaces
+```
+
+### 请求参数
+无
+
+### 错误编码
+
+| 错误代码 | 描述 | 语义 |
+| :--- | :--- | :--- |
+| 400 | Bad Request | 客户端请求中的语法错误 |
+| 403 | Forbidden | 没有权限 |
+| 404 | Not Found | 无法找到资源 |
+| 500 | Internal Server Error | 服务器内部错误 |
+| 200 | OK | 正常 |
+
+### 示例请求
+```plain
+curl -X GET 'http://localhost:8848/nacos/v1/console/namespaces'
+```
+### 示例返回
+```
+{"code":200,"message":null,"data":[{"namespace":"","namespaceShowName":"public","quota":200,"configCount":0,"type":0}]}
+```
+
+<h2 id="3.2">创建命名空间</h2>
+
+### 请求类型
+POST
+
+### 请求路径
+```plain
+/nacos/v1/console/namespaces
+```
+
+### 请求参数
+
+| 名称 | 类型 | 是否必选 | 描述 |
+| :--- | :--- | :--- | --- |
+| customNamespaceId | 字符串 | 是 | 命名空间ID |
+| namespaceName | 字符串 | 是 | 命名空间名 |
+| namespaceDesc | 字符串 | 否 | 命名空间描述 |
+
+### 错误编码
+
+| 错误代码 | 描述 | 语义 |
+| :--- | :--- | :--- |
+| 400 | Bad Request | 客户端请求中的语法错误 |
+| 403 | Forbidden | 没有权限 |
+| 404 | Not Found | 无法找到资源 |
+| 500 | Internal Server Error | 服务器内部错误 |
+| 200 | OK | 正常 |
+
+### 示例请求
+```plain
+curl -X POST 'http://localhost:8848/nacos/v1/console/namespaces' -d 'customNamespaceId=&namespaceName=dev&namespaceDesc='
+```
+### 示例返回
+```
+true
+```
+
+<h2 id="3.3">修改命名空间</h2>
+
+### 请求类型
+PUT
+
+### 请求路径
+```plain
+/nacos/v1/console/namespaces
+```
+
+### 请求参数
+
+| 名称 | 类型 | 是否必选 | 描述 |
+| :--- | :--- | :--- | --- |
+| namespace | 字符串 | 是 | 命名空间ID |
+| namespaceShowName | 字符串 | 是 | 命名空间名 |
+| namespaceDesc | 字符串 | 是 | 命名空间描述 |
+
+### 错误编码
+
+| 错误代码 | 描述 | 语义 |
+| :--- | :--- | :--- |
+| 400 | Bad Request | 客户端请求中的语法错误 |
+| 403 | Forbidden | 没有权限 |
+| 404 | Not Found | 无法找到资源 |
+| 500 | Internal Server Error | 服务器内部错误 |
+| 200 | OK | 正常 |
+
+### 示例请求
+```plain
+curl -X PUT 'http://localhost:8848/nacos/v1/console/namespaces' -d 'namespace=dev&namespaceShowName=开发环境2&namespaceDesc=只用于开发2'
+```
+### 示例返回
+```
+true
+```
+
+<h2 id="3.4">删除命名空间</h2>
+
+### 请求类型
+DELETE
+
+### 请求路径
+```plain
+/nacos/v1/console/namespaces
+```
+
+### 请求参数
+
+| 名称 | 类型 | 是否必选 | 描述 |
+| :--- | :--- | :--- | --- |
+| namespaceId | 字符串 | 是 | 命名空间ID |
+
+### 错误编码
+
+| 错误代码 | 描述 | 语义 |
+| :--- | :--- | :--- |
+| 400 | Bad Request | 客户端请求中的语法错误 |
+| 403 | Forbidden | 没有权限 |
+| 404 | Not Found | 无法找到资源 |
+| 500 | Internal Server Error | 服务器内部错误 |
+| 200 | OK | 正常 |
+
+### 示例请求
+```plain
+curl -X DELETE 'http://localhost:8848/nacos/v1/console/namespaces' -d 'namespaceId=dev'
+```
+### 示例返回
+```
+true
+```

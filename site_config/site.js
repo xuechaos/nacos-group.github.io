@@ -3,7 +3,7 @@ export default {
   port: 8080, // 本地开发服务器的启动端口
   domain: 'nacos.io', // 站点部署域名
   defaultSearch: 'baidu', // 默认搜索引擎，baidu或者google
-  defaultLanguage: 'en-us',
+  defaultLanguage: 'zh-cn',
   'en-us': {
     pageMenu: [
       {
@@ -14,7 +14,72 @@ export default {
       {
         key: 'docs',
         text: 'DOCS',
-        link: '/en-us/docs/quick-start.html',
+        link: '',
+        children: [
+          {
+            key: 'v2',
+            text: '2.X（Recommend）',
+            link: '/en-us/docs/v2/quickstart/quick-start.html',
+          },
+          {
+            key: 'v1',
+            text: '1.X',
+            link: '/en-us/docs/quick-start.html',
+          },
+        ]
+      },
+      // {
+      //   key: 'solution',
+      //   text: 'SOLUTIONS',
+      //   link: '',
+      //   imgUrl: 'https://img.alicdn.com/tfs/TB1esl_m.T1gK0jSZFrXXcNCXXa-200-200.png',
+      //   children: [
+      //     {
+      //       key: 'micoservice',
+      //       text: 'Microservice Solution',
+      //       link: 'https://www.alibabacloud.com/product/microservices-engine'
+      //     }, {
+      //       key: 'serverless',
+      //       text: 'Microservice on Serverless Solution',
+      //       link: 'https://cn.aliyun.com/product/aliware/sae?spm=nacos-website.topbar.0.0.0'
+      //     }, {
+      //       key: 'appas',
+      //       text: 'PaaS Solution',
+      //       link: 'https://www.aliyun.com/product/edas?spm=nacos-website.topbar.0.0.0'
+      //     },
+      //     {
+      //       key: 'gts',
+      //       text: 'Distributed transaction Solution',
+      //       link: 'https://www.aliyun.com/aliware/txc?spm=nacos-website.topbar.0.0.0'
+      //     }, {
+      //       key: 'msha',
+      //       text: 'High-availability Solution',
+      //       link: 'https://www.aliyun.com/product/ahas?spm=nacos-website.topbar.0.0.0'
+      //     },
+      //     {
+      //       key: 'mesh',
+      //       text: 'Service mesh Solution',
+      //       link: 'https://www.aliyun.com/product/servicemesh?spm=nacos-website.topbar.0.0.0',
+      //     }
+      //   ]
+      // },
+      {
+        key: 'Nacos in Cloud',
+        text: 'NACOS IN CLOUD',
+        link: '/en/cloud',
+        imgUrl: 'https://img.alicdn.com/tfs/TB1esl_m.T1gK0jSZFrXXcNCXXa-200-200.png'
+      },
+      {
+        key: 'Free Tier',
+        text: 'FREE TIER',
+        link: 'https://free.aliyun.com/?searchKey=nacos&spm=nacos.io.topbar.0.0.0',
+        imgUrl: 'https://img.alicdn.com/tfs/TB1esl_m.T1gK0jSZFrXXcNCXXa-200-200.png'
+      },
+      {
+        key: 'E-BOOK-NACOS',
+        text: 'E-BOOK-NACOS',
+        link: 'https://developer.aliyun.com/ebook/36?spm=a2c6h.20345107.ebook-index.18.152c2984fsi5ST',
+        imgUrl: 'https://img.alicdn.com/tfs/TB1esl_m.T1gK0jSZFrXXcNCXXa-200-200.png'
       },
       {
         key: 'blog',
@@ -26,26 +91,9 @@ export default {
         text: 'COMMUNITY',
         link: '/en-us/community',
       },
-      // {
-      //   key: 'download',
-      //   text: 'DOWNLOAD',
-      //   link: '/en-us/blog/download.html',
-      // },
-        {
-          key: 'Nacos in Cloud',
-          text: 'NACOS IN CLOUD',
-          link: 'https://cn.aliyun.com/product/aliware/mse?spm=nacos-website.topbar.0.0.0',
-          imgUrl: 'https://img.alicdn.com/tfs/TB1esl_m.T1gK0jSZFrXXcNCXXa-200-200.png'
-        },
-        {
-          key: 'We are hiring',
-          text: 'HIRING',
-          link: 'https://job.alibaba.com/zhaopin/position_detail.htm?trace=qrcode_share&positionCode=GP633620',
-          imgUrl: 'https://img.alicdn.com/tfs/TB1esl_m.T1gK0jSZFrXXcNCXXa-200-200.png'
-      },
       {
         text: 'DEMO-CONSOLE',
-          link: 'http://console.nacos.io/nacos/index.html',
+        link: 'http://console.nacos.io/nacos/index.html',
       },
     ],
     disclaimer: {
@@ -76,22 +124,22 @@ export default {
           text: 'Community',
           link: '/en-us/community/index.html',
         },
-          {
-              text: 'Cloud Service ACM',
-              link: 'https://www.aliyun.com/product/acm?source_type=nacos_pc_20181219',
-          },
-          {
-              text: 'Cloud Service EDAS',
-              link: 'https://www.aliyun.com/product/edas?source_type=nacos_pc_20181219',
-          },
-          {
-              text: 'Cloud Service AHAS',
-              link: 'https://www.aliyun.com/product/ahas?source_type=nacos_pc_20190225',
-          },
+        {
+          text: 'Cloud Service MSE',
+          link: 'https://www.aliyun.com/product/aliware/mse?spm=nacos.io.topbar.0.0.0',
+        },
+        {
+          text: 'Cloud Service EDAS',
+          link: 'https://www.aliyun.com/product/edas?source_type=nacos_pc_20181219',
+        },
+        {
+          text: 'Cloud Service AHAS',
+          link: 'https://www.aliyun.com/product/ahas?source_type=nacos_pc_20190225',
+        },
       ],
     },
 
-    copyright: '@ 2018 The Nacos Authors | An Alibaba Middleware (Aliware) Project',
+    copyright: '@ 2022 The Nacos Authors | An Alibaba Middleware (Aliware) Project',
   },
   'zh-cn': {
     pageMenu: [
@@ -103,7 +151,58 @@ export default {
       {
         key: 'docs',
         text: '文档',
-        link: '/zh-cn/docs/what-is-nacos.html',
+        link: '',
+        children: [
+          {
+            key: 'v2',
+            text: '2.X（推荐）',
+            link: '/zh-cn/docs/v2/quickstart/quick-start.html',
+          },
+          {
+            key: 'v1',
+            text: '1.X',
+            link: '/zh-cn/docs/quick-start.html',
+          },
+        ]
+      },
+      // {
+      //   key: 'solution',
+      //   text: '解决方案',
+      //   link: '',
+      //   imgUrl: 'https://img.alicdn.com/tfs/TB1esl_m.T1gK0jSZFrXXcNCXXa-200-200.png',
+      //   children: [
+      //     {
+      //       key: 'micoservice',
+      //       text: '微服务解决方案',
+      //       link: 'https://www.aliyun.com/product/aliware/mse?spm=nacos.io.topbar.0.0.0'
+      //     }, {
+      //       key: 'serverless',
+      //       text: '微服务Serverless解决方案',
+      //       link: 'https://cn.aliyun.com/product/aliware/sae?spm=nacos-website.topbar.0.0.0'
+      //     }, {
+      //       key: 'appas',
+      //       text: 'PaaS解决方案',
+      //       link: 'https://www.aliyun.com/product/edas?spm=nacos-website.topbar.0.0.0'
+      //     }
+      //   ]
+      // },
+      {
+        key: 'Nacos in Cloud',
+        text: '企业版NACOS',
+        link: '/zh-cn/cloud',
+        imgUrl: 'https://img.alicdn.com/tfs/TB1esl_m.T1gK0jSZFrXXcNCXXa-200-200.png'
+      },
+      {
+        key: 'Free Tier',
+        text: '免费试用',
+        link: 'https://free.aliyun.com/?searchKey=nacos&spm=nacos.io.topbar.0.0.0',
+        imgUrl: 'https://img.alicdn.com/tfs/TB1esl_m.T1gK0jSZFrXXcNCXXa-200-200.png'
+      },
+      {
+        key: 'E-BOOK',
+        text: 'NACOS架构与原理',
+        link: 'https://developer.aliyun.com/ebook/36?spm=a2c6h.20345107.ebook-index.18.152c2984fsi5ST',
+        imgUrl: 'https://img.alicdn.com/tfs/TB1esl_m.T1gK0jSZFrXXcNCXXa-200-200.png'
       },
       {
         key: 'blog',
@@ -115,21 +214,9 @@ export default {
         text: '社区',
         link: '/zh-cn/community/index.html',
       },
-        {
-            key: 'Nacos in Cloud',
-              text: '企业版Nacos',
-            link: 'https://cn.aliyun.com/product/aliware/mse?spm=nacos-website.topbar.0.0.0',
-            imgUrl: 'https://img.alicdn.com/tfs/TB1esl_m.T1gK0jSZFrXXcNCXXa-200-200.png'
-        },
-      {
-          key: 'We are hiring',
-          text: '招贤纳士',
-          link: 'https://job.alibaba.com/zhaopin/position_detail.htm?trace=qrcode_share&positionCode=GP633620',
-          imgUrl: 'https://img.alicdn.com/tfs/TB1esl_m.T1gK0jSZFrXXcNCXXa-200-200.png'
-      },
       {
         text: '控制台样例',
-          link: 'http://console.nacos.io/nacos/index.html',
+        link: 'http://console.nacos.io/nacos/index.html',
       },
     ],
     disclaimer: {
@@ -160,20 +247,20 @@ export default {
           text: '社区',
           link: '/zh-cn/community/index.html',
         },
-          {
-              text: '云服务 ACM',
-              link: 'https://www.aliyun.com/product/acm?source_type=nacos_pc_20181219',
-          },
-          {
-              text: '云服务 EDAS',
-              link: 'https://www.aliyun.com/product/edas?source_type=nacos_pc_20181219',
-          },
-          {
-              text: '云服务 AHAS',
-              link: 'https://www.aliyun.com/product/ahas?source_type=nacos_pc_20190225',
-          },
+        {
+          text: '云服务 MSE',
+          link: 'https://www.aliyun.com/product/aliware/mse?spm=nacos.io.topbar.0.0.0',
+        },
+        {
+          text: '云服务 EDAS',
+          link: 'https://www.aliyun.com/product/edas?source_type=nacos_pc_20181219',
+        },
+        {
+          text: '云服务 AHAS',
+          link: 'https://www.aliyun.com/product/ahas?source_type=nacos_pc_20190225',
+        },
       ],
     },
-    copyright: '@ 2018 The Nacos Authors | An Alibaba Middleware (Aliware) Project',
+    copyright: '@ 2022 The Nacos Authors | An Alibaba Middleware (Aliware) Project',
   },
 };

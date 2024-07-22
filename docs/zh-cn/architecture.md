@@ -12,7 +12,7 @@ description: Nacos 架构
 
 ### 服务 (Service)
 
-服务是指一个或一组软件功能（例如特定信息的检索或一组操作的执行），其目的是不同的客户端可以为不同的目的重用（例如通过跨进程的网络调用）。Nacos 支持主流的服务生态，如 Kubernetes Service、gRPC|Dubbo RPC Service 或者 Spring Cloud RESTful Service.
+服务是指一个或一组软件功能（例如特定信息的检索或一组操作的执行），其目的是不同的客户端可以为不同的目的重用（例如通过跨进程的网络调用）。Nacos 支持主流的服务生态，如 Kubernetes Service、gRPC|Dubbo RPC Service 或者 Spring Cloud RESTful Service。
 
 ### 服务注册中心 (Service Registry)
 
@@ -20,15 +20,15 @@ description: Nacos 架构
 
 ### 服务元数据 (Service Metadata)
 
-服务元数据是指包括服务端点(endpoints)、服务标签、服务版本号、服务实例权重、路由规则、安全策略等描述服务的数据
+服务元数据是指包括服务端点(endpoints)、服务标签、服务版本号、服务实例权重、路由规则、安全策略等描述服务的数据。
 
 ### 服务提供方 (Service Provider)
 
-是指提供可复用和可调用服务的应用方
+是指提供可复用和可调用服务的应用方。
 
 ### 服务消费方 (Service Consumer)
 
-是指会发起对某个服务调用的应用方
+是指会发起对某个服务调用的应用方。
 
 ### 配置 (Configuration)
 
@@ -51,8 +51,8 @@ description: Nacos 架构
 
 ## 逻辑架构及其组件介绍
 
-![nacos-logic.jpg](https://cdn.nlark.com/yuque/0/2019/png/338441/1561217775318-6e408805-18bb-4242-b4e9-83c5b929b469.png) 
- 
+![nacos-logic.jpg](https://cdn.nlark.com/yuque/0/2022/png/25601973/1646715315872-7ee3679a-e66e-49e9-ba9f-d24168a86c14.png)
+
 - 服务管理：实现服务CRUD，域名CRUD，服务健康状态检查，服务权重管理等功能
 - 配置管理：实现配置管CRUD，版本管理，灰度管理，监听管理，推送轨迹，聚合数据等功能
 - 元数据管理：提供元数据CURD 和打标能力
@@ -108,7 +108,7 @@ Nacos 数据模型 Key 由三元组唯一确定, Namespace默认是空串，公�
 
 服务部分待续
 
-![nacos_sdk_class_relation](https://cdn.nlark.com/yuque/0/2019/jpeg/338441/1561218077514-bfa98d03-88a1-43b9-b014-1491406e3db7.jpeg) 
+![nacos_sdk_class_relation](https://cdn.nlark.com/yuque/0/2022/png/25574784/1650771676187-d95a9e45-8656-4d1a-8b5b-ed63a23a816b.png) 
 
 
 ## 构建物、部署及启动模式

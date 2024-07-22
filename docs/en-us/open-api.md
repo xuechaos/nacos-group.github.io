@@ -11,6 +11,9 @@ description: Open API Guide
   - [Listen for configurations](#1.2)
   - [Publish configuration](#1.3)
   - [Delete configuration](#1.4)
+  - [Query list of history configuration](#1.5)
+  - [Query the history details of the configuration](#1.6)
+  - [Query the previous version of the configuration](#1.7)
 
 - Service Discovery
   - [Register instance](#2.1)
@@ -30,6 +33,14 @@ description: Open API Guide
   - [Query server list](#2.15)
   - [Query the leader of current cluster](#2.16)
   - [Update instance health status](#2.17)
+  - [Batch update instance metadata(Beta)](#2.18)
+  - [Batch delete instance metadata(Beta)](#2.19)
+
+- Namespace
+  - [Get namespace](#3.1)
+  - [Create namespace](#3.2)
+  - [Update namespace](#3.3)
+  - [Delete namespace](#3.4)
 
 ## Configuration Management
 
@@ -75,7 +86,7 @@ GET
 * Request example
 
     ```
-    http:serverIp:8848/nacos/v1/cs/configs?dataId=dataIdparam&group=groupParam&tenant=tenantParam
+    curl -X GET 'http://127.0.0.1:8848/nacos/v1/cs/configs?dataId=nacos.example&group=com.alibaba.nacos'
 
     ```
 * Return example
@@ -236,8 +247,8 @@ POST
 
 
 ### Parameter description
-* A delimiter to separate fields within a configuration: ^2  = Character.toString((char) 2
-* A delimiter to separate configurations: ^1 = Character.toString((char) 1)
+* A delimiter to separate fields within a configuration: ^2 = Character.toString((char) 2, The url encoded value is `%02`
+* A delimiter to separate configurations: ^1 = Character.toString((char) 1), The url encoded value is `%01`
 * contentMD5:  MD5(content). This is an empty string because the first local cache is empty.
 
 ### Return parameters
@@ -266,7 +277,7 @@ http://serverIp:8848/nacos/v1/cs/configs/listener
 
 POST request body data:
 
-Listening-Configs=dataId^2group^2contentMD5^2tenant^1
+Listening-Configs=dataId%02group%02contentMD5%02tenant%01
 
 ```
 
@@ -275,7 +286,7 @@ Listening-Configs=dataId^2group^2contentMD5^2tenant^1
 ```
 In case of any configuration changes,
 
-dataId^2group^2tenant^1
+dataId%02group%02tenant%01
 
 Otherwise, an empty string is returned.
 
@@ -329,10 +340,7 @@ POST
 ### Request example
 
 ```
-http:serverIp:8848/nacos/v1/cs/configs
-
-http body：
-dataId=dataIdparam&group=groupParam&tenant=tenantParam&content=contentParam&type=typeParam
+curl -X POST 'http://127.0.0.1:8848/nacos/v1/cs/configs' -d 'dataId=nacos.example&group=com.alibaba.nacos&content=contentTest'
 
 ```
 
@@ -389,7 +397,7 @@ DELETE
 #### Request example
 
 ```
-http:serverIp:8848/nacos/cs/configs?dataId=dataIdparam&group=groupParam
+curl -X DELETE 'http://127.0.0.1:8848/nacos/v1/cs/configs?dataId=nacos.example&group=com.alibaba.nacos'
 
 ```
 
@@ -397,6 +405,198 @@ http:serverIp:8848/nacos/cs/configs?dataId=dataIdparam&group=groupParam
 
 ```
 true
+```
+
+<h2 id="1.5">Query list of history configuration</h2>
+
+### Description
+
+Query list of history configuration.
+
+### Request Type
+GET
+
+### Request URL
+
+```
+/nacos/v1/cs/history?search=accurate
+```
+
+### Request parameters
+
+| Name | Type | Required | Description |
+| :--- | :--- | :--- | :--- |
+| tenant | string | No | Tenant information. It corresponds to the Namespace ID field in Nacos. |
+| dataId | string | Yes | Configuration ID |
+| group | string | Yes | Configuration group |
+| pageNo | integer | no | page number |
+| pageSize | integer | no | page size (default:100, max:500) |
+
+### Error code
+
+| Error code | Description | Meaning |
+| :--- | :--- | :--- |
+| 400 | Bad Request | Syntax error in client request |
+| 403 | Forbidden | No permission |
+| 404 | Not Found | Not found resource |
+| 500 | Internal Server Error | Internal server error |
+| 200 | OK | Normal |
+
+
+### Example
+#### Request example
+
+```
+curl -X GET 'http://127.0.0.1:8848/nacos/v1/cs/history?search=accurate&dataId=nacos.example&group=com.alibaba.nacos'
+```
+
+#### Response example
+
+```
+{
+  "totalCount": 1,
+  "pageNumber": 1,
+  "pagesAvailable": 1,
+  "pageItems": [
+    {
+      "id": "203",
+      "lastId": -1,
+      "dataId": "nacos.example",
+      "group": "com.alibaba.nacos",
+      "tenant": "",
+      "appName": "",
+      "md5": null,
+      "content": null,
+      "srcIp": "0:0:0:0:0:0:0:1",
+      "srcUser": null,
+      "opType": "I         ",
+      "createdTime": "2010-05-04T16:00:00.000+0000",
+      "lastModifiedTime": "2020-12-05T01:48:03.380+0000"
+    }
+  ]
+}
+```
+
+<h2 id="1.6">Query the history details of the configuration</h2>
+
+### Description
+
+Query the history details of the configuration
+
+### Request Type
+GET
+
+### Request URL
+
+```
+/nacos/v1/cs/history
+```
+
+### Request Parameters
+
+| Name | Type | Required | Description |
+| :--- | :--- | :--- | :--- |
+| nid | Integer | Yes | history config info ID |
+| tenant | string | No | Tenant information. It corresponds to the Namespace ID field in Nacos. (Since 2.0.3) |
+| dataId | string | Yes | Configuration ID (Since 2.0.3) |
+| group | string | Yes | Configuration group (Since 2.0.3) |
+> Note: From version 2.0.3, this interface need add three parameter, include tenant, dataId and group, tenant can not be provided. 
+
+### Error Code
+
+| Error code | Description | Meaning |
+| :--- | :--- | :--- |
+| 400 | Bad Request | Syntax error in client request |
+| 403 | Forbidden | No permission |
+| 404 | Not Found | Not found resource |
+| 500 | Internal Server Error | Internal server error |
+| 200 | OK | Normal |
+
+
+### Example
+#### Request example
+
+```
+curl -X GET 'http://127.0.0.1:8848/nacos/v1/cs/history?nid=203&tenant=&dataId=nacos.example&group=com.alibaba.nacos'
+```
+
+#### Response example
+
+```
+{
+  "id": "203",
+  "lastId": -1,
+  "dataId": "nacos.example",
+  "group": "com.alibaba.nacos",
+  "tenant": "",
+  "appName": "",
+  "md5": "9f67e6977b100e00cab385a75597db58",
+  "content": "contentTest",
+  "srcIp": "0:0:0:0:0:0:0:1",
+  "srcUser": null,
+  "opType": "I         ",
+  "createdTime": "2010-05-04T16:00:00.000+0000",
+  "lastModifiedTime": "2020-12-05T01:48:03.380+0000"
+}
+```
+
+<h2 id="1.7">Query the previous version of the configuration</h2>
+
+### Description
+
+Query the previous version of the configuration.(Since 1.4.0)
+
+### Request Type
+GET
+
+### Request URL
+/nacos/v1/cs/history/previous
+
+### Request Paramters
+
+| Name | Type | Required | Description |
+| :--- | :--- | :--- | :--- |
+| id | Integer | Yes | configuration unique id |
+| tenant | string | No | Tenant information. It corresponds to the Namespace ID field in Nacos. (Since 2.0.3) |
+| dataId | string | Yes | Configuration ID (Since 2.0.3) |
+| group | string | Yes | Configuration group (Since 2.0.3) |
+> Note: From version 2.0.3, this interface need add three parameter, include tenant, dataId and group, tenant can not be provided. 
+
+### Error Code
+
+| Error code | Description | Meaning |
+| :--- | :--- | :--- |
+| 400 | Bad Request | Syntax error in client request |
+| 403 | Forbidden | No permission |
+| 404 | Not Found | Not found resource |
+| 500 | Internal Server Error | Internal server error |
+| 200 | OK | Normal |
+
+
+### Example
+#### Request example
+```
+curl -X GET 'http://127.0.0.1:8848/nacos/v1/cs/history/previous?id=309135486247505920&tenant=&dataId=nacos.example&group=com.alibaba.nacos'
+```
+
+#### Response example
+
+```
+{
+  "id": "203",
+  "lastId": -1,
+  "dataId": "nacos.example",
+  "group": "com.alibaba.nacos",
+  "tenant": "",
+  "appName": "",
+  "md5": "9f67e6977b100e00cab385a75597db58",
+  "content": "contentTest",
+  "srcIp": "0:0:0:0:0:0:0:1",
+  "srcUser": null,
+  "opType": "I         ",
+  "createdTime": "2010-05-04T16:00:00.000+0000",
+  "lastModifiedTime": "2020-12-05T01:48:03.380+0000"
+}
 ```
 
 ## Service Discovery
@@ -430,9 +630,19 @@ POST
 | groupName | String | no | group name |
 | ephemeral | boolean | no | if instance is ephemeral |
 
+### Error Codes
+
+| Error code | Description | Meaning |
+| :--- | :--- | :--- |
+| 400 | Bad Request | Syntax error in the client request |
+| 403 | Forbidden | No permission |
+| 404 | Not Found | Not found resource |
+| 500 | Internal Server Error | Internal server error |
+| 200 | OK | Normal |
+
 ### Request Example
 ```plain
-curl -X POST 'http://127.0.0.1:8848/nacos/v1/ns/instance?port=8848&healthy=true&ip=11.11.11.11&weight=1.0&serviceName=nacos.test.3&encoding=GBK&namespaceId=n1''
+curl -X POST 'http://127.0.0.1:8848/nacos/v1/ns/instance?port=8848&healthy=true&ip=11.11.11.11&weight=1.0&serviceName=nacos.test.3&encoding=GBK&namespaceId=n1'
 ```
 
 ### Response Example
@@ -463,9 +673,19 @@ DELETE
 | clusterName | String | no | Cluster name |
 | namespaceId | String | no | ID of namespace |
 
+### error Codes
+
+| Error code | Description | Meaning |
+| :--- | :--- | :--- |
+| 400 | Bad Request | Syntax error in the client request |
+| 403 | Forbidden | No permission |
+| 404 | Not Found | Not found resource |
+| 500 | Internal Server Error | Internal server error |
+| 200 | OK | Normal |
+
 ### Request Example
 ```plain
-curl -X DELETE 127.0.0.1:8848/nacos/v1/ns/instance?serviceName=nacos.test.1&ip=1.1.1.1&port=8888&clusterName=TEST1
+curl -X DELETE '127.0.0.1:8848/nacos/v1/ns/instance?serviceName=nacos.test.1&ip=1.1.1.1&port=8888&clusterName=TEST1'
 ```
 ### Response Example
 ok
@@ -474,6 +694,8 @@ ok
 
 ### Description
 Modify an instance of service.
+
+**Attension：After Nacos2.0 version, the metadata updated through this interface has a higher priority and has the ability to remember. After the instance removed, it will still exist for a period of time. If the instance is re-registered during this period, the metadata will still be Effective. You can modify the memory time through** `nacos.naming.clean.expired-metadata.expired-time` **and** `nacos.naming.clean.expired-metadata.interval`
 
 ### Request Type
 PUT
@@ -498,9 +720,19 @@ PUT
 | enabled | boolean | no | If enabled |
 | metadata | JSON | no | Extended information |
 
+### error Codes
+
+| Error code | Description | Meaning |
+| :--- | :--- | :--- |
+| 400 | Bad Request | Syntax error in the client request |
+| 403 | Forbidden | No permission |
+| 404 | Not Found | Not found resource |
+| 500 | Internal Server Error | Internal server error |
+| 200 | OK | Normal |
+
 ### Request Example
 ```plain
-curl -X PUT 127.0.0.1:8848/nacos/v1/ns/instance?serviceName=nacos.test.1&ip=1.1.1.1&port=8888&clusterName=TEST1&weight=8&metadata={}
+curl -X PUT '127.0.0.1:8848/nacos/v1/ns/instance?serviceName=nacos.test.1&ip=1.1.1.1&port=8888&clusterName=TEST1&weight=8&metadata={}'
 ```
 ### Response Example
 ok
@@ -528,29 +760,50 @@ GET
 | clusters | String, splited by comma | no | Cluster name |
 | healthyOnly | boolean | no, default value is false | Return healthy instance or not |
 
+### Error Codes
+
+| Error code | Description | Meaning |
+| :--- | :--- | :--- |
+| 400 | Bad Request | Syntax error in the client request |
+| 403 | Forbidden | No permission |
+| 404 | Not Found | Not found resource |
+| 500 | Internal Server Error | Internal server error |
+| 200 | OK | Normal |
+
 ### Request Example
 ```plain
-curl -X GET 127.0.0.1:8848/nacos/v1/ns/instance/list?serviceName=nacos.test.1
+curl -X GET '127.0.0.1:8848/nacos/v1/ns/instance/list?serviceName=nacos.test.1'
 ```
 ### Response Example
 ```json
 {
-	"dom": "nacos.test.1",
-	"cacheMillis": 1000,
-	"useSpecifiedURL": false,
-	"hosts": [{
-		"valid": true,
-		"marked": false,
-		"instanceId": "10.10.10.10-8888-DEFAULT-nacos.test.1",
-		"port": 8888,
-		"ip": "10.10.10.10",
-		"weight": 1.0,
-		"metadata": {}
-	}],
-	"checksum": "3bbcf6dd1175203a8afdade0e77a27cd1528787794594",
-	"lastRefTime": 1528787794594,
-	"env": "",
-	"clusters": ""
+  "name": "DEFAULT_GROUP@@nacos.test.1", 
+  "groupName": "DEFAULT_GROUP", 
+  "clusters": "", 
+  "cacheMillis": 10000, 
+  "hosts": [
+    {
+      "instanceId": "10.10.10.10#8888#DEFAULT#DEFAULT_GROUP@@nacos.test.1", 
+      "ip": "10.10.10.10", 
+      "port": 8888, 
+      "weight": 1, 
+      "healthy": false, 
+      "enabled": true, 
+      "ephemeral": false, 
+      "clusterName": "DEFAULT", 
+      "serviceName": "DEFAULT_GROUP@@nacos.test.1", 
+      "metadata": { }, 
+      "instanceHeartBeatInterval": 5000, 
+      "instanceIdGenerator": "simple", 
+      "instanceHeartBeatTimeOut": 15000, 
+      "ipDeleteTimeout": 30000
+    }
+  ], 
+  "lastRefTime": 1528787794594, 
+  "checksum": "", 
+  "allIPs": false, 
+  "reachProtectionThreshold": false, 
+  "valid": true
 }
 ```
 
@@ -578,6 +831,16 @@ GET
 | ip | String | yes | IP of instance |
 | port | String | yes | Port of instance |
 | cluster | String | no | Cluster name |
+
+### Error Codes
+
+| Error code | Description | Meaning |
+| :--- | :--- | :--- |
+| 400 | Bad Request | Syntax error in the client request |
+| 403 | Forbidden | No permission |
+| 404 | Not Found | Not found resource |
+| 500 | Internal Server Error | Internal server error |
+| 200 | OK | Normal |
 
 ### Request Example
 ```plain
@@ -615,10 +878,22 @@ PUT
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | --- |
-| namespaceId | String | no | ID of namespace |
 | serviceName | String | yes | service name |
+| ip | String | yes | ip of instance |
+| port | int | yes | port of instance |
+| namespaceId | String | no | ID of namespace |
 | groupName | String | no | group name |
 | beat | String | yes | beat content |
+
+### Error Codes
+
+| Error code | Description | Meaning |
+| :--- | :--- | :--- |
+| 400 | Bad Request | Syntax error in the client request |
+| 403 | Forbidden | No permission |
+| 404 | Not Found | Not found resource |
+| 500 | Internal Server Error | Internal server error |
+| 200 | OK | Normal |
 
 ### Request Example
 ```plain
@@ -654,6 +929,16 @@ POST
 | metadata | String | no | metadata of service |
 | selector | JSON | no | visit strategy |
 
+### Error Codes
+
+| Error code | Description | Meaning |
+| :--- | :--- | :--- |
+| 400 | Bad Request | Syntax error in the client request |
+| 403 | Forbidden | No permission |
+| 404 | Not Found | Not found resource |
+| 500 | Internal Server Error | Internal server error |
+| 200 | OK | Normal |
+
 ### Request Example
 ```plain
 curl -X POST '127.0.0.1:8848/nacos/v1/ns/service?serviceName=nacos.test.2&metadata=k1%3dv1'
@@ -685,6 +970,15 @@ DELETE
 | groupName | String | no | group name |
 | namespaceId | String | no | namespace id |
 
+### Error Codes
+
+| Error code | Description | Meaning |
+| :--- | :--- | :--- |
+| 400 | Bad Request | Syntax error in the client request |
+| 403 | Forbidden | No permission |
+| 404 | Not Found | Not found resource |
+| 500 | Internal Server Error | Internal server error |
+| 200 | OK | Normal |
 
 ### Request Example
 ```plain
@@ -719,6 +1013,16 @@ PUT
 | metadata | String | no | metadata of service |
 | selector | JSON | no | visit strategy |
 
+### Error Codes
+
+| Error code | Description | Meaning |
+| :--- | :--- | :--- |
+| 400 | Bad Request | Syntax error in the client request |
+| 403 | Forbidden | No permission |
+| 404 | Not Found | Not found resource |
+| 500 | Internal Server Error | Internal server error |
+| 200 | OK | Normal |
+
 ### Request Example
 ```plain
 curl -X PUT '127.0.0.1:8848/nacos/v1/ns/service?serviceName=nacos.test.2&metadata=k1%3dv1'
@@ -750,6 +1054,15 @@ GET
 | groupName | String | no | group name |
 | namespaceId | String | no | namespace id |
 
+### Error Codes
+
+| Error code | Description | Meaning |
+| :--- | :--- | :--- |
+| 400 | Bad Request | Syntax error in the client request |
+| 403 | Forbidden | No permission |
+| 404 | Not Found | Not found resource |
+| 500 | Internal Server Error | Internal server error |
+| 200 | OK | Normal |
 
 ### Request Example
 ```plain
@@ -801,6 +1114,15 @@ GET
 | groupName | String | no | group name |
 | namespaceId | String | no | namespace id |
 
+### Error Codes
+
+| Error code | Description | Meaning |
+| :--- | :--- | :--- |
+| 400 | Bad Request | Syntax error in the client request |
+| 403 | Forbidden | No permission |
+| 404 | Not Found | Not found resource |
+| 500 | Internal Server Error | Internal server error |
+| 200 | OK | Normal |
 
 ### Request Example
 ```plain
@@ -832,6 +1154,15 @@ GET
 
 ### Request Parameters
 
+### Error Codes
+
+| Error code | Description | Meaning |
+| :--- | :--- | :--- |
+| 400 | Bad Request | Syntax error in the client request |
+| 403 | Forbidden | No permission |
+| 404 | Not Found | Not found resource |
+| 500 | Internal Server Error | Internal server error |
+| 200 | OK | Normal |
 
 ### Request Example
 ```plain
@@ -907,6 +1238,15 @@ PUT
 | value | String | yes | switch value |
 | debug | boolean | no | if affect the local server, true means yes, false means no, default true |
 
+### Error Codes
+
+| Error code | Description | Meaning |
+| :--- | :--- | :--- |
+| 400 | Bad Request | Syntax error in the client request |
+| 403 | Forbidden | No permission |
+| 404 | Not Found | Not found resource |
+| 500 | Internal Server Error | Internal server error |
+| 200 | OK | Normal |
 
 ### Request Example
 ```plain
@@ -932,6 +1272,15 @@ GET
 
 ### Request Parameters
 
+### Error Codes
+
+| Error code | Description | Meaning |
+| :--- | :--- | :--- |
+| 400 | Bad Request | Syntax error in the client request |
+| 403 | Forbidden | No permission |
+| 404 | Not Found | Not found resource |
+| 500 | Internal Server Error | Internal server error |
+| 200 | OK | Normal |
 
 ### Request Example
 ```plain
@@ -969,6 +1318,16 @@ GET
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | --- |
 | healthy | boolean | no | if return healthy servers only |
+
+### Error Codes
+
+| Error code | Description | Meaning |
+| :--- | :--- | :--- |
+| 400 | Bad Request | Syntax error in the client request |
+| 403 | Forbidden | No permission |
+| 404 | Not Found | Not found resource |
+| 500 | Internal Server Error | Internal server error |
+| 200 | OK | Normal |
 
 ### Request Example
 ```plain
@@ -1032,6 +1391,15 @@ GET
 
 ### Request Parameters
 
+### Error Codes
+
+| Error code | Description | Meaning |
+| :--- | :--- | :--- |
+| 400 | Bad Request | Syntax error in the client request |
+| 403 | Forbidden | No permission |
+| 404 | Not Found | Not found resource |
+| 500 | Internal Server Error | Internal server error |
+| 200 | OK | Normal |
 
 ### Request Example
 ```plain
@@ -1069,9 +1437,275 @@ PUT
 | port | int | yes | port of instance |
 | healthy | boolean | yes | if healthy |
 
+### Error Codes
+
+| Error code | Description | Meaning |
+| :--- | :--- | :--- |
+| 400 | Bad Request | Syntax error in the client request |
+| 403 | Forbidden | No permission |
+| 404 | Not Found | Not found resource |
+| 500 | Internal Server Error | Internal server error |
+| 200 | OK | Normal |
+
 ### Request Example
 ```plain
-curl -X PUT 'http://127.0.0.1:8848/nacos/v1/ns/health/instance?port=8848&healthy=true&ip=11.11.11.11&serviceName=nacos.test.3&namespaceId=n1''
+curl -X PUT 'http://127.0.0.1:8848/nacos/v1/ns/health/instance?port=8848&healthy=true&ip=11.11.11.11&serviceName=nacos.test.3&namespaceId=n1'
 ```
 ### Response Example
 ok
+
+
+<h2 id="2.18">Batch update instance metadata(Beta)</h2>
+
+### Description
+Batch update instance metadata(Since 1.4)
+
+> Note: This API is a Beta API, later versions maybe modify or even delete. Please use it with caution.
+
+### Request Type
+PUT
+
+### Request Path
+```plain
+/nacos/v1/ns/instance/metadata/batch
+```
+
+### Request Parameters
+
+| Name | Type | Required | Description |
+| :--- | :--- | :--- | --- |
+| namespaceId | String | yes | ID of namespace |
+| serviceName | String | yes | Service name(group@@serviceName) |
+| consistencyType | String | no | instance type (ephemeral/persist) |
+| instances | JSON | no | The instances which need to update |
+| metadata | JSON | yes | Metadata |
+
+### Error Codes
+
+| Error code | Description | Meaning |
+| :--- | :--- | :--- |
+| 400 | Bad Request | Syntax error in the client request |
+| 403 | Forbidden | No permission |
+| 404 | Not Found | Not found resource |
+| 500 | Internal Server Error | Internal server error |
+| 200 | OK | Normal |
+
+### Parameter description
+* consistencyType: The priority higher than param instances, if config it, the param instances will be ignored. When when value equals 'ephemeral', all the ephemeral instances in serviceName will be updated. When when value equals 'persist', all the persist instances in serviceName will be updated. When other value, no instances will be updated.
+* instances: json array. To locate particular instances by (ip + port + ephemeral + cluster).
+
+### Request Example
+```plain
+curl -X PUT 'http://localhost:8848/nacos/v1/ns/instance/metadata/batch' -d 'namespaceId=public&serviceName=xxxx@@xxxx&instances=[{"ip":"3.3.3.3","port": "8080","ephemeral":"true","clusterName":"xxxx-cluster"},{"ip":"2.2.2.2","port":"8080","ephemeral":"true","clusterName":"xxxx-cluster"}]&metadata={"age":"20","name":"cocolan"}' 
+or
+curl -X PUT 'http://localhost:8848/nacos/v1/ns/instance/metadata/batch' -d 'namespaceId=public&serviceName=xxxx@@xxxx&consistencyType=ephemeral&metadata={"age":"20","name":"cocolan"}'
+```
+### Response Example
+```
+{"updated":["2.2.2.2:8080:unknown:xxxx-cluster:ephemeral","3.3.3.3:8080:unknown:xxxx-cluster:ephemeral"]}
+```
+
+<h2 id="2.19">Batch delete instance metadata(Beta)</h2>
+
+### Description
+Batch delete instance metadata(Since 1.4)
+
+> Note: This API is a Beta API, later versions maybe modify or even delete. Please use it with caution.
+
+### Request Type
+DELETE
+
+### Request Path
+```plain
+/nacos/v1/ns/instance/metadata/batch
+```
+
+### Request Parameters
+
+| Name | Type | Required | Description |
+| :--- | :--- | :--- | --- |
+| namespaceId | String | yes | ID of namespace |
+| serviceName | String | yes | Service name(group@@serviceName) |
+| consistencyType | String | no | instance type (ephemeral/persist) |
+| instances | JSON | no | The instances which need to update |
+| metadata | JSON | yes | Metadata |
+
+### Error Codes
+
+| Error code | Description | Meaning |
+| :--- | :--- | :--- |
+| 400 | Bad Request | Syntax error in the client request |
+| 403 | Forbidden | No permission |
+| 404 | Not Found | Not found resource |
+| 500 | Internal Server Error | Internal server error |
+| 200 | OK | Normal |
+
+### Parameter description
+* consistencyType: The priority higher than param instances, if config it, the param instances will be ignored. When when value equals 'ephemeral', all the ephemeral instances in serviceName will be updated. When when value equals 'persist', all the persist instances in serviceName will be updated. When other value, no instances will be updated.
+* instances: json array. To locate particular instances by (ip + port + ephemeral + cluster).
+
+### Request Example
+```plain
+curl -X DELETE 'http://localhost:8848/nacos/v1/ns/instance/metadata/batch' -d 'namespaceId=public&serviceName=xxxx@@xxxx&instances=[{"ip":"3.3.3.3","port": "8080","ephemeral":"true","clusterName":"xxxx-cluster"},{"ip":"2.2.2.2","port":"8080","ephemeral":"true","clusterName":"xxxx-cluster"}]&metadata={"age":"20","name":"cocolan"}' 
+or
+curl -X DELETE 'http://localhost:8848/nacos/v1/ns/instance/metadata/batch' -d 'namespaceId=public&serviceName=xxxx@@xxxx&consistencyType=ephemeral&metadata={"age":"20","name":"cocolan"}'
+```
+### Response Example
+```
+{"updated":["2.2.2.2:8080:unknown:xxxx-cluster:ephemeral","3.3.3.3:8080:unknown:xxxx-cluster:ephemeral"]}
+```
+
+## Namespace
+
+<h2 id="3.1">Get namespace</h2>
+
+### Description
+This API is used to get namespaces in Nacos.
+
+### Request Type
+GET
+
+### Request Path
+```plain
+/nacos/v1/ns/instance
+```
+
+### Request Parameters
+None
+
+### error Codes
+
+| Error code | Description | Meaning |
+| :--- | :--- | :--- |
+| 400 | Bad Request | Syntax error in the client request |
+| 403 | Forbidden | No permission |
+| 404 | Not Found | Not found resource |
+| 500 | Internal Server Error | Internal server error |
+| 200 | OK | Normal |
+
+### Request Example
+```plain
+curl -X GET 'http://localhost:8848/nacos/v1/console/namespaces'
+```
+### Response Example
+```
+{"code":200,"message":null,"data":[{"namespace":"","namespaceShowName":"public","quota":200,"configCount":0,"type":0}]}
+```
+
+<h2 id="3.2">Create namespace</h2>
+
+### Description
+Create namespace
+
+### Request Type
+POST
+
+### Request Path
+```plain
+/nacos/v1/console/namespaces
+```
+
+### Request Parameters
+
+| Name | Type | Required | Description |
+| :--- | :--- | :--- | --- |
+| customNamespaceId | String | yes | ID of namespace |
+| namespaceName | String | yes | Namespace name |
+| namespaceDesc | String | no | Namespace description |
+
+### error Codes
+
+| Error code | Description | Meaning |
+| :--- | :--- | :--- |
+| 400 | Bad Request | Syntax error in the client request |
+| 403 | Forbidden | No permission |
+| 404 | Not Found | Not found resource |
+| 500 | Internal Server Error | Internal server error |
+| 200 | OK | Normal |
+
+### Request Example
+```plain
+curl -X POST 'http://localhost:8848/nacos/v1/console/namespaces' -d 'customNamespaceId=&namespaceName=dev&namespaceDesc='
+```
+### Response Example
+```
+true
+```
+
+<h2 id="3.3">Modify namespace</h2>
+
+### Description
+Update namespace
+
+### Request Type
+PUT
+
+### Request Path
+```plain
+/nacos/v1/console/namespaces
+```
+
+### Request Parameters
+
+| Name | Type | Required | Description |
+| :--- | :--- | :--- | --- |
+| namespace | String | yes | ID of namespace |
+| namespaceShowName | String | yes | Namespace name |
+| namespaceDesc | String | yes | Namespace description |
+
+### error Codes
+
+| Error code | Description | Meaning |
+| :--- | :--- | :--- |
+| 400 | Bad Request | Syntax error in the client request |
+| 403 | Forbidden | No permission |
+| 404 | Not Found | Not found resource |
+| 500 | Internal Server Error | Internal server error |
+| 200 | OK | Normal |
+
+### Request Example
+```plain
+curl -X PUT 'http://localhost:8848/nacos/v1/console/namespaces' -d 'namespace=dev&namespaceShowName=开发环境2&namespaceDesc=只用于开发2'
+```
+### Response Example
+```
+true
+```
+
+<h2 id="3.4">Delete namespace</h2>
+
+### Description
+It deletes namespace in Nacos.
+
+### Request Type
+DELETE
+
+### Request Path
+```plain
+/nacos/v1/console/namespaces
+```
+
+### Request Parameters
+
+| Name | Type | Required | Description |
+| :--- | :--- | :--- | --- |
+| namespaceId | String | yes | ID of namespace |
+
+### error Codes
+
+| Error code | Description | Meaning |
+| :--- | :--- | :--- |
+| 400 | Bad Request | Syntax error in the client request |
+| 403 | Forbidden | No permission |
+| 404 | Not Found | Not found resource |
+| 500 | Internal Server Error | Internal server error |
+| 200 | OK | Normal |
+
+### Request Example
+```plain
+curl -X DELETE 'http://localhost:8848/nacos/v1/console/namespaces' -d 'namespaceId=dev'
+```
+### Response Example
+```
+true
+```
