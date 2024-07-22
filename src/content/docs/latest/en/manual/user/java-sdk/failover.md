@@ -1,5 +1,5 @@
 ---
-title: Java SDK 容灾
+title: Java SDK failover
 keywords: [容灾]
 description: Java客户端容灾用户指南
 sidebar:

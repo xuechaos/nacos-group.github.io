@@ -1,5 +1,5 @@
 ---
-title: 部署手册概览
+title: deployment-overview
 keywords: [Nacos,部署模式]
 description: Nacos支持三种部署模式
 sidebar:

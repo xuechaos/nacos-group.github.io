@@ -1,5 +1,5 @@
 ---
-title: 集群模式部署
+title: deployment-cluster
 keywords: [Nacos,部署,集群模式]
 description: Nacos集群模式部署手册，参考本文档可进行Nacos集群模式多种方式部署。
 sidebar:
