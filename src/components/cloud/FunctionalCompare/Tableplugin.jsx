@@ -1,6 +1,7 @@
 
 import { useEffect, useState } from "preact/hooks";
 import Correct from "./Correct";
+import False from "./False";
 import "./style.tableplugin.css";
 
 
@@ -69,7 +70,7 @@ const Tableplugin = (props) => {
                   {item.name.des && <p class="text-xs">{item.name.des}</p>}
                 </td>
                 <td class="col3 text-center">
-                  {item.free.checked && <Correct />}
+                  {typeof item.free.checked === 'boolean' && (item.free.checked ? <Correct /> : <False />)}
                   {item.free.des && (
                     <p class="text-xs font-normal color-gray-08">
                       {item.free.des}
@@ -77,7 +78,7 @@ const Tableplugin = (props) => {
                   )}
                 </td>
                 <td class="col4 text-center">
-                  {item.develop.checked && <Correct />}
+                  {typeof item.develop.checked === 'boolean' && (item.develop.checked ? <Correct /> : <False />)}
                   {item.develop.des && (
                     <p class="text-xs font-normal color-gray-08">
                       {item.develop.des}
@@ -86,7 +87,7 @@ const Tableplugin = (props) => {
 
                 </td>
                 <td class="col5 text-center">
-                  {item.speciality.checked && <Correct />}
+                  {typeof item.speciality.checked === 'boolean' && (item.speciality.checked ? <Correct /> : <False />)}
                   {item.speciality.des && (
                     <p class="text-xs font-normal color-gray-08">
                       {item.speciality.des}
@@ -94,7 +95,7 @@ const Tableplugin = (props) => {
                   )}
                 </td>
                 <td class="col6 text-center">
-                  {item.serverless.checked && <Correct />}
+                  {typeof item.serverless.checked === 'boolean' && (item.serverless.checked ? <Correct /> : <False />)}
                   {item.serverless.des && (
                     <p class="text-xs font-normal color-gray-08">
                       {item.serverless.des}
