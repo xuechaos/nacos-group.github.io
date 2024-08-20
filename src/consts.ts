@@ -7,10 +7,10 @@ export const SITE_DESCRIPTION = 'Welcome to my website!';
 // 吊顶提示文案
 export const TOPBAR = {
     "text": "8月2日（周五）开源沙龙首个AI原生应用架构专场 | 上海站 ，欢迎报名！",
-    "mobileText": "欢迎报名8月2日上海首个AI原生应用架构开源沙龙！",
-    "link": "https://summit.aliyun.com/cloudnative2024_developer_shanghai?spm=5176.20960838.0.0.7802305eyqMQf8",
+    "mobileText": "8月2日（周五）开源沙龙首个AI原生应用架构专场 | 上海站 ，欢迎报名！",
+    "link": "https://summit.aliyun.com/cloudnative2024_developer_shanghai",
     "target": "_blank",
-    "display": true
+    "display": false
 }
 export const MEDIARESOURCE = [
     {
@@ -156,8 +156,8 @@ export const ACTIVITY_CATEGORY = [
 export const HEADER_ACTIVITY_CARD = [
     {
         "collection": "blog",
-        "slug": "announcement-derby-ops-api",
-        "description": "关于Nacos Derby数据库运维接口相关问题公告",
+        "slug": "announcement-nacos-security-problem-file",
+        "description": "关于近期Nacos的任意文件读写漏洞说明及解决办法",
         "imageUrl": "https://img.alicdn.com/imgextra/i4/O1CN01bGnAVW1pFeLFnlaQL_!!6000000005331-2-tps-508-370.png"
     },
     {

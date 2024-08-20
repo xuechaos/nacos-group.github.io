@@ -1,9 +1,7 @@
 ---
-title: Java SDK properties
-keywords: [ Java,SDK,配置参数 ]
-description: 本文档介绍了Nacos的Java SDK(nacos-client)目前所支持的配置参数列表,以及对Nacos Java SDK读取配置参数的原理做简要介绍。
-sidebar:
-  order: 2
+title: Java SDK Properties
+keywords: [ Java,SDK,Properties ]
+description: This document introduces the list of configuration parameters currently supported by the Nacos Java SDK (nacos-client), and provides a brief explanation of the principles behind how the Nacos Java SDK reads these configuration parameters.
 ---
 
 # Java SDK 配置参数

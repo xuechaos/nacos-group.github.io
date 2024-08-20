@@ -16,3 +16,8 @@ Nacos社区当前仅提供了Java版本的客户端，我们将主要依靠社�
 * [nodejs](https://github.com/nacos-group/nacos-sdk-nodejs)
 * [c#](https://github.com/nacos-group/nacos-sdk-csharp)
 * more ...
+
+## 其他多语言用法
+> 以下多语言用法由其他社区提供和维护：
+
+* [PHP](https://github.com/workbunny/webman-nacos)

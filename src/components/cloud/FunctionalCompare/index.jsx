@@ -10,16 +10,16 @@ import "./style.css";
 
 
 const FunctionalCompare = (props) => {
-  const dataVersion = ['免费版', '开发版', '专业版', 'Serverless 版']
+  const dataVersion = ['社区版', '开发版', '专业版', 'Serverless 版']
 
   const versionContain = {
-    '免费版': 'free',
+    '社区版': 'free',
     '开发版': 'develop',
     '专业版': 'speciality',
     'Serverless 版': 'serverless',
   }
   const [isSafariBrowser, setIsSafariBrowser] = useState(true);
-  const [version, setVersion] = useState('免费版');
+  const [version, setVersion] = useState('社区版');
   const [isSticky, setIsSticky] = useState(false);
   const [isShow, setIsShow] = useState(false);
   const [isCollapsed, setIsCollapsed] = useState(true);
@@ -71,7 +71,7 @@ const FunctionalCompare = (props) => {
             <th class="col1 border-0" />
             <th class="col2 border-0" />
             <th class="col3 overflow-hidden">
-              <p class="mb-6 text-2xl font-normal"> 免费版</p>
+              <p class="mb-6 text-2xl font-normal"> 社区版</p>
               <div class='text-gray-08 text-xs h-20 leading-8'>免费试用</div>
             </th>
             <th class="col4">
